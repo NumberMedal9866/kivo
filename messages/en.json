@@ -1,0 +1,606 @@
+{
+  "common": {
+    "tagline": "Self-ordering made simple",
+    "availability": "Now in Uzbekistan",
+    "learnMore": "Learn more",
+    "requestConsultation": "Discuss your project",
+    "seeHowItWorks": "How it works",
+    "getProposal": "Get a proposal",
+    "backHome": "Back to home"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNavigation": "Main navigation",
+    "footerNavigation": "Footer navigation",
+    "breadcrumb": "Breadcrumb",
+    "decorative": "Decorative illustration",
+    "themeToggle": "Toggle theme"
+  },
+  "nav": {
+    "product": "Product",
+    "demo": "Demo",
+    "benefits": "Benefits",
+    "howItWorks": "Launch",
+    "integrations": "Integrations",
+    "rental": "Rental",
+    "faq": "FAQ",
+    "implementation": "Implementation",
+    "contact": "Contact",
+    "home": "Home"
+  },
+  "langSwitcher": {
+    "label": "Language",
+    "ru": "Русский",
+    "uz": "O‘zbekcha",
+    "en": "English"
+  },
+  "hero": {
+    "badge": "Self-ordering kiosks · Uzbekistan",
+    "title": "The kiosk takes orders. Your team cooks.",
+    "subtitle": "KIVO delivers a turnkey kiosk: iiko, payments, menu, training and support.",
+    "ctaPrimary": "Discuss your project",
+    "ctaSecondary": "Try the demo",
+    "worksWith": "Works with",
+    "cardTitle": "#214 paid",
+    "cardSubtitle": "Sent to the kitchen",
+    "upsellChip": "Add a dessert?",
+    "kioskCaption": "Illustration — final hardware may differ"
+  },
+  "trust": {
+    "heading": "Works with",
+    "note": "Third-party names and marks belong to their respective owners."
+  },
+  "switch": {
+    "kicker": "Before / after",
+    "heading": "One rush hour, two scenarios",
+    "beforeLabel": "Without a kiosk",
+    "afterLabel": "With KIVO",
+    "before": {
+      "i1": "One till — one queue",
+      "i2": "The cashier types, guests wait",
+      "i3": "Upselling depends on luck",
+      "i4": "Orders taken by ear"
+    },
+    "after": {
+      "i1": "Guests order in parallel",
+      "i2": "The team cooks and hands out",
+      "i3": "Suggestions in every order",
+      "i4": "Orders confirmed on screen"
+    },
+    "sceneCounter": "Till",
+    "sceneKiosks": "Kiosks",
+    "sceneKitchen": "Kitchen",
+    "sceneEntrance": "Entrance",
+    "caption": "Kiosks don't replace people — they take over repetitive order entry so the team can focus on guests and food."
+  },
+  "demo": {
+    "kicker": "Live demo",
+    "heading": "Try it yourself — as your guest",
+    "intro": "Switch the language, build an order and go through to payment.",
+    "note": "A demonstration with a fictional menu: no real order is created, no payment is processed.",
+    "restart": "Restart demo",
+    "screenLabel": "Interactive kiosk demonstration",
+    "hint1": "Three languages out of the box",
+    "hint2": "Modifiers and combos",
+    "hint3": "Tactful upselling"
+  },
+  "stats": {
+    "kicker": "Impact",
+    "heading": "What changes — in numbers and on the floor",
+    "aov": {
+      "stat": "+8–15%",
+      "statLabel": "per kiosk order",
+      "text": "Industry benchmark for QSR and fast casual — sources in the “Industry data” block."
+    },
+    "speed": {
+      "stat": "1 → 4",
+      "statLabel": "order-taking points",
+      "text": "Every kiosk is an extra ordering point. We size the number to your floor."
+    },
+    "staff": {
+      "title": "The team cooks instead of typing",
+      "text": "Repetitive order entry moves to the kiosk. People prepare, hand out and help guests."
+    },
+    "chips": {
+      "lang": "Interface in 3+ languages",
+      "errors": "Guests confirm the order themselves — fewer mistakes",
+      "upsell": "Suggestions in every order",
+      "stoplist": "Stop-lists in sync with iiko",
+      "menu": "The whole menu, with photos and modifiers",
+      "same": "The same service at every location"
+    },
+    "footnote": "Benchmarks come from public industry sources — see “Industry data”. Results depend on the venue."
+  },
+  "integrations": {
+    "kicker": "Integrations",
+    "heading": "Fits into what you already run",
+    "intro": "Orders flow into iiko; payment goes through the services Uzbekistan already uses.",
+    "flowCustomer": "Guest",
+    "flowKiosk": "KIVO kiosk",
+    "flowPos": "iiko",
+    "flowKitchen": "Kitchen",
+    "flowPayment": "Payment",
+    "posTitle": "iiko POS",
+    "posText": "Menu, modifiers and stop-lists stay in sync. Orders land in the kitchen's usual workflow.",
+    "paymentsTitle": "Payments",
+    "paymentsText": "Payment acceptance is configured per merchant.",
+    "customTitle": "Need another integration?",
+    "customText": "Loyalty, delivery, internal systems — discussed after a technical review.",
+    "disclaimer": "Details are confirmed during the technical assessment.",
+    "cta": "Integrations in detail"
+  },
+  "how": {
+    "kicker": "Launch",
+    "heading": "Four steps to a working kiosk",
+    "intro": "KIVO runs the implementation — your team doesn't have to become integrators.",
+    "steps": {
+      "assessment": {
+        "num": "01",
+        "title": "Assessment",
+        "short": "Format, iiko, payments, goals",
+        "d1": "Floor format and ordering scenario",
+        "d2": "iiko configuration and payment tools",
+        "d3": "Goals: order value, speed, workload"
+      },
+      "setup": {
+        "num": "02",
+        "title": "Setup",
+        "short": "Menu, branding, languages, integrations",
+        "d1": "Menu migration with photos and modifiers",
+        "d2": "Interface in your brand style",
+        "d3": "iiko and payment connections"
+      },
+      "installation": {
+        "num": "03",
+        "title": "Installation",
+        "short": "Delivery, mounting, tests, training",
+        "d1": "Mounting and connection on site",
+        "d2": "End-to-end test: order → payment → kitchen",
+        "d3": "On-site team training"
+      },
+      "support": {
+        "num": "04",
+        "title": "Support",
+        "short": "Warranty, service, growth",
+        "d1": "Technical support and warranty service",
+        "d2": "Menu and flow updates",
+        "d3": "Improvements as you grow"
+      }
+    },
+    "cta": "How implementation works"
+  },
+  "rental": {
+    "kicker": "Rental",
+    "heading": "Start without buying the hardware",
+    "intro": "Kiosk, installation and support — as a service with a low initial payment.",
+    "points": {
+      "p1": { "title": "KIVO hardware", "text": "We deliver and install it ourselves" },
+      "p2": { "title": "Low entry", "text": "No heavy upfront investment" },
+      "p3": { "title": "Support included", "text": "Service, warranty, updates" },
+      "p4": { "title": "Flexible scale", "text": "From one venue to a chain" }
+    },
+    "note": "Exact terms are calculated individually — for your format and size.",
+    "cta": "Discuss the terms"
+  },
+  "evidence": {
+    "kicker": "Industry data",
+    "heading": "Global experience, in numbers",
+    "intro": "Public data on self-ordering in restaurants. Market benchmarks — not KIVO results.",
+    "sourceLabel": "Source",
+    "items": {
+      "technomic": {
+        "stat": "+8–15%",
+        "statLabel": "per kiosk order",
+        "text": "Technomic research: the average kiosk order is about 8% higher in QSR and 15% higher in fast casual.",
+        "sourceName": "Technomic via Investopedia",
+        "date": "2025"
+      },
+      "shakeshack": {
+        "stat": "Shorter",
+        "statLabel": "lines at peak hours",
+        "text": "Shake Shack's annual report: kiosks help serve more guests at peak — fewer lines, less waiting, less friction.",
+        "sourceName": "Shake Shack Form 10-K, SEC",
+        "date": "2018"
+      },
+      "arcos": {
+        "stat": "61%",
+        "statLabel": "of sales via digital channels",
+        "text": "Arcos Dorados, the largest McDonald's franchisee: app, delivery and kiosks together drove 61% of systemwide sales in 2025.",
+        "sourceName": "Arcos Dorados 6-K, SEC",
+        "date": "2026"
+      },
+      "mcdonalds": {
+        "stat": "35%",
+        "statLabel": "of sales via digital channels",
+        "text": "McDonald's 2022 report: digital channels in its six largest markets — nearly 35% of sales, over $25 billion.",
+        "sourceName": "McDonald's Form 10-K, SEC",
+        "date": "2023"
+      }
+    },
+    "disclaimer": "Some figures combine several digital channels, not kiosks alone. Outcomes depend on location, menu, traffic and implementation quality — this is not a guarantee."
+  },
+  "service": {
+    "kicker": "The package",
+    "heading": "Everything included",
+    "intro": "One agreement — the whole stack, from hardware to support.",
+    "items": {
+      "hardware": { "title": "Hardware", "text": "A kiosk ready to work" },
+      "software": { "title": "Software", "text": "The guest ordering interface" },
+      "installation": { "title": "Delivery & mounting", "text": "Installed at your venue" },
+      "menu": { "title": "Menu migration", "text": "Photos, modifiers, combos" },
+      "iiko": { "title": "iiko integration", "text": "Orders into your system" },
+      "payments": { "title": "Payment systems", "text": "Configured per merchant" },
+      "branding": { "title": "Branding", "text": "Your colors and logo" },
+      "languages": { "title": "Languages", "text": "Uzbek, Russian, English+" },
+      "training": { "title": "Training", "text": "Your team, launch-ready" },
+      "warranty": { "title": "Warranty", "text": "On all hardware" },
+      "maintenance": { "title": "Maintenance", "text": "Scheduled service" },
+      "support": { "title": "Support", "text": "Real engineers on call" },
+      "custom": { "title": "Custom integrations", "text": "After a technical review" }
+    }
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "heading": "Frequently asked questions",
+    "intro": "The essentials, briefly. The rest — in person.",
+    "items": {
+      "q1": {
+        "q": "Which businesses is the kiosk a good fit for?",
+        "a": "Fast food, coffee shops, bakeries, food courts and any venue where guests order, pay and collect themselves."
+      },
+      "q2": {
+        "q": "Is iiko supported?",
+        "a": "Yes — it's the core of the solution: kiosk orders land in your iiko workflow, menus and stop-lists stay in sync. The configuration is confirmed during the assessment."
+      },
+      "q3": {
+        "q": "Which payment methods are supported?",
+        "a": "Click, Uzum, Payme, HUMO, Uzcard, Visa and Mastercard. Acceptance is configured per merchant."
+      },
+      "q4": {
+        "q": "Can we rent the hardware instead of buying it?",
+        "a": "Yes. Rental with a low initial payment is available — you can start without purchasing the hardware. Terms are calculated individually."
+      },
+      "q5": {
+        "q": "Can the kiosk match our brand?",
+        "a": "Yes: logo, colors and menu presentation are configured so the kiosk looks like part of your venue."
+      },
+      "q6": {
+        "q": "How many languages does the interface support?",
+        "a": "Uzbek, Russian and English as standard. Additional languages can be configured for your guests."
+      },
+      "q7": {
+        "q": "Is menu migration included?",
+        "a": "Yes. Categories, photos, modifiers, combos and iiko synchronization are part of the implementation."
+      },
+      "q8": {
+        "q": "Who installs the kiosk?",
+        "a": "KIVO: delivery, mounting, connection and end-to-end testing at your venue."
+      },
+      "q9": {
+        "q": "Is staff training included?",
+        "a": "Yes — before launch we train the team: helping guests, daily care, whom to contact for support."
+      },
+      "q10": {
+        "q": "What about support after launch?",
+        "a": "Maintenance, warranty and technical support are part of the offer. The exact service format is agreed individually."
+      },
+      "q11": {
+        "q": "Does it work for chains?",
+        "a": "Yes: multiple locations, centralized menus, and a branch-by-branch rollout plan defined at the assessment stage."
+      },
+      "q12": {
+        "q": "Can we add our own integration?",
+        "a": "Yes — loyalty, delivery and internal systems are discussed after a technical review of the scope."
+      },
+      "q13": {
+        "q": "How is the price formed?",
+        "a": "It depends on the number of kiosks, locations, the model (rental or purchase) and the setup scope. There's no public price list — we prepare an individual proposal after a short assessment."
+      },
+      "q14": {
+        "q": "How do we start?",
+        "a": "Leave your number or write on Telegram. A few questions about your format and iiko — and we'll prepare a proposal."
+      }
+    }
+  },
+  "cta": {
+    "heading": "Shall we see how it would work for you?",
+    "text": "Leave your number — we'll call back, show a demo and prepare a tailored proposal.",
+    "altHeading": "Or directly:",
+    "telegram": "Write on Telegram",
+    "phone": "Call us",
+    "email": "Send an email"
+  },
+  "form": {
+    "name": "Your name",
+    "namePlaceholder": "e.g. Aziz",
+    "business": "Business name",
+    "businessPlaceholder": "e.g. Coffee house on Amir Temur",
+    "businessOptional": "optional",
+    "phone": "Phone number",
+    "phonePlaceholder": "+998 __ ___ __ __",
+    "message": "Message",
+    "messagePlaceholder": "Format, number of locations, current POS — anything that helps us prepare",
+    "messageOptional": "optional",
+    "consentLabel": "I agree to the processing of my contact details as described in the <link>privacy notice</link>",
+    "submit": "Request a call",
+    "submitting": "Sending…",
+    "successTitle": "Request received",
+    "successText": "Thank you — we'll be in touch shortly.",
+    "successNew": "Send another request",
+    "errors": {
+      "name": "Please enter your name",
+      "nameMax": "Name is too long",
+      "phone": "Please enter a valid phone number",
+      "messageMax": "Message is too long (2000 characters max)",
+      "businessMax": "Business name is too long",
+      "consent": "Please confirm consent to be contacted",
+      "generic": "Something went wrong. Please try again or contact us directly.",
+      "unavailable": "The form is temporarily unavailable. Please use Telegram, phone or email instead."
+    }
+  },
+  "footer": {
+    "description": "Self-ordering kiosks for restaurants and coffee shops: hardware, software, iiko, payments, installation and support — turnkey.",
+    "colProduct": "Product",
+    "colCompany": "Information",
+    "colContact": "Contact",
+    "language": "Language",
+    "privacy": "Privacy notice",
+    "builtFor": "Built for businesses in Uzbekistan",
+    "copyright": "© {year} {brand}. All rights reserved.",
+    "trademarks": "iiko, Click, Uzum, Payme, HUMO, Uzcard, Visa and Mastercard are trademarks of their respective owners."
+  },
+  "contactChannels": {
+    "telegram": "Telegram",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "stickyCta": {
+    "label": "Discuss your project"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to home"
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "text": "An unexpected error occurred. Please try again.",
+    "retry": "Try again"
+  },
+  "meta": {
+    "home": {
+      "title": "Self-service ordering kiosks for restaurants in Uzbekistan",
+      "description": "KIVO supplies self-ordering kiosks for restaurants, fast food and coffee shops in Uzbekistan: hardware, software, installation, iiko POS integration, Click, Payme, Uzum, HUMO, Uzcard, Visa and Mastercard payments, training and support. Rental available."
+    },
+    "product": {
+      "title": "The kiosk — hardware, interface and service",
+      "description": "A self-service ordering terminal for cafés and restaurants: touchscreen ordering, branded multilingual interface, payment terminal, delivery, installation, training and rental options in Uzbekistan."
+    },
+    "integrations": {
+      "title": "iiko POS and payment integrations",
+      "description": "How the KIVO kiosk integrates with iiko POS and the payment systems of Uzbekistan — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — plus custom integrations after technical review."
+    },
+    "implementation": {
+      "title": "Implementation — from assessment to launch",
+      "description": "How a self-ordering kiosk is implemented in a restaurant: discovery, technical review, menu preparation, installation, testing, staff training, launch and ongoing support."
+    },
+    "contact": {
+      "title": "Contact us — request a consultation",
+      "description": "Discuss a self-service ordering kiosk for your restaurant or café in Uzbekistan. Leave your contact details and get a tailored proposal."
+    },
+    "privacy": {
+      "title": "Privacy notice",
+      "description": "How the KIVO website collects and processes contact details submitted through the lead form, and how analytics and cookies are used."
+    }
+  },
+  "productPage": {
+    "kicker": "Product",
+    "title": "A kiosk that looks like part of your venue",
+    "lead": "A white body, a black display bezel and an interface in your brand. Guests notice the short queue — not the technology.",
+    "design": {
+      "title": "Hardware designed for dining rooms",
+      "text": "The kiosk is built around a large portrait touchscreen in a slim black bezel on a white body. The payment terminal sits at a natural hand height next to the screen.",
+      "p1": "White body, black display bezel",
+      "p2": "Large portrait touchscreen",
+      "p3": "Payment terminal at a comfortable height",
+      "p4": "Floor-standing or counter placement — per venue"
+    },
+    "interface": {
+      "title": "An interface guests understand in seconds",
+      "text": "Large photos, clear categories, obvious buttons. Modifiers, combos and suggestions are built into the flow — in the guest's language.",
+      "p1": "Your logo, colors and menu presentation",
+      "p2": "Uzbek, Russian and English as standard",
+      "p3": "Modifiers, combos and tactful upselling",
+      "p4": "Clear order confirmation before payment"
+    },
+    "service": {
+      "title": "Delivered, installed and supported",
+      "text": "KIVO delivers the kiosk, installs it at your venue, connects iiko and payments, trains the team and stays available. Rental means you can start without buying the hardware."
+    },
+    "specs": {
+      "title": "Specifications",
+      "note": "Exact specifications are confirmed during the technical assessment and may vary by configuration and supply batch. We intentionally don't publish them before that.",
+      "toConfirm": "Confirmed during technical assessment",
+      "items": {
+        "screen": "Touchscreen size and resolution",
+        "body": "Body material and dimensions",
+        "payment": "Payment terminal model",
+        "printer": "Receipt printer",
+        "connectivity": "Connectivity requirements",
+        "mounting": "Mounting and placement options"
+      }
+    },
+    "cta": "Discuss your kiosk"
+  },
+  "integrationsPage": {
+    "kicker": "Integrations",
+    "title": "Connected to the systems your business already runs on",
+    "lead": "Orders go to iiko; payment runs through the services your guests already use.",
+    "iiko": {
+      "title": "iiko POS integration",
+      "text": "iiko is the core integration. The kiosk sends orders into your existing workflow — the kitchen and the counter keep working as usual.",
+      "p1": "Kiosk orders inside your iiko workflow",
+      "p2": "Items, prices and modifiers stay in sync",
+      "p3": "Stop-lists prevent ordering what ran out",
+      "p4": "Multiple branches with a centralized menu"
+    },
+    "payments": {
+      "title": "The payment ecosystem of Uzbekistan",
+      "text": "Guests pay the way they're used to: Click, Uzum, Payme, HUMO, Uzcard, Visa and Mastercard. Acceptance is configured per merchant — details confirmed at the assessment.",
+      "confirmed": "Supported integrations",
+      "custom": "After technical review"
+    },
+    "flow": {
+      "title": "How an order travels",
+      "s1": {
+        "title": "Guest orders on the kiosk",
+        "text": "Menu, modifiers and language — on screen."
+      },
+      "s2": {
+        "title": "Payment is confirmed",
+        "text": "Card or QR through the configured provider."
+      },
+      "s3": {
+        "title": "Order arrives in iiko",
+        "text": "The kitchen sees it in the usual workflow."
+      },
+      "s4": {
+        "title": "Guest collects the order",
+        "text": "The number is on the receipt and on screen."
+      }
+    },
+    "sync": {
+      "title": "Menu synchronization",
+      "text": "The menu is managed centrally: prices, new items and stop-lists propagate to the kiosks automatically."
+    },
+    "multi": {
+      "title": "Several locations",
+      "text": "For chains and franchises — one menu structure, local variations where needed, and a rollout plan defined at the assessment stage."
+    },
+    "custom": {
+      "title": "Custom integrations",
+      "text": "Loyalty programs, delivery aggregators, internal reporting — after a technical review.",
+      "s1": "You describe the system and the goal",
+      "s2": "We run a technical discovery",
+      "s3": "We agree the scope and terms",
+      "s4": "The integration is built, tested and launched"
+    },
+    "cta": "Discuss your setup"
+  },
+  "implementationPage": {
+    "kicker": "Implementation",
+    "title": "A managed path from first call to working kiosks",
+    "lead": "Implementation is a service, not homework for your team.",
+    "note": "Stage duration depends on menu size, number of locations and your iiko configuration. A realistic schedule is part of the post-assessment proposal.",
+    "stages": {
+      "discovery": {
+        "title": "Discovery",
+        "text": "A short conversation about your format, venues, guest flow and goals."
+      },
+      "review": {
+        "title": "Technical review",
+        "text": "We examine your iiko configuration, payment scheme and infrastructure."
+      },
+      "menu": {
+        "title": "Menu preparation",
+        "text": "Categories, items, photos, modifiers, combos and prices — structured for self-ordering."
+      },
+      "interface": {
+        "title": "Interface configuration",
+        "text": "Branding, colors, languages and suggestion logic."
+      },
+      "hardware": {
+        "title": "Hardware preparation",
+        "text": "The kiosk is assembled and tested with your menu before it ships to the venue."
+      },
+      "install": {
+        "title": "Installation",
+        "text": "Delivery, mounting, connection and placement — done by KIVO."
+      },
+      "testing": {
+        "title": "End-to-end testing",
+        "text": "Real scenarios on site: menu, payment, receipts, hand-off to iiko."
+      },
+      "training": {
+        "title": "Staff training",
+        "text": "Helping guests, daily care and whom to contact."
+      },
+      "launch": {
+        "title": "Launch support",
+        "text": "We stay close in the first days and tune the flow to real guest behavior."
+      },
+      "maintenance": {
+        "title": "Maintenance & support",
+        "text": "Scheduled service, warranty and technical support as your business grows."
+      }
+    },
+    "phases": {
+      "before": "Before installation",
+      "during": "Installation week",
+      "after": "After launch"
+    },
+    "cta": "Start with an assessment"
+  },
+  "contactPage": {
+    "kicker": "Contact",
+    "title": "Let's discuss your venue",
+    "lead": "Leave your details and we'll call back — or reach us directly.",
+    "formTitle": "Request a consultation",
+    "directTitle": "Direct channels",
+    "serviceAreaTitle": "Service area",
+    "serviceAreaText": "We work with restaurants, coffee shops and quick-service businesses across Uzbekistan.",
+    "prepareTitle": "Useful to have ready for the first call",
+    "prepare": {
+      "i1": "Business format and number of locations",
+      "i2": "Whether you use iiko (and roughly how)",
+      "i3": "Approximate menu size",
+      "i4": "Payment methods you accept today",
+      "i5": "What you want self-ordering to change",
+      "i6": "Preferred timeline"
+    },
+    "prepareNote": "Don't have all the answers? No problem — we'll figure it out together."
+  },
+  "privacyPage": {
+    "kicker": "Privacy",
+    "title": "Privacy notice",
+    "updated": "Last updated: {date}",
+    "intro": "This notice explains what happens to the information you submit through this website and how analytics and cookies are used.",
+    "s1": {
+      "title": "What we collect",
+      "text": "When you submit the contact form, we collect the data you enter: your name, phone number, business name (optional) and message (optional). Technical context is stored alongside it: the page you submitted from, the referrer, UTM parameters, the site language and the submission time."
+    },
+    "s2": {
+      "title": "Why we collect it",
+      "text": "For one purpose: to contact you about self-service kiosks — to call you back, answer questions and prepare a proposal. We do not sell or share this data with third parties for marketing."
+    },
+    "s3": {
+      "title": "Where it is stored",
+      "text": "Submissions are stored in a private Google Sheets document operated by the company. Data is processed in Google's infrastructure and may be stored on servers outside Uzbekistan."
+    },
+    "s4": {
+      "title": "Who can access it",
+      "text": "Only staff who handle sales and implementation have access, granted individually through Google accounts."
+    },
+    "s5": {
+      "title": "Correction and deletion",
+      "text": "You may request to see, correct or delete your submitted data at any time — contact us through any channel on the contact page."
+    },
+    "s6": {
+      "title": "Analytics",
+      "text": "The site may use Vercel Analytics, Vercel Speed Insights, Google Analytics 4 and Yandex Metrica for aggregate usage statistics. Analytics events never include the content of your submissions, your phone number or your name."
+    },
+    "s7": {
+      "title": "Cookies",
+      "text": "The site uses a cookie to remember your language choice (NEXT_LOCALE). Analytics services, when enabled, may set their own cookies according to their policies."
+    },
+    "s8": {
+      "title": "Legal entity",
+      "text": "The final legal entity, registration details and controller contacts will be published here before commercial launch. This notice must be reviewed by legal counsel before public use."
+    }
+  },
+  "devWarning": {
+    "missingContacts": "Developer note: contact channels are not configured (NEXT_PUBLIC_TELEGRAM_URL / NEXT_PUBLIC_CONTACT_PHONE / NEXT_PUBLIC_CONTACT_EMAIL). This notice is hidden in production."
+  }
+}

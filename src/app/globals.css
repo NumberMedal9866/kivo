@@ -1,0 +1,310 @@
+@import "tailwindcss";
+
+/* Class-based dark mode: `.dark` on <html> (set pre-hydration in layout). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ===========================================================================
+   Design tokens — redesigned visual identity.
+
+   The system is built on three "materials":
+   1. Warm paper (--color-bg) — light editorial sections.
+   2. Night (--color-night) — dark product/tech chapters with grid + glow.
+   3. Electric cobalt (--color-brand) — one loud accent, used deliberately.
+
+   The white kiosk with its black bezel stays the visual protagonist: dark
+   chapters make the white hardware glow; light chapters keep reading calm.
+   Adjust here after real product imagery lands (docs/MEDIA_REPLACEMENT_GUIDE).
+   =========================================================================== */
+@theme {
+  /* Light material */
+  --color-bg: #f4f2ec;
+  --color-surface: #ffffff;
+  --color-ink: #0b0d12;
+  --color-ink-soft: #5a6170;
+  --color-line: #e4e0d5;
+
+  /* Dark material */
+  --color-night: #0a0c11;
+  --color-night-soft: #12151d;
+  --color-night-line: #242a3a;
+
+  /* Accent */
+  --color-brand: #315cff;
+  --color-brand-hover: #2448d8;
+  --color-brand-soft: #e9eeff;
+  --color-brand-bright: #7d97ff;
+
+  /* Supporting accents */
+  --color-amber: #f2a93b;
+  --color-success: #0ba57c;
+  --color-error: #c9363e;
+
+  /* Kiosk material tones */
+  --color-kiosk-body: #fdfdfe;
+  --color-kiosk-edge: #e3e6ec;
+  --color-kiosk-bezel: #101216;
+
+  --font-sans: var(--font-manrope), "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Fluid display scale — sized so long Russian/Uzbek compounds fit at 360px */
+  --text-display: clamp(2.35rem, 1rem + 5vw, 4.9rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.035em;
+  --text-display--font-weight: 800;
+
+  --text-headline: clamp(1.8rem, 1rem + 2.9vw, 3.2rem);
+  --text-headline--line-height: 1.06;
+  --text-headline--letter-spacing: -0.028em;
+  --text-headline--font-weight: 800;
+
+  --text-title: clamp(1.3rem, 1rem + 1.1vw, 1.85rem);
+  --text-title--line-height: 1.18;
+  --text-title--letter-spacing: -0.018em;
+  --text-title--font-weight: 800;
+
+  --text-lead: clamp(1.02rem, 0.94rem + 0.45vw, 1.24rem);
+  --text-lead--line-height: 1.55;
+
+  /* Giant editorial numerals (evidence, stats) */
+  --text-numeral: clamp(3rem, 1.8rem + 5vw, 5.8rem);
+  --text-numeral--line-height: 0.95;
+  --text-numeral--letter-spacing: -0.04em;
+  --text-numeral--font-weight: 800;
+
+  --shadow-soft: 0 1px 2px rgb(11 13 18 / 0.04), 0 8px 24px -8px rgb(11 13 18 / 0.08);
+  --shadow-float:
+    0 2px 4px rgb(11 13 18 / 0.05), 0 12px 32px -8px rgb(11 13 18 / 0.12),
+    0 32px 64px -24px rgb(11 13 18 / 0.14);
+  --shadow-kiosk:
+    0 4px 8px rgb(0 0 0 / 0.18), 0 24px 48px -16px rgb(0 0 0 / 0.38),
+    0 64px 120px -48px rgb(49 92 255 / 0.28);
+  --shadow-kiosk-light:
+    0 4px 8px rgb(11 13 18 / 0.05), 0 24px 48px -16px rgb(11 13 18 / 0.16),
+    0 64px 96px -48px rgb(11 13 18 / 0.22);
+
+  --radius-card: 1.25rem;
+
+  --animate-marquee: marquee 36s linear infinite;
+  --animate-flow-x: flow-x 3.2s ease-in-out infinite;
+  --animate-screen-cycle: screen-cycle 6s ease-in-out infinite;
+  --animate-soft-float: soft-float 7s ease-in-out infinite;
+  --animate-bob: bob 1.6s ease-in-out infinite;
+  --animate-tap: tap 1.4s ease-in-out infinite;
+  --animate-steam: steam 2.6s ease-in-out infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes flow-x {
+    0% {
+      left: 0%;
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+    }
+    88% {
+      opacity: 1;
+    }
+    100% {
+      left: 100%;
+      opacity: 0;
+    }
+  }
+  @keyframes screen-cycle {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3%);
+    }
+  }
+  @keyframes soft-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  /* Queue shuffle: guests shifting their weight while waiting */
+  @keyframes bob {
+    0%,
+    100% {
+      transform: translate(-50%, -50%);
+    }
+    50% {
+      transform: translate(-50%, calc(-50% - 3px));
+    }
+  }
+  /* Guest tapping on a kiosk screen */
+  @keyframes tap {
+    0%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.12);
+    }
+  }
+  /* Steam rising over the kitchen */
+  @keyframes steam {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    30% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(-14px);
+      opacity: 0;
+    }
+  }
+}
+
+/* ===========================================================================
+   Dark theme.
+   Only the light-material tokens flip; night chapters, the brand chapter and
+   the white kiosk hardware keep their fixed palettes.
+   =========================================================================== */
+.dark {
+  --color-bg: #0d0f15;
+  --color-surface: #161923;
+  --color-ink: #eef0f5;
+  --color-ink-soft: #99a1ae;
+  --color-line: #272c39;
+  --color-brand-soft: #1d2748;
+  color-scheme: dark;
+}
+
+/* Electric blue reads too dark on night surfaces — bump text accents. */
+.dark .text-brand {
+  color: var(--color-brand-bright);
+}
+
+/* Scope that pins the light palette regardless of theme — used inside the
+   kiosk demo so the product screen always looks like the real (light) UI. */
+.theme-light {
+  --color-bg: #f4f2ec;
+  --color-surface: #ffffff;
+  --color-ink: #0b0d12;
+  --color-ink-soft: #5a6170;
+  --color-line: #e4e0d5;
+  --color-brand-soft: #e9eeff;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-brand);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --- Section rhythm ------------------------------------------------------ */
+@utility section-pad {
+  padding-block: clamp(4rem, 3rem + 4vw, 7.5rem);
+}
+
+/* --- Dark chapter treatment ---------------------------------------------- */
+/* Night background with a faint blueprint grid and one cobalt glow at the
+   top. No bottom glow: stacked dark sections (CTA → footer) must meet
+   without visible banding. */
+@utility chapter-dark {
+  position: relative;
+  background-color: var(--color-night);
+  color: #fff;
+  background-image:
+    radial-gradient(90rem 42rem at 78% -10%, rgb(49 92 255 / 0.16), transparent 60%),
+    linear-gradient(rgb(255 255 255 / 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.025) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    72px 72px,
+    72px 72px;
+}
+
+/* Flat variant: grid only, no glow — used where dark sections stack (footer). */
+@utility chapter-dark-flat {
+  position: relative;
+  background-color: var(--color-night);
+  color: #fff;
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.025) 1px, transparent 1px);
+  background-size:
+    72px 72px,
+    72px 72px;
+}
+
+/* Blue chapter — one loud brand moment per page. */
+@utility chapter-brand {
+  position: relative;
+  color: #fff;
+  background-color: var(--color-brand);
+  background-image:
+    radial-gradient(70rem 40rem at 85% 0%, rgb(255 255 255 / 0.14), transparent 55%),
+    radial-gradient(50rem 30rem at 0% 100%, rgb(10 12 17 / 0.35), transparent 60%),
+    linear-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    100% 100%,
+    72px 72px,
+    72px 72px;
+}
+
+/* Faint oversized watermark word behind dark sections */
+@utility watermark-text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255 255 255 / 0.06);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Kiosk floor reflection */
+@utility kiosk-reflection {
+  transform: scaleY(-1);
+  mask-image: linear-gradient(to bottom, rgb(0 0 0 / 0.28), transparent 55%);
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0 0 0 / 0.28), transparent 55%);
+  pointer-events: none;
+  user-select: none;
+}

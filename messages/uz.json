@@ -1,0 +1,600 @@
+{
+  "common": {
+    "tagline": "O‘z-o‘ziga xizmat — bu oson",
+    "availability": "Endi O‘zbekistonda",
+    "learnMore": "Batafsil",
+    "requestConsultation": "Loyihani muhokama qilish",
+    "seeHowItWorks": "Qanday ishlaydi",
+    "getProposal": "Taklif olish",
+    "backHome": "Bosh sahifaga"
+  },
+  "a11y": {
+    "skipToContent": "Asosiy mazmunga o‘tish",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish",
+    "mainNavigation": "Asosiy navigatsiya",
+    "footerNavigation": "Pastki navigatsiya",
+    "breadcrumb": "Sahifa yo‘li",
+    "decorative": "Bezak illyustratsiya",
+    "themeToggle": "Mavzuni almashtirish"
+  },
+  "nav": {
+    "product": "Mahsulot",
+    "demo": "Demo",
+    "benefits": "Imkoniyatlar",
+    "howItWorks": "Ishga tushirish",
+    "integrations": "Integratsiyalar",
+    "rental": "Ijara",
+    "faq": "Savollar",
+    "implementation": "Joriy etish",
+    "contact": "Bog‘lanish",
+    "home": "Bosh sahifa"
+  },
+  "langSwitcher": {
+    "label": "Til",
+    "ru": "Русский",
+    "uz": "O‘zbekcha",
+    "en": "English"
+  },
+  "hero": {
+    "badge": "O‘z-o‘ziga xizmat kiosklari · O‘zbekiston",
+    "title": "Buyurtmani kiosk oladi. Jamoa — tayyorlaydi.",
+    "subtitle": "KIVO kioskni kalit topshirish sharti bilan ishga tushiradi: iiko, to‘lov, menyu, o‘qitish va qo‘llab-quvvatlash.",
+    "ctaPrimary": "Loyihani muhokama qilish",
+    "ctaSecondary": "Demoni sinab ko‘rish",
+    "worksWith": "Hamkor tizimlar",
+    "cardTitle": "№214 to‘landi",
+    "cardSubtitle": "Oshxonaga yuborildi",
+    "upsellChip": "Desert qo‘shasizmi?",
+    "kioskCaption": "Illyustratsiya — yakuniy uskuna farq qilishi mumkin"
+  },
+  "trust": {
+    "heading": "Hamkor tizimlar",
+    "note": "Nomlar va tovar belgilari o‘z egalariga tegishli."
+  },
+  "switch": {
+    "kicker": "Oldin / keyin",
+    "heading": "Bitta gavjum soat — ikki xil manzara",
+    "beforeLabel": "Kiosksiz",
+    "afterLabel": "KIVO bilan",
+    "before": {
+      "i1": "Bitta kassa — bitta navbat",
+      "i2": "Kassir teradi, mehmonlar kutadi",
+      "i3": "Qo‘shimcha savdo — omadga bog‘liq",
+      "i4": "Buyurtma og‘zaki qabul qilinadi"
+    },
+    "after": {
+      "i1": "Mehmonlar parallel buyurtma beradi",
+      "i2": "Jamoa tayyorlaydi va topshiradi",
+      "i3": "Har buyurtmada mos takliflar",
+      "i4": "Buyurtma ekranda tasdiqlanadi"
+    },
+    "sceneCounter": "Kassa",
+    "sceneKiosks": "Kiosklar",
+    "sceneKitchen": "Oshxona",
+    "sceneEntrance": "Kirish",
+    "caption": "Kiosklar odamlarning o‘rnini bosmaydi — ular bir xildagi buyurtma kiritishni o‘z zimmasiga oladi."
+  },
+  "demo": {
+    "kicker": "Jonli demo",
+    "heading": "O‘zingiz sinab ko‘ring — mehmon sifatida",
+    "intro": "Tilni almashtiring, buyurtma yig‘ing va to‘lovgacha yetib boring.",
+    "note": "To‘qima menyuli namoyish: haqiqiy buyurtma yaratilmaydi, to‘lov o‘tkazilmaydi.",
+    "restart": "Qaytadan boshlash",
+    "screenLabel": "Kioskning interaktiv namoyishi",
+    "hint1": "Uchta til — standartda",
+    "hint2": "Modifikatorlar va kombolar",
+    "hint3": "Odobli qo‘shimcha takliflar"
+  },
+  "stats": {
+    "kicker": "Samara",
+    "heading": "Nima o‘zgaradi — raqamlarda va zalda",
+    "aov": {
+      "stat": "+8–15%",
+      "statLabel": "kiosk orqali buyurtmaga",
+      "text": "QSR va fast casual bo‘yicha soha ko‘rsatkichi — manbalar «Soha ma’lumotlari» blokida."
+    },
+    "speed": {
+      "stat": "1 → 4",
+      "statLabel": "buyurtma qabul nuqtasi",
+      "text": "Har bir kiosk — qo‘shimcha qabul nuqtasi. Sonini zalingizga qarab tanlaymiz."
+    },
+    "staff": {
+      "title": "Jamoa klaviaturada emas — oshxonada",
+      "text": "Bir xildagi buyurtma kiritish kioskka o‘tadi. Odamlar tayyorlaydi, topshiradi va mehmonlarga yordam beradi."
+    },
+    "chips": {
+      "lang": "Interfeys 3+ tilda",
+      "errors": "Mehmon buyurtmani o‘zi tasdiqlaydi — xato kamroq",
+      "upsell": "Har buyurtmada takliflar",
+      "stoplist": "Stop-listlar iiko bilan sinxron",
+      "menu": "Butun menyu — foto va modifikatorlar bilan",
+      "same": "Har bir nuqtada bir xil xizmat"
+    },
+    "footnote": "Ko‘rsatkichlar ochiq soha manbalaridan — «Soha ma’lumotlari»ga qarang. Natija zavedeniyaga bog‘liq."
+  },
+  "integrations": {
+    "kicker": "Integratsiyalar",
+    "heading": "Siz ishlayotgan tizimlarga mos tushadi",
+    "intro": "Buyurtmalar iiko’ga boradi, to‘lov — O‘zbekistonda odatiy servislar orqali.",
+    "flowCustomer": "Mehmon",
+    "flowKiosk": "KIVO kioski",
+    "flowPos": "iiko",
+    "flowKitchen": "Oshxona",
+    "flowPayment": "To‘lov",
+    "posTitle": "iiko POS",
+    "posText": "Menyu, modifikatorlar va stop-listlar sinxronlanadi. Buyurtmalar oshxonaning odatiy jarayoniga tushadi.",
+    "paymentsTitle": "To‘lov",
+    "paymentsText": "To‘lov qabul qilish har bir zavedeniya konfiguratsiyasiga moslanadi.",
+    "customTitle": "Yana integratsiya kerakmi?",
+    "customText": "Sodiqlik, yetkazib berish, ichki tizimlar — texnik baholashdan keyin muhokama qilamiz.",
+    "disclaimer": "Tafsilotlar texnik auditda tasdiqlanadi.",
+    "cta": "Integratsiyalar haqida batafsil"
+  },
+  "how": {
+    "kicker": "Ishga tushirish",
+    "heading": "Ishlayotgan kioskgacha to‘rt qadam",
+    "intro": "Joriy etishni KIVO olib boradi — jamoangiz integratorga aylanishi shart emas.",
+    "steps": {
+      "assessment": {
+        "num": "01",
+        "title": "Audit",
+        "short": "Format, iiko, to‘lovlar, maqsadlar",
+        "d1": "Zal formati va buyurtma stsenariysi",
+        "d2": "iiko konfiguratsiyasi va to‘lov vositalari",
+        "d3": "Maqsadlar: chek, tezlik, yuklama"
+      },
+      "setup": {
+        "num": "02",
+        "title": "Sozlash",
+        "short": "Menyu, brending, tillar, integratsiyalar",
+        "d1": "Menyuni foto va modifikatorlar bilan ko‘chirish",
+        "d2": "Interfeys sizning brendingizda",
+        "d3": "iiko va to‘lov tizimlarini ulash"
+      },
+      "installation": {
+        "num": "03",
+        "title": "O‘rnatish",
+        "short": "Yetkazish, montaj, sinov, o‘qitish",
+        "d1": "Nuqtada montaj va ulash",
+        "d2": "To‘liq sinov: buyurtma → to‘lov → oshxona",
+        "d3": "Jamoani joyida o‘qitish"
+      },
+      "support": {
+        "num": "04",
+        "title": "Qo‘llab-quvvatlash",
+        "short": "Kafolat, servis, rivojlanish",
+        "d1": "Texnik yordam va kafolat xizmati",
+        "d2": "Menyu va stsenariy yangilanishlari",
+        "d3": "O‘sish bilan birga takomillashtirish"
+      }
+    },
+    "cta": "Joriy etish qanday kechadi"
+  },
+  "rental": {
+    "kicker": "Ijara",
+    "heading": "Uskuna sotib olmasdan boshlang",
+    "intro": "Kiosk, o‘rnatish va qo‘llab-quvvatlash — past boshlang‘ich to‘lovli xizmat sifatida.",
+    "points": {
+      "p1": { "title": "Uskuna — KIVO’dan", "text": "O‘zimiz olib kelamiz va o‘rnatamiz" },
+      "p2": { "title": "Past start", "text": "Boshida katta sarmoya shart emas" },
+      "p3": { "title": "Qo‘llab-quvvatlash ichida", "text": "Servis, kafolat, yangilanishlar" },
+      "p4": { "title": "Moslashuvchan masshtab", "text": "Bitta nuqtadan tarmoqqacha" }
+    },
+    "note": "Aniq shartlarni alohida hisoblaymiz — format va hajmingizga qarab.",
+    "cta": "Shartlarni muhokama qilish"
+  },
+  "evidence": {
+    "kicker": "Soha ma’lumotlari",
+    "heading": "Jahon tajribasi — raqamlarda",
+    "intro": "Restoranlardagi o‘z-o‘ziga xizmat bo‘yicha ochiq ma’lumotlar. Bular bozor ko‘rsatkichlari, KIVO natijalari emas.",
+    "sourceLabel": "Manba",
+    "items": {
+      "technomic": {
+        "stat": "+8–15%",
+        "statLabel": "kiosk orqali buyurtmaga",
+        "text": "Technomic tadqiqoti: kiosk orqali o‘rtacha buyurtma fastfudda ~8%, fast casual’da ~15% yuqori.",
+        "sourceName": "Technomic, Investopedia orqali",
+        "date": "2025"
+      },
+      "shakeshack": {
+        "stat": "Qisqaroq",
+        "statLabel": "gavjum soatlarda navbat",
+        "text": "Shake Shack yillik hisobotida: kiosklar eng gavjum paytda ko‘proq mehmonga xizmat qilishga yordam beradi — kamroq navbat va kutish.",
+        "sourceName": "Shake Shack, 10-K shakli, SEC",
+        "date": "2018"
+      },
+      "arcos": {
+        "stat": "61%",
+        "statLabel": "savdo — raqamli kanallar",
+        "text": "Arcos Dorados, McDonald's’ning eng yirik franchayzisi: ilova, yetkazib berish va kiosklar birga 2025-yilda savdoning 61% ini berdi.",
+        "sourceName": "Arcos Dorados, 6-K shakli, SEC",
+        "date": "2026"
+      },
+      "mcdonalds": {
+        "stat": "35%",
+        "statLabel": "savdo — raqamli kanallar",
+        "text": "McDonald's, 2022-yil hisoboti: oltita eng yirik bozorda raqamli kanallar — savdoning qariyb 35% i, $25 mlrd dan ortiq.",
+        "sourceName": "McDonald's, 10-K shakli, SEC",
+        "date": "2023"
+      }
+    },
+    "disclaimer": "Ba’zi ko‘rsatkichlar bir nechta raqamli kanalni birlashtiradi, faqat kioskni emas. Natija joylashuv, menyu, oqim va joriy etish sifatiga bog‘liq — bu kafolat emas."
+  },
+  "service": {
+    "kicker": "To‘plam",
+    "heading": "Hammasi ichida",
+    "intro": "Bitta shartnoma — butun tizim: uskunadan qo‘llab-quvvatlashgacha.",
+    "items": {
+      "hardware": { "title": "Uskuna", "text": "Ishga tayyor kiosk" },
+      "software": { "title": "Dastur", "text": "Mehmonlar uchun buyurtma interfeysi" },
+      "installation": { "title": "Yetkazish va montaj", "text": "Nuqtangizda o‘rnatamiz" },
+      "menu": { "title": "Menyu ko‘chirish", "text": "Foto, modifikatorlar, kombolar" },
+      "iiko": { "title": "iiko integratsiyasi", "text": "Buyurtmalar — tizimingizga" },
+      "payments": { "title": "To‘lov tizimlari", "text": "Merchantga moslab sozlash" },
+      "branding": { "title": "Brending", "text": "Sizning rang va logotipingiz" },
+      "languages": { "title": "Tillar", "text": "O‘zbek, rus, ingliz+" },
+      "training": { "title": "O‘qitish", "text": "Jamoa ishga tayyor" },
+      "warranty": { "title": "Kafolat", "text": "Barcha uskunaga" },
+      "maintenance": { "title": "Texnik xizmat", "text": "Rejali servis" },
+      "support": { "title": "Qo‘llab-quvvatlash", "text": "Jonli muhandislar aloqada" },
+      "custom": { "title": "Qo‘shimcha integratsiyalar", "text": "Texnik baholashdan keyin" }
+    }
+  },
+  "faq": {
+    "kicker": "Savol-javob",
+    "heading": "Ko‘p beriladigan savollar",
+    "intro": "Asosiylari — qisqacha. Qolganini suhbatda aniqlaymiz.",
+    "items": {
+      "q1": {
+        "q": "Kiosk qanday biznesga mos?",
+        "a": "Fastfud, qahvaxona, novvoyxona, fud-kort va mehmon o‘zi buyurtma berib, to‘lab, olib ketadigan har qanday zavedeniyaga."
+      },
+      "q2": {
+        "q": "iiko qo‘llab-quvvatlanadimi?",
+        "a": "Ha, bu yechimning o‘zagi: kioskdan buyurtmalar iiko jarayoningizga tushadi, menyu va stop-listlar sinxron. Konfiguratsiyani auditda tasdiqlaymiz."
+      },
+      "q3": {
+        "q": "Qaysi to‘lov usullari bor?",
+        "a": "Click, Uzum, Payme, HUMO, Uzcard, Visa va Mastercard. To‘lov qabul qilish har bir merchantga moslanadi."
+      },
+      "q4": {
+        "q": "Uskunani sotib olmasdan ijaraga olsa bo‘ladimi?",
+        "a": "Ha. Past boshlang‘ich to‘lovli ijara mavjud — uskunani sotib olmasdan boshlash mumkin. Shartlarni alohida hisoblaymiz."
+      },
+      "q5": {
+        "q": "Kiosk brendimizga mos bo‘ladimi?",
+        "a": "Ha: logotip, ranglar va menyu uslubi kiosk zavedeniyaning bir qismidek ko‘rinishi uchun sozlanadi."
+      },
+      "q6": {
+        "q": "Interfeys nechta tilni biladi?",
+        "a": "O‘zbek, rus va ingliz — standartda. Mehmonlaringiz uchun qo‘shimcha tillar sozlanadi."
+      },
+      "q7": {
+        "q": "Menyu ko‘chirish xizmatga kiradimi?",
+        "a": "Ha. Kategoriyalar, foto, modifikatorlar, kombolar va iiko bilan sinxronizatsiya — joriy etishning bir qismi."
+      },
+      "q8": {
+        "q": "Kioskni kim o‘rnatadi?",
+        "a": "KIVO: yetkazib berish, montaj, ulash va nuqtangizda to‘liq sinov."
+      },
+      "q9": {
+        "q": "Xodimlarni o‘qitish kiradimi?",
+        "a": "Ha, ishga tushirishdan oldin jamoani o‘rgatamiz: mehmonlarga yordam, kundalik parvarish, qayerga murojaat qilish."
+      },
+      "q10": {
+        "q": "Ishga tushgandan keyin qo‘llab-quvvatlash qanday?",
+        "a": "Texnik xizmat, kafolat va yordam taklifga kiradi. Aniq servis formatini alohida kelishamiz."
+      },
+      "q11": {
+        "q": "Tarmoq uchun mosmi?",
+        "a": "Ha: bir nechta nuqta, markazlashgan menyu va filiallar bo‘yicha reja — audit bosqichida."
+      },
+      "q12": {
+        "q": "O‘z integratsiyamizni qo‘shsak bo‘ladimi?",
+        "a": "Ha — sodiqlik, yetkazib berish va ichki tizimlarni ish hajmi texnik baholangach muhokama qilamiz."
+      },
+      "q13": {
+        "q": "Narx qanday shakllanadi?",
+        "a": "Kiosklar va nuqtalar soni, model (ijara yoki xarid) va sozlash hajmiga bog‘liq. Ochiq narxnoma yo‘q — qisqa auditdan keyin individual taklif tayyorlaymiz."
+      },
+      "q14": {
+        "q": "Nimadan boshlaymiz?",
+        "a": "Raqamingizni qoldiring yoki Telegramga yozing. Format va iiko haqida bir nechta savol — va taklif tayyorlaymiz."
+      }
+    }
+  },
+  "cta": {
+    "heading": "Sizda qanday ishlashini ko‘raylikmi?",
+    "text": "Raqamingizni qoldiring — qo‘ng‘iroq qilamiz, demo ko‘rsatamiz va shaxsiy taklif tayyorlaymiz.",
+    "altHeading": "Yoki to‘g‘ridan-to‘g‘ri:",
+    "telegram": "Telegramga yozish",
+    "phone": "Qo‘ng‘iroq qilish",
+    "email": "Email yuborish"
+  },
+  "form": {
+    "name": "Ismingiz",
+    "namePlaceholder": "Masalan, Aziz",
+    "business": "Zavedeniya nomi",
+    "businessPlaceholder": "Masalan, Amir Temurdagi qahvaxona",
+    "businessOptional": "ixtiyoriy",
+    "phone": "Telefon raqami",
+    "phonePlaceholder": "+998 __ ___ __ __",
+    "message": "Xabar",
+    "messagePlaceholder": "Format, nuqtalar soni, hozirgi kassa — tayyorgarlikka yordam beradigan hamma narsa",
+    "messageOptional": "ixtiyoriy",
+    "consentLabel": "<link>Maxfiylik bayonnomasi</link>ga muvofiq kontakt ma’lumotlarim qayta ishlanishiga roziman",
+    "submit": "Qo‘ng‘iroqni buyurtma qilish",
+    "submitting": "Yuborilmoqda…",
+    "successTitle": "So‘rov qabul qilindi",
+    "successText": "Rahmat! Tez orada bog‘lanamiz.",
+    "successNew": "Yana bitta so‘rov yuborish",
+    "errors": {
+      "name": "Iltimos, ismingizni kiriting",
+      "nameMax": "Ism juda uzun",
+      "phone": "To‘g‘ri telefon raqamini kiriting",
+      "messageMax": "Xabar juda uzun (ko‘pi bilan 2000 belgi)",
+      "businessMax": "Nom juda uzun",
+      "consent": "Bog‘lanishga rozilikni tasdiqlang",
+      "generic": "Nimadir xato ketdi. Qayta urinib ko‘ring yoki bevosita bog‘laning.",
+      "unavailable": "Forma vaqtincha ishlamayapti. Telegramga yozing, qo‘ng‘iroq qiling yoki email yuboring."
+    }
+  },
+  "footer": {
+    "description": "Restoran va qahvaxonalar uchun o‘z-o‘ziga xizmat kiosklari: uskuna, dastur, iiko, to‘lov, o‘rnatish va qo‘llab-quvvatlash — kalit topshirish sharti bilan.",
+    "colProduct": "Mahsulot",
+    "colCompany": "Ma’lumot",
+    "colContact": "Kontaktlar",
+    "language": "Til",
+    "privacy": "Maxfiylik",
+    "builtFor": "O‘zbekiston biznesi uchun yaratilgan",
+    "copyright": "© {year} {brand}. Barcha huquqlar himoyalangan.",
+    "trademarks": "iiko, Click, Uzum, Payme, HUMO, Uzcard, Visa va Mastercard — o‘z egalarining tovar belgilari."
+  },
+  "contactChannels": {
+    "telegram": "Telegram",
+    "phone": "Telefon",
+    "email": "Email"
+  },
+  "stickyCta": {
+    "label": "Loyihani muhokama qilish"
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "text": "Bunday sahifa mavjud emas yoki u ko‘chirilgan.",
+    "cta": "Bosh sahifaga"
+  },
+  "errorPage": {
+    "title": "Nimadir xato ketdi",
+    "text": "Kutilmagan xatolik yuz berdi. Qayta urinib ko‘ring.",
+    "retry": "Qayta urinish"
+  },
+  "meta": {
+    "home": {
+      "title": "O‘zbekistonda restoranlar uchun o‘z-o‘ziga xizmat kiosklari",
+      "description": "KIVO — O‘zbekistonda restoranlar, fastfud va qahvaxonalar uchun o‘z-o‘ziga buyurtma terminallari: uskuna, dastur, o‘rnatish, iiko integratsiyasi, Click, Payme, Uzum, HUMO, Uzcard, Visa va Mastercard to‘lovlari, o‘qitish va qo‘llab-quvvatlash. Ijara mavjud."
+    },
+    "product": {
+      "title": "Kiosk — uskuna, interfeys va xizmat",
+      "description": "Kafe va restoranlar uchun o‘z-o‘ziga xizmat terminali: sensorli buyurtma, brendlangan ko‘p tilli interfeys, to‘lov terminali, yetkazib berish, o‘rnatish, o‘qitish va O‘zbekistonda ijara."
+    },
+    "integrations": {
+      "title": "iiko va to‘lov tizimlari bilan integratsiya",
+      "description": "KIVO kioski iiko POS va O‘zbekiston to‘lov tizimlari — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — bilan qanday integratsiyalashadi, individual integratsiyalar qanday buyurtma qilinadi."
+    },
+    "implementation": {
+      "title": "Joriy etish — baholashdan ishga tushirishgacha",
+      "description": "Restoranda o‘z-o‘ziga xizmat kioskini joriy etish qanday kechadi: baholash, texnik tahlil, menyu tayyorlash, o‘rnatish, sinov, xodimlarni o‘qitish, ishga tushirish va qo‘llab-quvvatlash."
+    },
+    "contact": {
+      "title": "Bog‘lanish — konsultatsiya olish",
+      "description": "O‘zbekistondagi restoran yoki kafengiz uchun o‘z-o‘ziga xizmat kioskini muhokama qiling. Kontaktlaringizni qoldiring va shaxsiy taklif oling."
+    },
+    "privacy": {
+      "title": "Maxfiylik bayonnomasi",
+      "description": "KIVO sayti so‘rov formasi orqali qanday ma’lumotlarni yig‘adi, ular qayerda saqlanadi hamda analitika va cookie qanday ishlatiladi."
+    }
+  },
+  "productPage": {
+    "kicker": "Mahsulot",
+    "title": "Zavedeniyangizning bir qismiga aylanadigan kiosk",
+    "lead": "Oq korpus, ekranning qora romkasi va brendingizga mos interfeys. Mehmonlar texnologiyani emas, qisqa navbatni sezadi.",
+    "design": {
+      "title": "Zallar uchun yaratilgan uskuna",
+      "text": "Kioskning asosi — oq korpusdagi ingichka qora romkali katta vertikal sensorli ekran. To‘lov terminali ekran yonida, qulay balandlikda.",
+      "p1": "Oq korpus, ekranning qora romkasi",
+      "p2": "Katta vertikal sensorli ekran",
+      "p3": "Qulay balandlikdagi to‘lov terminali",
+      "p4": "Polga yoki peshtaxtaga o‘rnatish — har bir nuqtaga qarab"
+    },
+    "interface": {
+      "title": "Soniyalarda tushuniladigan interfeys",
+      "text": "Yirik fotosuratlar, aniq kategoriyalar, ravshan tugmalar. Modifikatorlar, kombolar va takliflar jarayonga o‘rnatilgan — mehmon tilida.",
+      "p1": "Logotipingiz, ranglaringiz va menyu uslubi",
+      "p2": "O‘zbek, rus va ingliz — standartda",
+      "p3": "Modifikatorlar, kombolar va odobli takliflar",
+      "p4": "To‘lovdan oldin aniq tasdiqlash"
+    },
+    "service": {
+      "title": "Yetkazamiz, o‘rnatamiz va kuzatib boramiz",
+      "text": "KIVO kioskni yetkazadi, nuqtada o‘rnatadi, iiko va to‘lovlarni ulaydi, jamoani o‘qitadi va aloqada qoladi. Ijara tufayli uskunani sotib olmasdan boshlash mumkin."
+    },
+    "specs": {
+      "title": "Texnik xususiyatlar",
+      "note": "Aniq xususiyatlar texnik auditda tasdiqlanadi hamda konfiguratsiya va partiyaga qarab farq qilishi mumkin. Shu sababli ularni hozircha e’lon qilmaymiz.",
+      "toConfirm": "Texnik baholashda tasdiqlanadi",
+      "items": {
+        "screen": "Ekran diagonali va o‘lchamlari",
+        "body": "Korpus materiali va gabaritlari",
+        "payment": "To‘lov terminali modeli",
+        "printer": "Chek printeri",
+        "connectivity": "Ulanish talablari",
+        "mounting": "O‘rnatish va joylashtirish variantlari"
+      }
+    },
+    "cta": "Kioskingizni muhokama qilish"
+  },
+  "integrationsPage": {
+    "kicker": "Integratsiyalar",
+    "title": "Biznesingiz ishlayotgan tizimlarga ulanadi",
+    "lead": "Buyurtmalar iiko’ga boradi, to‘lov mehmonlarga tanish tizimlar orqali o‘tadi.",
+    "iiko": {
+      "title": "iiko POS integratsiyasi",
+      "text": "iiko — asosiy integratsiya. Kiosk buyurtmalarni amaldagi jarayoningizga uzatadi — oshxona va kassa odatdagidek ishlaydi.",
+      "p1": "Kiosk buyurtmalari — iiko jarayoningizda",
+      "p2": "Pozitsiyalar, narxlar va modifikatorlar sinxron",
+      "p3": "Stop-listlar tugagan taomni buyurtma qildirmaydi",
+      "p4": "Markazlashgan menyu bilan bir nechta filial"
+    },
+    "payments": {
+      "title": "O‘zbekiston to‘lov ekotizimi",
+      "text": "Mehmonlar odatdagidek to‘laydi: Click, Uzum, Payme, HUMO, Uzcard, Visa va Mastercard. Qabul har bir merchantga moslanadi — tafsilotlar auditda.",
+      "confirmed": "Qo‘llab-quvvatlanadigan integratsiyalar",
+      "custom": "Texnik baholashdan keyin"
+    },
+    "flow": {
+      "title": "Buyurtma yo‘li",
+      "s1": {
+        "title": "Mehmon kioskda buyurtma beradi",
+        "text": "Menyu, modifikatorlar va til — ekranda."
+      },
+      "s2": {
+        "title": "To‘lov tasdiqlanadi",
+        "text": "Karta yoki QR — sozlangan provayder orqali."
+      },
+      "s3": { "title": "Buyurtma iiko’ga keladi", "text": "Oshxona uni odatiy jarayonda ko‘radi." },
+      "s4": { "title": "Mehmon buyurtmani oladi", "text": "Raqam — chekda va ekranda." }
+    },
+    "sync": {
+      "title": "Menyu sinxronizatsiyasi",
+      "text": "Menyu markazdan boshqariladi: narxlar, yangi pozitsiyalar va stop-listlar kiosklarga avtomatik tarqaladi."
+    },
+    "multi": {
+      "title": "Bir nechta nuqta",
+      "text": "Tarmoq va franshizalar uchun — yagona menyu tuzilmasi, kerak joyda lokal farqlar va audit bosqichidagi reja."
+    },
+    "custom": {
+      "title": "Individual integratsiyalar",
+      "text": "Sodiqlik dasturlari, yetkazib berish agregatorlari, ichki hisobot — texnik baholashdan keyin.",
+      "s1": "Siz tizim va maqsadni tasvirlab berasiz",
+      "s2": "Biz texnik tadqiqot o‘tkazamiz",
+      "s3": "Hajm va shartlarni kelishamiz",
+      "s4": "Integratsiya yaratiladi, sinaladi va ishga tushadi"
+    },
+    "cta": "Konfiguratsiyangizni muhokama qilish"
+  },
+  "implementationPage": {
+    "kicker": "Joriy etish",
+    "title": "Birinchi qo‘ng‘iroqdan ishlayotgan kioskgacha boshqariladigan yo‘l",
+    "lead": "Joriy etish — bu xizmat, jamoangiz uchun uy vazifasi emas.",
+    "note": "Bosqichlar davomiyligi menyu hajmi, nuqtalar soni va iiko konfiguratsiyasiga bog‘liq. Real jadval — auditdan keyingi taklifning bir qismi.",
+    "stages": {
+      "discovery": {
+        "title": "Tanishuv",
+        "text": "Format, nuqtalar, mehmonlar oqimi va maqsadlar haqida qisqa suhbat."
+      },
+      "review": {
+        "title": "Texnik audit",
+        "text": "iiko konfiguratsiyasi, to‘lov sxemasi va infratuzilmani ko‘rib chiqamiz."
+      },
+      "menu": {
+        "title": "Menyu tayyorlash",
+        "text": "Kategoriyalar, pozitsiyalar, foto, modifikatorlar, kombolar va narxlar — mustaqil buyurtma uchun qulay tuzilmada."
+      },
+      "interface": {
+        "title": "Interfeysni sozlash",
+        "text": "Brending, ranglar, tillar va takliflar mantig‘i."
+      },
+      "hardware": {
+        "title": "Uskunani tayyorlash",
+        "text": "Kiosk nuqtaga jo‘natilishidan oldin menyungiz bilan yig‘iladi va tekshiriladi."
+      },
+      "install": {
+        "title": "O‘rnatish",
+        "text": "Yetkazish, montaj, ulash va joylashtirish — KIVO kuchlari bilan."
+      },
+      "testing": {
+        "title": "To‘liq sinov",
+        "text": "Joyida real stsenariylar: menyu, to‘lov, cheklar, iiko’ga uzatish."
+      },
+      "training": {
+        "title": "Xodimlarni o‘qitish",
+        "text": "Mehmonlarga yordam, kundalik parvarish va murojaat tartibi."
+      },
+      "launch": {
+        "title": "Ishga tushirishni kuzatish",
+        "text": "Dastlabki kunlarda yoningizdamiz va jarayonni real xatti-harakatga qarab sozlaymiz."
+      },
+      "maintenance": {
+        "title": "Texnik xizmat va qo‘llab-quvvatlash",
+        "text": "Rejali servis, kafolat va texnik yordam — biznes o‘sgani sari."
+      }
+    },
+    "phases": {
+      "before": "O‘rnatishdan oldin",
+      "during": "O‘rnatish haftasi",
+      "after": "Ishga tushirilgandan keyin"
+    },
+    "cta": "Baholashdan boshlash"
+  },
+  "contactPage": {
+    "kicker": "Kontaktlar",
+    "title": "Zavedeniyangizni muhokama qilamiz",
+    "lead": "Kontaktlaringizni qoldiring — qo‘ng‘iroq qilamiz. Yoki bevosita bog‘laning.",
+    "formTitle": "Konsultatsiya olish",
+    "directTitle": "To‘g‘ridan-to‘g‘ri kanallar",
+    "serviceAreaTitle": "Xizmat hududi",
+    "serviceAreaText": "Butun O‘zbekiston bo‘ylab restoranlar, qahvaxonalar va tez xizmat biznesi bilan ishlaymiz.",
+    "prepareTitle": "Birinchi suhbatga nima tayyorlash foydali",
+    "prepare": {
+      "i1": "Biznes formati va nuqtalar soni",
+      "i2": "iiko ishlatasizmi (va taxminan qanday)",
+      "i3": "Menyuning taxminiy hajmi",
+      "i4": "Hozir qanday to‘lov usullarini qabul qilasiz",
+      "i5": "O‘z-o‘ziga xizmat orqali nimani o‘zgartirmoqchisiz",
+      "i6": "Istalgan muddatlar"
+    },
+    "prepareNote": "Hammasiga javob yo‘qmi? Muammo emas — birga aniqlaymiz."
+  },
+  "privacyPage": {
+    "kicker": "Maxfiylik",
+    "title": "Maxfiylik bayonnomasi",
+    "updated": "Yangilangan: {date}",
+    "intro": "Ushbu hujjat sayt orqali yuboradigan ma’lumotlaringiz bilan nima bo‘lishini hamda analitika va cookie qanday ishlatilishini tushuntiradi.",
+    "s1": {
+      "title": "Qanday ma’lumotlarni yig‘amiz",
+      "text": "Formani yuborganingizda siz kiritgan ma’lumotlarni olamiz: ism, telefon raqami, zavedeniya nomi (ixtiyoriy) va xabar (ixtiyoriy). Ular bilan birga texnik kontekst saqlanadi: yuborilgan sahifa, o‘tish manbai, UTM belgilari, sayt tili va vaqt."
+    },
+    "s2": {
+      "title": "Nega yig‘amiz",
+      "text": "Bitta maqsadda: kiosklar bo‘yicha siz bilan bog‘lanish — qo‘ng‘iroq qilish, savollarga javob berish va taklif tayyorlash. Bu ma’lumotlarni marketing maqsadida uchinchi shaxslarga bermaymiz."
+    },
+    "s3": {
+      "title": "Ma’lumotlar qayerda saqlanadi",
+      "text": "So‘rovlar kompaniya boshqaradigan yopiq Google Sheets jadvalida saqlanadi. Ma’lumotlar Google infratuzilmasida qayta ishlanadi va O‘zbekistondan tashqaridagi serverlarda saqlanishi mumkin."
+    },
+    "s4": {
+      "title": "Kim kirisha oladi",
+      "text": "Faqat savdo va joriy etish uchun mas’ul xodimlar — ruxsat Google akkauntlari orqali shaxsan beriladi."
+    },
+    "s5": {
+      "title": "Tuzatish va o‘chirish",
+      "text": "Istalgan payt ma’lumotlaringizni ko‘rish, tuzatish yoki o‘chirishni so‘rashingiz mumkin — kontaktlar sahifasidagi istalgan kanal orqali yozing."
+    },
+    "s6": {
+      "title": "Analitika",
+      "text": "Sayt umumiy statistika uchun Vercel Analytics, Vercel Speed Insights, Google Analytics 4 va Yandex Metrica ishlatishi mumkin. Analitika hodisalarida so‘rov matni, telefon raqami yoki ism hech qachon bo‘lmaydi."
+    },
+    "s7": {
+      "title": "Cookie",
+      "text": "Sayt tanlangan tilni eslab qolish uchun cookie ishlatadi (NEXT_LOCALE). Yoqilgan analitika xizmatlari o‘z siyosatlariga ko‘ra o‘z cookie’larini o‘rnatishi mumkin."
+    },
+    "s8": {
+      "title": "Yuridik shaxs",
+      "text": "Yakuniy yuridik shaxs, ro‘yxat ma’lumotlari va operator kontaktlari tijorat ishga tushirilishidan oldin shu yerda e’lon qilinadi. Undan oldin hujjatni yurist tekshirishi shart."
+    }
+  },
+  "devWarning": {
+    "missingContacts": "Dasturchi uchun eslatma: aloqa kanallari sozlanmagan (NEXT_PUBLIC_TELEGRAM_URL / NEXT_PUBLIC_CONTACT_PHONE / NEXT_PUBLIC_CONTACT_EMAIL). Prodakshnda bu xabar ko‘rinmaydi."
+  }
+}
