@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
@@ -67,22 +67,25 @@ export function HeroKiosk({
       />
 
       <Image
-        src="/images/hero-kiosk-front.png"
+        src="/images/hero-kiosk-v2.png"
         alt={alt}
-        width={495}
-        height={1324}
+        width={491}
+        height={1323}
         priority
         sizes="(max-width: 1024px) 60vw, 380px"
         className="relative mx-auto h-[480px] w-auto sm:h-[540px] lg:h-[580px]"
       />
 
       {/* Floor reflection */}
-      <div aria-hidden="true" className="kiosk-reflection relative -mt-1 flex h-24 justify-center overflow-hidden opacity-50">
+      <div
+        aria-hidden="true"
+        className="kiosk-reflection relative -mt-1 flex h-24 justify-center overflow-hidden opacity-50"
+      >
         <Image
-          src="/images/hero-kiosk-front.png"
+          src="/images/hero-kiosk-v2.png"
           alt=""
-          width={495}
-          height={1324}
+          width={491}
+          height={1323}
           className="h-[480px] w-auto sm:h-[540px] lg:h-[580px]"
         />
       </div>
@@ -122,7 +125,12 @@ export function HeroKiosk({
           className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand text-white"
         >
           <svg viewBox="0 0 12 12" className="h-3 w-3" fill="none">
-            <path d="M6 2.5v7M2.5 6h7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+            <path
+              d="M6 2.5v7M2.5 6h7"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+            />
           </svg>
         </span>
       </div>

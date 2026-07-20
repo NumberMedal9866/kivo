@@ -28,14 +28,14 @@ export type MediaEntry = {
 export const media = {
   "hero-kiosk-front": {
     id: "hero-kiosk-front",
-    src: "/images/hero-kiosk-front.png",
+    src: "/images/hero-kiosk-v2.png",
     alt: {
       ru: "Киоск самообслуживания kiyo: белый корпус, чёрная рамка экрана и платёжный терминал",
       uz: "kiyo o‘z-o‘ziga xizmat kioski: oq korpus, qora ekran romkasi va to‘lov terminali",
       en: "kiyo self-service kiosk with a white body, black display bezel and payment terminal",
     },
-    width: 495,
-    height: 1324,
+    width: 491,
+    height: 1323,
     focalPoint: "Full front view, screen centered, slight left offset for floating UI card",
     section: "Home hero",
     transparentPreferred: true,
