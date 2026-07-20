@@ -32,8 +32,8 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
           style={{
             width: 64,
             height: 64,
-            borderRadius: 16,
-            background: "#0B0D12",
+            borderRadius: 32,
+            background: "#315CFF",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",

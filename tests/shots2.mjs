@@ -29,7 +29,7 @@ await page.locator("#how-it-works").screenshot({ path: `${outDir}/crop-how-deskt
 
 // Switch interaction state
 await page.locator("section").first().scrollIntoViewIfNeeded();
-const switchBtn = page.getByRole("button", { name: "С KIVO" });
+const switchBtn = page.getByRole("button", { name: "С kiyo" });
 await switchBtn.scrollIntoViewIfNeeded();
 await switchBtn.click();
 await page.waitForTimeout(900);

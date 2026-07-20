@@ -39,7 +39,7 @@
   "hero": {
     "badge": "O‘z-o‘ziga xizmat kiosklari · O‘zbekiston",
     "title": "Buyurtmani kiosk oladi. Jamoa — tayyorlaydi.",
-    "subtitle": "KIVO kioskni kalit topshirish sharti bilan ishga tushiradi: iiko, to‘lov, menyu, o‘qitish va qo‘llab-quvvatlash.",
+    "subtitle": "kiyo kioskni kalit topshirish sharti bilan ishga tushiradi: iiko, to‘lov, menyu, o‘qitish va qo‘llab-quvvatlash.",
     "ctaPrimary": "Loyihani muhokama qilish",
     "ctaSecondary": "Demoni sinab ko‘rish",
     "worksWith": "Hamkor tizimlar",
@@ -56,7 +56,7 @@
     "kicker": "Oldin / keyin",
     "heading": "Bitta gavjum soat — ikki xil manzara",
     "beforeLabel": "Kiosksiz",
-    "afterLabel": "KIVO bilan",
+    "afterLabel": "kiyo bilan",
     "before": {
       "i1": "Bitta kassa — bitta navbat",
       "i2": "Kassir teradi, mehmonlar kutadi",
@@ -118,7 +118,7 @@
     "heading": "Siz ishlayotgan tizimlarga mos tushadi",
     "intro": "Buyurtmalar iiko’ga boradi, to‘lov — O‘zbekistonda odatiy servislar orqali.",
     "flowCustomer": "Mehmon",
-    "flowKiosk": "KIVO kioski",
+    "flowKiosk": "kiyo kioski",
     "flowPos": "iiko",
     "flowKitchen": "Oshxona",
     "flowPayment": "To‘lov",
@@ -134,7 +134,7 @@
   "how": {
     "kicker": "Ishga tushirish",
     "heading": "Ishlayotgan kioskgacha to‘rt qadam",
-    "intro": "Joriy etishni KIVO olib boradi — jamoangiz integratorga aylanishi shart emas.",
+    "intro": "Joriy etishni kiyo olib boradi — jamoangiz integratorga aylanishi shart emas.",
     "steps": {
       "assessment": {
         "num": "01",
@@ -176,7 +176,7 @@
     "heading": "Uskuna sotib olmasdan boshlang",
     "intro": "Kiosk, o‘rnatish va qo‘llab-quvvatlash — past boshlang‘ich to‘lovli xizmat sifatida.",
     "points": {
-      "p1": { "title": "Uskuna — KIVO’dan", "text": "O‘zimiz olib kelamiz va o‘rnatamiz" },
+      "p1": { "title": "Uskuna — kiyo’dan", "text": "O‘zimiz olib kelamiz va o‘rnatamiz" },
       "p2": { "title": "Past start", "text": "Boshida katta sarmoya shart emas" },
       "p3": { "title": "Qo‘llab-quvvatlash ichida", "text": "Servis, kafolat, yangilanishlar" },
       "p4": { "title": "Moslashuvchan masshtab", "text": "Bitta nuqtadan tarmoqqacha" }
@@ -187,7 +187,7 @@
   "evidence": {
     "kicker": "Soha ma’lumotlari",
     "heading": "Jahon tajribasi — raqamlarda",
-    "intro": "Restoranlardagi o‘z-o‘ziga xizmat bo‘yicha ochiq ma’lumotlar. Bular bozor ko‘rsatkichlari, KIVO natijalari emas.",
+    "intro": "Restoranlardagi o‘z-o‘ziga xizmat bo‘yicha ochiq ma’lumotlar. Bular bozor ko‘rsatkichlari, kiyo natijalari emas.",
     "sourceLabel": "Manba",
     "items": {
       "technomic": {
@@ -276,7 +276,7 @@
       },
       "q8": {
         "q": "Kioskni kim o‘rnatadi?",
-        "a": "KIVO: yetkazib berish, montaj, ulash va nuqtangizda to‘liq sinov."
+        "a": "kiyo: yetkazib berish, montaj, ulash va nuqtangizda to‘liq sinov."
       },
       "q9": {
         "q": "Xodimlarni o‘qitish kiradimi?",
@@ -372,7 +372,7 @@
   "meta": {
     "home": {
       "title": "O‘zbekistonda restoranlar uchun o‘z-o‘ziga xizmat kiosklari",
-      "description": "KIVO — O‘zbekistonda restoranlar, fastfud va qahvaxonalar uchun o‘z-o‘ziga buyurtma terminallari: uskuna, dastur, o‘rnatish, iiko integratsiyasi, Click, Payme, Uzum, HUMO, Uzcard, Visa va Mastercard to‘lovlari, o‘qitish va qo‘llab-quvvatlash. Ijara mavjud."
+      "description": "kiyo — O‘zbekistonda restoranlar, fastfud va qahvaxonalar uchun o‘z-o‘ziga buyurtma terminallari: uskuna, dastur, o‘rnatish, iiko integratsiyasi, Click, Payme, Uzum, HUMO, Uzcard, Visa va Mastercard to‘lovlari, o‘qitish va qo‘llab-quvvatlash. Ijara mavjud."
     },
     "product": {
       "title": "Kiosk — uskuna, interfeys va xizmat",
@@ -380,7 +380,7 @@
     },
     "integrations": {
       "title": "iiko va to‘lov tizimlari bilan integratsiya",
-      "description": "KIVO kioski iiko POS va O‘zbekiston to‘lov tizimlari — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — bilan qanday integratsiyalashadi, individual integratsiyalar qanday buyurtma qilinadi."
+      "description": "kiyo kioski iiko POS va O‘zbekiston to‘lov tizimlari — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — bilan qanday integratsiyalashadi, individual integratsiyalar qanday buyurtma qilinadi."
     },
     "implementation": {
       "title": "Joriy etish — baholashdan ishga tushirishgacha",
@@ -392,7 +392,7 @@
     },
     "privacy": {
       "title": "Maxfiylik bayonnomasi",
-      "description": "KIVO sayti so‘rov formasi orqali qanday ma’lumotlarni yig‘adi, ular qayerda saqlanadi hamda analitika va cookie qanday ishlatiladi."
+      "description": "kiyo sayti so‘rov formasi orqali qanday ma’lumotlarni yig‘adi, ular qayerda saqlanadi hamda analitika va cookie qanday ishlatiladi."
     }
   },
   "productPage": {
@@ -417,7 +417,7 @@
     },
     "service": {
       "title": "Yetkazamiz, o‘rnatamiz va kuzatib boramiz",
-      "text": "KIVO kioskni yetkazadi, nuqtada o‘rnatadi, iiko va to‘lovlarni ulaydi, jamoani o‘qitadi va aloqada qoladi. Ijara tufayli uskunani sotib olmasdan boshlash mumkin."
+      "text": "kiyo kioskni yetkazadi, nuqtada o‘rnatadi, iiko va to‘lovlarni ulaydi, jamoani o‘qitadi va aloqada qoladi. Ijara tufayli uskunani sotib olmasdan boshlash mumkin."
     },
     "specs": {
       "title": "Texnik xususiyatlar",
@@ -511,7 +511,7 @@
       },
       "install": {
         "title": "O‘rnatish",
-        "text": "Yetkazish, montaj, ulash va joylashtirish — KIVO kuchlari bilan."
+        "text": "Yetkazish, montaj, ulash va joylashtirish — kiyo kuchlari bilan."
       },
       "testing": {
         "title": "To‘liq sinov",

@@ -1,10 +1,10 @@
-# KIVO — self-service kiosk website
+# kiyo — self-service kiosk website
 
 Multilingual (RU / UZ / EN) marketing website for a company supplying
 self-service ordering kiosks to restaurants, coffee shops and quick-service
 businesses in Uzbekistan.
 
-> **Temporary brand:** "KIVO" is a provisional name. Everything brand-related
+> **Temporary brand:** "kiyo" is a provisional name. Everything brand-related
 > is centralized so it can be replaced in one place — see
 > [docs/BRAND_REPLACEMENT_GUIDE.md](docs/BRAND_REPLACEMENT_GUIDE.md).
 

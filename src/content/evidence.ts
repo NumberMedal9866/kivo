@@ -3,7 +3,7 @@
  *
  * IMPORTANT EDITORIAL RULES (see the section itself for the on-page
  * disclaimer):
- * - These are EXTERNAL benchmarks, never KIVO results.
+ * - These are EXTERNAL benchmarks, never kiyo results.
  * - Do not strip context: combined digital-channel figures must stay
  *   labeled as combined figures.
  * - Localized wording lives in messages/<locale>.json under `evidence.items`,

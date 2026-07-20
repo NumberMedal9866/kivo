@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -18,6 +18,15 @@ import "../globals.css";
 const manrope = Manrope({
   subsets: ["latin", "latin-ext", "cyrillic"],
   variable: "--font-manrope",
+  display: "swap",
+});
+
+// Brand wordmark font — the "kiyo" lockup only. Self-hosted via next/font,
+// so the logo's proportions never depend on a runtime CDN fetch.
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -45,9 +54,11 @@ export async function generateMetadata({
 }
 
 export const viewport: Viewport = {
-  themeColor: "#F6F7F9",
+  themeColor: "#0A0C11",
   width: "device-width",
   initialScale: 1,
+  // Required for env(safe-area-inset-*) used by the sticky mobile CTA.
+  viewportFit: "cover",
 };
 
 export default async function LocaleLayout({
@@ -66,7 +77,11 @@ export default async function LocaleLayout({
   return (
     // suppressHydrationWarning: the inline script below may add `.dark`
     // to <html> before React hydrates (theme persistence, no FOUC).
-    <html lang={locale} className={manrope.variable} suppressHydrationWarning>
+    <html
+      lang={locale}
+      className={`${manrope.variable} ${montserrat.variable}`}
+      suppressHydrationWarning
+    >
       <body className="min-h-dvh antialiased">
         <script
           dangerouslySetInnerHTML={{

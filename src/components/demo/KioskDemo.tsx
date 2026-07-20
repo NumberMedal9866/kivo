@@ -107,7 +107,7 @@ export function KioskDemo({ initialLang, label }: { initialLang: DemoLang; label
       <div className="flex h-152 flex-col overflow-hidden rounded-[1.1rem] bg-bg">
         {/* Kiosk screen header */}
         <div className="flex items-center justify-between bg-surface px-4 py-3 shadow-[0_1px_0_var(--color-line)]">
-          <LogoMark className="h-6 w-6 text-ink" />
+          <LogoMark className="h-6 w-6 text-brand" />
           <div role="group" aria-label={demoUi.chooseLang[lang]} className="flex gap-1">
             {(["uz", "ru", "en"] as const).map((l) => (
               <button

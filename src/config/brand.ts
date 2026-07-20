@@ -1,12 +1,13 @@
 /**
  * ============================================================================
- * TEMPORARY BRAND — replace this configuration when the final company name
- * and logo are selected. See docs/BRAND_REPLACEMENT_GUIDE.md.
+ * BRAND: "kiyo" — name and logo artwork selected by the site owner
+ * (brand sheet: mark #315CFF, wordmark #0B0D12 / white on dark).
+ * The wordmark is intentionally lowercase everywhere, including sentence
+ * starts. Trademark availability has NOT been verified.
  *
- * Nothing in this file has been checked for trademark availability.
  * All visible brand references across the site must come from this file or
  * from the translation dictionaries — never hardcode the brand name in
- * components or copy.
+ * components or copy. See docs/BRAND_REPLACEMENT_GUIDE.md.
  * ============================================================================
  */
 
@@ -14,19 +15,19 @@ export const locales = ["ru", "uz", "en"] as const;
 export type Locale = (typeof locales)[number];
 
 export const brand = {
-  /** Public brand name shown in UI. */
-  name: "KIVO",
+  /** Public brand name shown in UI (lowercase by design). */
+  name: "kiyo",
   /** Placeholder legal name — must be replaced with the registered entity before launch. */
-  legalName: "KIVO (legal entity to be confirmed)",
-  shortName: "KIVO",
+  legalName: "kiyo (legal entity to be confirmed)",
+  shortName: "kiyo",
   /** English master tagline; localized variants live in messages/<locale>.json. */
   tagline: "Self-ordering made simple",
   description:
     "Self-service ordering kiosks for restaurants, coffee shops and quick-service businesses in Uzbekistan — hardware, software, installation, iiko and payment integration, training and support.",
   /** Text used by the wordmark component. */
-  logoText: "KIVO",
+  logoText: "kiyo",
   /** Single-letter monogram used on the kiosk mockup, favicon and watermarks. */
-  monogram: "K",
+  monogram: "k",
 
   /**
    * Contact channels. Values come from environment variables so that no
@@ -52,9 +53,9 @@ export const brand = {
   seo: {
     /** Site URL without trailing slash; overridden by NEXT_PUBLIC_SITE_URL. */
     siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
-    siteName: "KIVO",
+    siteName: "kiyo",
     /** Used when a page does not define its own metadata. */
-    defaultTitle: "KIVO — self-service ordering kiosks for Uzbekistan",
+    defaultTitle: "kiyo — self-service ordering kiosks for Uzbekistan",
     defaultDescription:
       "Complete self-ordering kiosk solution for restaurants and cafés in Uzbekistan: hardware, software, installation, iiko POS integration, local payment systems, training and support.",
     twitterCard: "summary_large_image" as const,

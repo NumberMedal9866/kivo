@@ -43,11 +43,13 @@ export function pageMetadata({
       url: canonical,
       locale: OG_LOCALE[locale],
       alternateLocale: locales.filter((l) => l !== locale).map((l) => OG_LOCALE[l]),
+      images: [{ url: `${siteUrl}/og.png`, width: 1200, height: 630, alt: siteName }],
     },
     twitter: {
       card: brand.seo.twitterCard,
       title,
       description,
+      images: [`${siteUrl}/og.png`],
     },
   };
 }

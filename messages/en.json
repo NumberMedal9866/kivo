@@ -39,7 +39,7 @@
   "hero": {
     "badge": "Self-ordering kiosks · Uzbekistan",
     "title": "The kiosk takes orders. Your team cooks.",
-    "subtitle": "KIVO delivers a turnkey kiosk: iiko, payments, menu, training and support.",
+    "subtitle": "kiyo delivers a turnkey kiosk: iiko, payments, menu, training and support.",
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "Try the demo",
     "worksWith": "Works with",
@@ -56,7 +56,7 @@
     "kicker": "Before / after",
     "heading": "One rush hour, two scenarios",
     "beforeLabel": "Without a kiosk",
-    "afterLabel": "With KIVO",
+    "afterLabel": "With kiyo",
     "before": {
       "i1": "One till — one queue",
       "i2": "The cashier types, guests wait",
@@ -118,7 +118,7 @@
     "heading": "Fits into what you already run",
     "intro": "Orders flow into iiko; payment goes through the services Uzbekistan already uses.",
     "flowCustomer": "Guest",
-    "flowKiosk": "KIVO kiosk",
+    "flowKiosk": "kiyo kiosk",
     "flowPos": "iiko",
     "flowKitchen": "Kitchen",
     "flowPayment": "Payment",
@@ -134,7 +134,7 @@
   "how": {
     "kicker": "Launch",
     "heading": "Four steps to a working kiosk",
-    "intro": "KIVO runs the implementation — your team doesn't have to become integrators.",
+    "intro": "kiyo runs the implementation — your team doesn't have to become integrators.",
     "steps": {
       "assessment": {
         "num": "01",
@@ -176,7 +176,7 @@
     "heading": "Start without buying the hardware",
     "intro": "Kiosk, installation and support — as a service with a low initial payment.",
     "points": {
-      "p1": { "title": "KIVO hardware", "text": "We deliver and install it ourselves" },
+      "p1": { "title": "kiyo hardware", "text": "We deliver and install it ourselves" },
       "p2": { "title": "Low entry", "text": "No heavy upfront investment" },
       "p3": { "title": "Support included", "text": "Service, warranty, updates" },
       "p4": { "title": "Flexible scale", "text": "From one venue to a chain" }
@@ -187,7 +187,7 @@
   "evidence": {
     "kicker": "Industry data",
     "heading": "Global experience, in numbers",
-    "intro": "Public data on self-ordering in restaurants. Market benchmarks — not KIVO results.",
+    "intro": "Public data on self-ordering in restaurants. Market benchmarks — not kiyo results.",
     "sourceLabel": "Source",
     "items": {
       "technomic": {
@@ -276,7 +276,7 @@
       },
       "q8": {
         "q": "Who installs the kiosk?",
-        "a": "KIVO: delivery, mounting, connection and end-to-end testing at your venue."
+        "a": "kiyo: delivery, mounting, connection and end-to-end testing at your venue."
       },
       "q9": {
         "q": "Is staff training included?",
@@ -372,7 +372,7 @@
   "meta": {
     "home": {
       "title": "Self-service ordering kiosks for restaurants in Uzbekistan",
-      "description": "KIVO supplies self-ordering kiosks for restaurants, fast food and coffee shops in Uzbekistan: hardware, software, installation, iiko POS integration, Click, Payme, Uzum, HUMO, Uzcard, Visa and Mastercard payments, training and support. Rental available."
+      "description": "kiyo supplies self-ordering kiosks for restaurants, fast food and coffee shops in Uzbekistan: hardware, software, installation, iiko POS integration, Click, Payme, Uzum, HUMO, Uzcard, Visa and Mastercard payments, training and support. Rental available."
     },
     "product": {
       "title": "The kiosk — hardware, interface and service",
@@ -380,7 +380,7 @@
     },
     "integrations": {
       "title": "iiko POS and payment integrations",
-      "description": "How the KIVO kiosk integrates with iiko POS and the payment systems of Uzbekistan — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — plus custom integrations after technical review."
+      "description": "How the kiyo kiosk integrates with iiko POS and the payment systems of Uzbekistan — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — plus custom integrations after technical review."
     },
     "implementation": {
       "title": "Implementation — from assessment to launch",
@@ -392,7 +392,7 @@
     },
     "privacy": {
       "title": "Privacy notice",
-      "description": "How the KIVO website collects and processes contact details submitted through the lead form, and how analytics and cookies are used."
+      "description": "How the kiyo website collects and processes contact details submitted through the lead form, and how analytics and cookies are used."
     }
   },
   "productPage": {
@@ -417,7 +417,7 @@
     },
     "service": {
       "title": "Delivered, installed and supported",
-      "text": "KIVO delivers the kiosk, installs it at your venue, connects iiko and payments, trains the team and stays available. Rental means you can start without buying the hardware."
+      "text": "kiyo delivers the kiosk, installs it at your venue, connects iiko and payments, trains the team and stays available. Rental means you can start without buying the hardware."
     },
     "specs": {
       "title": "Specifications",
@@ -517,7 +517,7 @@
       },
       "install": {
         "title": "Installation",
-        "text": "Delivery, mounting, connection and placement — done by KIVO."
+        "text": "Delivery, mounting, connection and placement — done by kiyo."
       },
       "testing": {
         "title": "End-to-end testing",

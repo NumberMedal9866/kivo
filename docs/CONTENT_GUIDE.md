@@ -34,7 +34,7 @@
 
 - Evidence section: every stat keeps its source link + date, combined
   digital-channel figures must stay labeled as combined, and the outcome
-  disclaimer stays visible. These are external benchmarks, never KIVO
+  disclaimer stays visible. These are external benchmarks, never kiyo
   results.
 - Integrations: say "supported / configured per merchant", never
   "100% compatible" or "works flawlessly". No invented API details,

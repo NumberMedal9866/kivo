@@ -42,7 +42,7 @@ export function KioskScreen({ className }: { className?: string }) {
     >
       {/* Header */}
       <div className="flex shrink-0 items-center justify-between bg-white px-[7%] py-[4%]">
-        <LogoMark className="h-4 w-4 text-ink" />
+        <LogoMark className="h-4 w-4 text-brand" />
         <div className="flex gap-[3px]">
           <span className="rounded-full bg-ink px-[7px] py-[2px] text-[6px] font-extrabold text-white">
             UZ

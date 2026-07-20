@@ -45,6 +45,8 @@
   --color-kiosk-bezel: #101216;
 
   --font-sans: var(--font-manrope), "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* Brand wordmark only (the "kiyo" lockup) */
+  --font-logo: var(--font-montserrat), "Montserrat", sans-serif;
 
   /* Fluid display scale — sized so long Russian/Uzbek compounds fit at 360px */
   --text-display: clamp(2.35rem, 1rem + 5vw, 4.9rem);

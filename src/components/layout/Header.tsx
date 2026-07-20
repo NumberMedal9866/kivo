@@ -69,11 +69,11 @@ export function Header() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 sm:px-8 md:h-[4.5rem]">
         <Link
           href="/"
-          aria-label={t("nav.home")}
+          aria-label={`Kiyo — ${t("nav.home")}`}
           className="shrink-0"
           onClick={() => setOpen(false)}
         >
-          <Logo dark />
+          <Logo variant="lockup" color="inverse" size={26} />
         </Link>
 
         {/* Desktop navigation */}

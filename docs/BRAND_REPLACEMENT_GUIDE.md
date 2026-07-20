@@ -1,6 +1,6 @@
 # Brand replacement guide
 
-"KIVO" is a **temporary brand**. Nothing has been checked for trademark
+"kiyo" is a **temporary brand**. Nothing has been checked for trademark
 availability. All brand references flow from two places, so replacing the
 brand is a contained operation.
 

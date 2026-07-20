@@ -1,5 +1,6 @@
-import { getTranslations } from "next-intl/server";
-import { brand } from "@/config/brand";
+import { getLocale, getTranslations } from "next-intl/server";
+import { brand, type Locale } from "@/config/brand";
+import { media } from "@/content/media";
 import { Container } from "@/components/ui/Container";
 import { buttonClasses } from "@/components/ui/Button";
 import { TrackedLink } from "@/components/ui/TrackedLink";
@@ -10,6 +11,8 @@ import { IntegrationLogo } from "@/components/home/IntegrationLogo";
 export async function Hero() {
   const t = await getTranslations("hero");
   const tTrust = await getTranslations("trust");
+  const locale = (await getLocale()) as Locale;
+  const heroAlt = media["hero-kiosk-front"].alt[locale];
 
   return (
     <section className="chapter-dark overflow-hidden">
@@ -50,6 +53,7 @@ export async function Hero() {
             cardTitle={t("cardTitle")}
             cardSubtitle={t("cardSubtitle")}
             upsellChip={t("upsellChip")}
+            alt={heroAlt}
           />
           <p className="mt-4 text-center text-[0.68rem] text-white/30">{t("kioskCaption")}</p>
         </div>
