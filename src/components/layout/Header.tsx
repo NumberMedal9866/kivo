@@ -66,14 +66,20 @@ export function Header() {
           : "border-b border-transparent bg-transparent",
       )}
     >
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 sm:px-8 md:h-[4.5rem]">
+      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-2 px-4 sm:px-8 md:h-[4.5rem] md:gap-4">
         <Link
           href="/"
           aria-label={`Kiyo — ${t("nav.home")}`}
           className="shrink-0"
           onClick={() => setOpen(false)}
         >
-          <Logo variant="lockup" color="inverse" size={26} />
+          {/* Slightly smaller lockup on phones so the row never overflows */}
+          <span className="sm:hidden">
+            <Logo variant="lockup" color="inverse" size={22} />
+          </span>
+          <span className="hidden sm:block">
+            <Logo variant="lockup" color="inverse" size={26} />
+          </span>
         </Link>
 
         {/* Desktop navigation */}
@@ -102,7 +108,7 @@ export function Header() {
         </div>
 
         {/* Mobile controls */}
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex shrink-0 items-center gap-1.5 lg:hidden">
           <ThemeToggle />
           <LanguageSwitcher dark />
           <button
@@ -112,7 +118,7 @@ export function Header() {
             aria-controls="mobile-menu"
             aria-label={open ? t("a11y.closeMenu") : t("a11y.openMenu")}
             onClick={() => setOpen((v) => !v)}
-            className="grid h-11 w-11 place-items-center rounded-full border border-white/15 bg-white/5 text-white"
+            className="grid h-[38px] w-[38px] shrink-0 place-items-center rounded-full border border-white/15 bg-white/5 text-white"
           >
             <svg viewBox="0 0 20 20" className="h-5 w-5" fill="none" aria-hidden="true">
               {open ? (

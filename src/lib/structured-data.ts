@@ -13,6 +13,7 @@ export function organizationJsonLd() {
     url: brand.seo.siteUrl,
     description: brand.description,
     areaServed: brand.location.serviceArea,
+    ...(brand.contacts.email && { email: brand.contacts.email }),
     ...(brand.socialLinks.length > 0 && { sameAs: brand.socialLinks.map((s) => s.url) }),
   };
 }

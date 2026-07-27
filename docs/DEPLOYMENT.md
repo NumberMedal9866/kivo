@@ -1,70 +1,131 @@
-# Deployment (Vercel)
+# Deployment: kiyo.uz on Vercel (domain + email stay at ahost)
 
-## Pre-flight checklist
+Verified against Vercel CLI 55 and Vercel docs updated 2026-02/03.
+Everything except the login is copy-paste terminal commands — the dashboard
+is only needed once, to read the project-specific DNS values.
+
+> Why not the DNS values from tutorials: Vercel no longer uses one universal
+> A/CNAME for everyone. Each project gets **unique** DNS targets, shown after
+> you add the domain. Always copy the values Vercel shows you.
+
+## 0. Pre-flight (already passing in this repo)
 
 ```bash
-pnpm format:check
-pnpm lint
-pnpm typecheck
-pnpm test          # unit
-pnpm build         # production build
-pnpm test:e2e      # Playwright starts the prod server itself
+pnpm check && pnpm build && pnpm test:e2e
 ```
 
-All must pass. Also verify:
-
-- `.env.local` is **not** committed; no secrets in the repo.
-- The form works in mock mode (`pnpm dev`, submit the form, watch console).
-- `/sitemap.xml`, `/robots.txt`, `/manifest.webmanifest` respond.
-- The three locales render: `/ru`, `/uz`, `/en`.
-
-## First deploy
+## 1. Log in (one time)
 
 ```bash
-npm i -g vercel        # if not installed
 vercel login
-vercel link            # create/link the project
-vercel                 # preview deployment
-vercel --prod          # production
 ```
 
-Framework preset: **Next.js** (auto-detected). Build command `next build`,
-install command `pnpm install` (auto-detected from the lockfile).
+Pick a login method (GitHub / Google / Email). With Email you'll get a
+confirmation link in your inbox — click it, return to the terminal.
 
-## Environment variables (Vercel dashboard)
+## 2. Link the folder and deploy
 
-Public (safe for the client):
+From the project root:
 
-| Variable                        | Example                   |
-| ------------------------------- | ------------------------- |
-| `NEXT_PUBLIC_SITE_URL`          | `https://example.uz`      |
-| `NEXT_PUBLIC_TELEGRAM_URL`      | `https://t.me/company`    |
-| `NEXT_PUBLIC_CONTACT_PHONE`     | `+998 xx xxx xx xx`       |
-| `NEXT_PUBLIC_CONTACT_EMAIL`     | `hello@example.uz`        |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | `G-XXXXXXXXXX` (optional) |
-| `NEXT_PUBLIC_YANDEX_METRICA_ID` | `12345678` (optional)     |
+```bash
+vercel link
+```
 
-Secret (server-only — never `NEXT_PUBLIC_`):
+Interactive prompts (answer as follows):
 
-| Variable                       | Notes                         |
-| ------------------------------ | ----------------------------- |
-| `GOOGLE_SERVICE_ACCOUNT_EMAIL` | from the service-account JSON |
-| `GOOGLE_PRIVATE_KEY`           | keep `\n` escapes if one line |
-| `GOOGLE_SHEET_ID`              | spreadsheet ID                |
-| `GOOGLE_SHEET_TAB`             | defaults to `Leads`           |
+- "Set up …?" → **yes**
+- "Which scope…" → your account
+- "Link to existing project?" → **no**
+- "What's your project's name?" → `kiyo`
+- "In which directory is your code located?" → press Enter (`./`)
 
-After changing env vars, redeploy (`vercel --prod`).
+Then:
 
-## Post-deploy checks
+```bash
+vercel --prod
+```
 
-1. Open the production URL — `/` must redirect to a locale.
-2. Switch languages; reload — the choice must persist (cookie).
-3. Submit a test lead — verify the row appears in the Google Sheet.
-4. View source of `/ru` — check `hreflang` alternates and JSON-LD.
-5. Run Lighthouse (mobile) — targets: Performance ≥ 90, A11y ≥ 95,
-   Best Practices ≥ 95, SEO ≥ 95.
+The terminal prints a `https://….vercel.app` URL — the site is live there.
 
-## Domains
+## 3. Environment variables (CLI, no dashboard)
 
-Add the production domain in Vercel → Domains, then update
-`NEXT_PUBLIC_SITE_URL` and redeploy so canonicals/sitemap use the final host.
+Each command prompts "What's the value of …?" — paste the value, Enter.
+
+```bash
+vercel env add NEXT_PUBLIC_SITE_URL production      # → https://kiyo.uz
+vercel env add NEXT_PUBLIC_TELEGRAM_URL production  # → https://t.me/barsushe
+vercel env add NEXT_PUBLIC_CONTACT_EMAIL production # → info@kiyo.uz
+```
+
+Later, when the Google Sheet is ready (docs/GOOGLE_SHEETS_SETUP.md):
+
+```bash
+vercel env add GOOGLE_SERVICE_ACCOUNT_EMAIL production
+vercel env add GOOGLE_PRIVATE_KEY production   # paste single-line, keep \n escapes
+vercel env add GOOGLE_SHEET_ID production
+vercel env add GOOGLE_SHEET_TAB production     # → Leads
+```
+
+Env changes apply on the next deploy:
+
+```bash
+vercel --prod
+```
+
+## 4. Attach the domain
+
+```bash
+vercel domains add kiyo.uz kiyo
+vercel domains add www.kiyo.uz kiyo
+```
+
+Now get the exact DNS records Vercel wants for THIS project:
+
+```bash
+vercel domains inspect kiyo.uz
+```
+
+It prints the **intended DNS records** — an `A` record value for the apex
+and a unique `CNAME` target for `www` (looks like `….vercel-dns-0XX.com`).
+
+Dashboard alternative: [vercel.com/dashboard](https://vercel.com/dashboard)
+→ open the `kiyo` project → **Settings** (left sidebar) → **Domains** →
+**Add Domain** → type `kiyo.uz` (accept the suggested `www` redirect). The
+page then displays the same required records with copy buttons.
+
+## 5. Set the records at ahost
+
+In the ahost client area → «Вход в cPanel» → **Zone Editor** (Редактор
+зоны) → `kiyo.uz` → **Manage**:
+
+1. Edit the **A** record for `kiyo.uz` (name `@`) → paste the A value from
+   step 4.
+2. Delete any old `www` record; add **CNAME** `www` → paste the CNAME target
+   from step 4.
+3. **Do not touch MX / mail records** — email `info@kiyo.uz` stays on ahost.
+
+Check until it verifies (TAS-IX usually propagates in minutes):
+
+```bash
+vercel domains verify kiyo.uz
+```
+
+SSL is issued automatically once verification passes — no certificate steps.
+
+## 6. Post-deploy checks
+
+1. `https://kiyo.uz` opens with a valid padlock and redirects to `/ru`.
+2. Language switch persists after reload (cookie).
+3. Submit a test lead → row appears in the Google Sheet (once creds are set).
+4. `https://kiyo.uz/sitemap.xml` and `/robots.txt` respond.
+5. Telegram/email buttons appear (env vars picked up).
+
+## Useful commands
+
+```bash
+vercel open        # open the project dashboard in the browser
+vercel ls          # list deployments
+vercel env list production
+vercel logs <deployment-url>
+vercel rollback    # revert to the previous deployment
+```

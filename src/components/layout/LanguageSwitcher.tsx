@@ -63,7 +63,8 @@ export function LanguageSwitcher({
           aria-label={t(locale)}
           className={cn(
             "rounded-full font-bold transition-colors",
-            size === "sm" ? "px-2.5 py-1 text-[0.72rem]" : "px-4 py-2 text-sm",
+            // px (not rem) so Android font scaling can't blow up the header chrome
+            size === "sm" ? "px-[9px] py-[4px] text-[11.5px]" : "px-4 py-2 text-sm",
             locale === active
               ? dark
                 ? "bg-white text-night"

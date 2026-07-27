@@ -61,7 +61,9 @@ export function HowSteps({ steps }: { steps: HowStep[] }) {
         role="tablist"
         aria-orientation="vertical"
         onKeyDown={onKeyDown}
-        className="flex flex-col gap-2"
+        // min-w-0: grid items default to min-width:auto, which would let the
+        // no-wrap truncate labels below force the column (and the page) wide.
+        className="flex min-w-0 flex-col gap-2"
       >
         {steps.map((s, i) => (
           <button
@@ -74,7 +76,7 @@ export function HowSteps({ steps }: { steps: HowStep[] }) {
             tabIndex={i === active ? 0 : -1}
             onClick={() => setActive(i)}
             className={cn(
-              "group flex items-center gap-4 rounded-2xl border px-5 py-4 text-left transition-all duration-300",
+              "group flex w-full min-w-0 items-center gap-4 rounded-2xl border px-5 py-4 text-left transition-all duration-300",
               i === active
                 ? "border-night bg-night text-white shadow-float dark:border-white/20"
                 : "border-line bg-surface text-ink hover:border-ink/30",
@@ -127,7 +129,7 @@ export function HowSteps({ steps }: { steps: HowStep[] }) {
         id={`${baseId}-panel`}
         role="tabpanel"
         aria-labelledby={`${baseId}-tab-${active}`}
-        className="relative overflow-hidden rounded-card border border-line bg-surface p-8"
+        className="relative min-w-0 overflow-hidden rounded-card border border-line bg-surface p-8"
       >
         <span
           aria-hidden="true"

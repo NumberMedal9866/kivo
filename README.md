@@ -70,17 +70,15 @@ build must exist: run `pnpm build` first, or let the config run it).
 
 ## Contacts
 
-No phone/Telegram/email is invented. A channel renders **only** when its
-environment variable is set:
+Real contacts are baked into `src/config/brand.ts` as defaults:
+Telegram `https://t.me/barsushe`, email `info@kiyo.uz`, no phone (the phone
+channel intentionally doesn't render). Environment variables override them:
 
 ```
-NEXT_PUBLIC_TELEGRAM_URL=https://t.me/yourcompany
-NEXT_PUBLIC_CONTACT_PHONE=+998 xx xxx xx xx
-NEXT_PUBLIC_CONTACT_EMAIL=hello@example.com
+NEXT_PUBLIC_TELEGRAM_URL=…
+NEXT_PUBLIC_CONTACT_PHONE=…
+NEXT_PUBLIC_CONTACT_EMAIL=…
 ```
-
-In development a small red note marks missing contacts; it never renders in
-production.
 
 ## Lead form → Google Sheets
 

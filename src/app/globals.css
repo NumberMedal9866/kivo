@@ -207,6 +207,9 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5.5rem;
+  /* Hard guarantee against horizontal overflow on mobile (e.g. Android
+     font scaling inflating fixed chrome): clip, never scroll, on the x axis. */
+  overflow-x: clip;
 }
 
 body {

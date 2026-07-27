@@ -30,29 +30,33 @@ export const brand = {
   monogram: "k",
 
   /**
-   * Contact channels. Values come from environment variables so that no
-   * invented phone/Telegram/email ever ships. A channel is rendered only
-   * when its value is present (see src/lib/contacts.ts).
+   * Contact channels — real values supplied by the owner, baked in as
+   * defaults so they work in every environment; env vars can override.
+   * No phone by design: the phone channel simply doesn't render
+   * (see src/lib/contacts.ts).
    */
   contacts: {
     phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? "",
-    telegramUrl: process.env.NEXT_PUBLIC_TELEGRAM_URL ?? "",
-    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "",
+    telegramUrl: process.env.NEXT_PUBLIC_TELEGRAM_URL ?? "https://t.me/barsushe",
+    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@kiyo.uz",
   },
 
   /** Supported website locales and the fallback used when detection fails. */
   locales,
   defaultLocale: "ru" as Locale,
 
-  /**
-   * Social profiles — none exist yet for the temporary brand. Add entries
-   * as { name, url } and the footer will render them automatically.
-   */
-  socialLinks: [] as { name: string; url: string }[],
+  /** Public profiles (used in Organization structured data as sameAs). */
+  socialLinks: [{ name: "Telegram", url: "https://t.me/barsushe" }] as {
+    name: string;
+    url: string;
+  }[],
 
   seo: {
-    /** Site URL without trailing slash; overridden by NEXT_PUBLIC_SITE_URL. */
-    siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
+    /**
+     * Canonical production URL; NEXT_PUBLIC_SITE_URL overrides (local dev
+     * sets http://localhost:3000 via .env.local).
+     */
+    siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://kiyo.uz").replace(/\/$/, ""),
     siteName: "kiyo",
     /** Used when a page does not define its own metadata. */
     defaultTitle: "kiyo — self-service ordering kiosks for Uzbekistan",
