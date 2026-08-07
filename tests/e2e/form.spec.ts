@@ -16,7 +16,7 @@ test("lead form submits successfully in mock mode", async ({ page }) => {
   await page.getByLabel(/Ваше имя/).fill("Тестовый Гость");
   await page.getByLabel(/Название заведения/).fill("Кофейня Тест");
   await page.getByLabel(/Номер телефона/).fill("+998 90 123 45 67");
-  await page.getByLabel(/Сообщение/).fill("Две точки, iiko уже используем.");
+  await page.getByLabel(/Сообщение/).fill("Две точки, касса уже есть.");
   await page.getByRole("checkbox").check();
 
   // Respect the minimum form-completion time (anti-bot).

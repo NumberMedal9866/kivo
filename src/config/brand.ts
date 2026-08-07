@@ -23,7 +23,7 @@ export const brand = {
   /** English master tagline; localized variants live in messages/<locale>.json. */
   tagline: "Self-ordering made simple",
   description:
-    "Self-service ordering kiosks for restaurants, coffee shops and quick-service businesses in Uzbekistan — hardware, software, installation, iiko and payment integration, training and support.",
+    "Self-service ordering kiosks for restaurants, coffee shops and quick-service businesses in Uzbekistan — hardware, software, installation, payment integration, training and support. POS integration is agreed per venue.",
   /** Text used by the wordmark component. */
   logoText: "kiyo",
   /** Single-letter monogram used on the kiosk mockup, favicon and watermarks. */
@@ -61,7 +61,7 @@ export const brand = {
     /** Used when a page does not define its own metadata. */
     defaultTitle: "kiyo — self-service ordering kiosks for Uzbekistan",
     defaultDescription:
-      "Complete self-ordering kiosk solution for restaurants and cafés in Uzbekistan: hardware, software, installation, iiko POS integration, local payment systems, training and support.",
+      "Complete self-ordering kiosk solution for restaurants and cafés in Uzbekistan: hardware, software, installation, local payment systems, training and support. POS integration is agreed individually.",
     twitterCard: "summary_large_image" as const,
   },
 
@@ -75,11 +75,11 @@ export const brand = {
   /**
    * Integrations shown on the site. `confirmed` distinguishes the supported
    * stack from anything discussed individually after a technical review.
-   * Logo files are expected in public/brands/integrations/<id>.svg —
-   * see docs/INTEGRATION_LOGO_GUIDE.md.
+   * Logo files are expected in public/brands/integrations/<id>.svg|png —
+   * see docs/INTEGRATION_LOGO_GUIDE.md. No POS system is listed on purpose:
+   * POS integration is agreed per venue at the technical review.
    */
   integrations: [
-    { id: "iiko", name: "iiko", kind: "pos", confirmed: true },
     { id: "click", name: "Click", kind: "payment", confirmed: true },
     { id: "uzum", name: "Uzum", kind: "payment", confirmed: true },
     { id: "payme", name: "Payme", kind: "payment", confirmed: true },

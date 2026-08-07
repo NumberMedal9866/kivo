@@ -1,7 +1,8 @@
 # Integration logo guide
 
-The integration strip and integrations sections display iiko, Click, Uzum,
-Payme, HUMO, Uzcard, Visa and Mastercard. Until official artwork is added,
+The integrations sections display Click, Uzum, Payme, HUMO, Uzcard, Visa
+and Mastercard. No POS system is listed on purpose — POS integration is
+agreed per venue at the technical review. Until official artwork is added,
 the site renders neutral text placeholders.
 
 The authoritative instructions (filenames, formats, padding, legal rules)

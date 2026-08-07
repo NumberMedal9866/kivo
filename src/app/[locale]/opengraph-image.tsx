@@ -72,7 +72,7 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
           }}
         >
           <div style={{ width: 52, height: 6, background: "#315CFF", borderRadius: 3 }} />
-          {brand.seo.siteName} · iiko · Click · Payme · Uzum · HUMO · Uzcard
+          {brand.seo.siteName} · Click · Payme · Uzum · HUMO · Uzcard
         </div>
       </div>
     </div>,

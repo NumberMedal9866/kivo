@@ -8,8 +8,7 @@ import { cn } from "@/lib/utils";
  * Official integration logo. Looks for <id>.svg first, then <id>.png in
  * public/brands/integrations (see the README there). Official artwork is
  * shown as-is — never recolored, distorted or animated. When no official
- * file exists (currently: iiko — see iiko.MISSING.md) a neutral wordmark
- * placeholder is rendered instead.
+ * file exists, a neutral wordmark placeholder is rendered instead.
  *
  * `tile` wraps the logo in a consistent chip. Some official files are the
  * brands' white-on-dark variants (wordmark filled white) — those get a

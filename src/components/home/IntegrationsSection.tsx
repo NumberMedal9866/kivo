@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { brand } from "@/config/brand";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
-import { hasIntegrationLogo, IntegrationLogo } from "@/components/home/IntegrationLogo";
+import { IntegrationLogo } from "@/components/home/IntegrationLogo";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
@@ -23,7 +23,7 @@ export async function IntegrationsSection() {
         aria-hidden="true"
         className="watermark-text pointer-events-none absolute -top-4 right-0 hidden select-none text-[10rem] font-extrabold leading-none tracking-tighter lg:block"
       >
-        iiko
+        POS
       </p>
       <Container className="relative">
         <p className="mb-3 text-[0.78rem] font-extrabold uppercase tracking-[0.18em] text-brand-bright">
@@ -83,33 +83,27 @@ export async function IntegrationsSection() {
         </Reveal>
 
         <div className="mt-6 grid gap-4 lg:grid-cols-[1.1fr_1.3fr_1fr]">
-          {/* iiko card */}
+          {/* POS card — no vendor named on purpose: the POS connection is
+              scoped per venue at the technical review */}
           <Reveal>
             <div className="h-full rounded-card border border-white/10 bg-white/[0.03] p-7">
-              {/* Skip the text fallback here — the heading already says iiko */}
-              {hasIntegrationLogo("iiko") ? (
-                <div className="flex h-10 items-center text-white">
-                  <IntegrationLogo integration={brand.integrations[0]} tile />
-                </div>
-              ) : (
-                <span
-                  aria-hidden="true"
-                  className="grid h-11 w-11 place-items-center rounded-xl bg-white/8 text-white/70"
+              <span
+                aria-hidden="true"
+                className="grid h-11 w-11 place-items-center rounded-xl bg-white/8 text-white/70"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.7"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.7"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <rect x="4" y="4" width="16" height="16" rx="3" />
-                    <path d="M8 12h8M8 16h5M8 8h.01" />
-                  </svg>
-                </span>
-              )}
+                  <rect x="4" y="4" width="16" height="16" rx="3" />
+                  <path d="M8 12h8M8 16h5M8 8h.01" />
+                </svg>
+              </span>
               <h3 className="mt-3 text-lg font-extrabold">{t("posTitle")}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/55">{t("posText")}</p>
             </div>
@@ -119,17 +113,15 @@ export async function IntegrationsSection() {
           <Reveal delay={70}>
             <div className="h-full rounded-card border border-white/10 bg-white/[0.03] p-7">
               <ul className="flex flex-wrap gap-2">
-                {brand.integrations
-                  .filter((i) => i.kind !== "pos")
-                  .map((integration) => (
-                    <li key={integration.id}>
-                      <IntegrationLogo
-                        integration={integration}
-                        tile
-                        className="h-11 min-w-19 px-3"
-                      />
-                    </li>
-                  ))}
+                {brand.integrations.map((integration) => (
+                  <li key={integration.id}>
+                    <IntegrationLogo
+                      integration={integration}
+                      tile
+                      className="h-11 min-w-19 px-3"
+                    />
+                  </li>
+                ))}
               </ul>
               <h3 className="mt-4 text-lg font-extrabold">{t("paymentsTitle")}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/55">{t("paymentsText")}</p>

@@ -9,7 +9,7 @@ const SERVICE_KEYS = [
   "software",
   "installation",
   "menu",
-  "iiko",
+  "pos",
   "payments",
   "branding",
   "languages",

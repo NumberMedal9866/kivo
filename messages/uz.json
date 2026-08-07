@@ -39,7 +39,7 @@
   "hero": {
     "badge": "O‘z-o‘ziga xizmat kiosklari · O‘zbekiston",
     "title": "Buyurtmani kiosk oladi. Jamoa — tayyorlaydi.",
-    "subtitle": "kiyo kioskni kalit topshirish sharti bilan ishga tushiradi: iiko, to‘lov, menyu, o‘qitish va qo‘llab-quvvatlash.",
+    "subtitle": "kiyo kioskni kalit topshirish sharti bilan ishga tushiradi: to‘lov, menyu, o‘qitish va qo‘llab-quvvatlash.",
     "ctaPrimary": "Loyihani muhokama qilish",
     "ctaSecondary": "Demoni sinab ko‘rish",
     "cardTitle": "№214 to‘landi",
@@ -120,7 +120,7 @@
       "lang": "Interfeys 3+ tilda",
       "errors": "Mehmon buyurtmani o‘zi tasdiqlaydi — xato kamroq",
       "upsell": "Har buyurtmada takliflar",
-      "stoplist": "Stop-listlar iiko bilan sinxron",
+      "stoplist": "Menyu va stop-listlar markazlashgan holda yangilanadi",
       "menu": "Butun menyu — foto va modifikatorlar bilan",
       "same": "Har bir nuqtada bir xil xizmat"
     },
@@ -129,14 +129,14 @@
   "integrations": {
     "kicker": "Integratsiyalar",
     "heading": "Siz ishlayotgan tizimlarga mos tushadi",
-    "intro": "Buyurtmalar iiko’ga boradi, to‘lov — O‘zbekistonda odatiy servislar orqali.",
+    "intro": "To‘lov — O‘zbekistonda odatiy servislar orqali; kassa tizimingizga ulanish alohida kelishiladi.",
     "flowCustomer": "Mehmon",
     "flowKiosk": "kiyo kioski",
-    "flowPos": "iiko",
+    "flowPos": "POS",
     "flowKitchen": "Oshxona",
     "flowPayment": "To‘lov",
-    "posTitle": "iiko POS",
-    "posText": "Menyu, modifikatorlar va stop-listlar sinxronlanadi. Buyurtmalar oshxonaning odatiy jarayoniga tushadi.",
+    "posTitle": "Kassa (POS) integratsiyasi",
+    "posText": "Kassa tizimingizga ulanish har bir muassasa uchun alohida tanlanadi — integratsiya formati va hajmi texnik auditda kelishiladi.",
     "paymentsTitle": "To‘lov",
     "paymentsText": "To‘lov qabul qilish har bir zavedeniya konfiguratsiyasiga moslanadi.",
     "customTitle": "Yana integratsiya kerakmi?",
@@ -152,9 +152,9 @@
       "assessment": {
         "num": "01",
         "title": "Audit",
-        "short": "Format, iiko, to‘lovlar, maqsadlar",
+        "short": "Format, kassa, to‘lovlar, maqsadlar",
         "d1": "Zal formati va buyurtma stsenariysi",
-        "d2": "iiko konfiguratsiyasi va to‘lov vositalari",
+        "d2": "Kassa tizimi va to‘lov vositalari",
         "d3": "Maqsadlar: chek, tezlik, yuklama"
       },
       "setup": {
@@ -163,7 +163,7 @@
         "short": "Menyu, brending, tillar, integratsiyalar",
         "d1": "Menyuni foto va modifikatorlar bilan ko‘chirish",
         "d2": "Interfeys sizning brendingizda",
-        "d3": "iiko va to‘lov tizimlarini ulash"
+        "d3": "To‘lov tizimlari va kelishilgan integratsiyalarni ulash"
       },
       "installation": {
         "num": "03",
@@ -267,9 +267,9 @@
         "title": "Menyu ko‘chirish",
         "text": "Foto, modifikatorlar, kombolar"
       },
-      "iiko": {
-        "title": "iiko integratsiyasi",
-        "text": "Buyurtmalar — tizimingizga"
+      "pos": {
+        "title": "Kassa integratsiyasi",
+        "text": "Format — auditdan keyin"
       },
       "payments": {
         "title": "To‘lov tizimlari",
@@ -315,8 +315,8 @@
         "a": "Fastfud, qahvaxona, novvoyxona, fud-kort va mehmon o‘zi buyurtma berib, to‘lab, olib ketadigan har qanday zavedeniyaga."
       },
       "q2": {
-        "q": "iiko qo‘llab-quvvatlanadimi?",
-        "a": "Ha, bu yechimning o‘zagi: kioskdan buyurtmalar iiko jarayoningizga tushadi, menyu va stop-listlar sinxron. Konfiguratsiyani auditda tasdiqlaymiz."
+        "q": "Kassa tizimi bilan integratsiya qilasizmi?",
+        "a": "POS bilan ulanish alohida kelishiladi: texnik auditda tizimingizni ko‘rib, integratsiya formati va hajmini kelishamiz."
       },
       "q3": {
         "q": "Qaysi to‘lov usullari bor?",
@@ -336,7 +336,7 @@
       },
       "q7": {
         "q": "Menyu ko‘chirish xizmatga kiradimi?",
-        "a": "Ha. Kategoriyalar, foto, modifikatorlar, kombolar va iiko bilan sinxronizatsiya — joriy etishning bir qismi."
+        "a": "Ha. Kategoriyalar, foto, modifikatorlar va kombolar — joriy etishning bir qismi."
       },
       "q8": {
         "q": "Kioskni kim o‘rnatadi?",
@@ -364,7 +364,7 @@
       },
       "q14": {
         "q": "Nimadan boshlaymiz?",
-        "a": "Raqamingizni qoldiring yoki Telegramga yozing. Format va iiko haqida bir nechta savol — va taklif tayyorlaymiz."
+        "a": "Raqamingizni qoldiring yoki Telegramga yozing. Format va kassangiz haqida bir nechta savol — va taklif tayyorlaymiz."
       }
     }
   },
@@ -405,7 +405,7 @@
     }
   },
   "footer": {
-    "description": "Restoran va qahvaxonalar uchun o‘z-o‘ziga xizmat kiosklari: uskuna, dastur, iiko, to‘lov, o‘rnatish va qo‘llab-quvvatlash — kalit topshirish sharti bilan.",
+    "description": "Restoran va qahvaxonalar uchun o‘z-o‘ziga xizmat kiosklari: uskuna, dastur, to‘lov, o‘rnatish va qo‘llab-quvvatlash — kalit topshirish sharti bilan.",
     "colProduct": "Mahsulot",
     "colCompany": "Ma’lumot",
     "colContact": "Kontaktlar",
@@ -413,7 +413,7 @@
     "privacy": "Maxfiylik",
     "builtFor": "O‘zbekiston biznesi uchun yaratilgan",
     "copyright": "© {year} {brand}. Barcha huquqlar himoyalangan.",
-    "trademarks": "iiko, Click, Uzum, Payme, HUMO, Uzcard, Visa va Mastercard — o‘z egalarining tovar belgilari."
+    "trademarks": "Click, Uzum, Payme, HUMO, Uzcard, Visa va Mastercard — o‘z egalarining tovar belgilari."
   },
   "contactChannels": {
     "telegram": "Telegram",
@@ -436,15 +436,15 @@
   "meta": {
     "home": {
       "title": "O‘zbekistonda restoranlar uchun o‘z-o‘ziga xizmat kiosklari",
-      "description": "kiyo — O‘zbekistonda restoranlar, fastfud va qahvaxonalar uchun o‘z-o‘ziga buyurtma terminallari: uskuna, dastur, o‘rnatish, iiko integratsiyasi, Click, Payme, Uzum, HUMO, Uzcard, Visa va Mastercard to‘lovlari, o‘qitish va qo‘llab-quvvatlash. Ijara mavjud."
+      "description": "kiyo — O‘zbekistonda restoranlar, fastfud va qahvaxonalar uchun o‘z-o‘ziga buyurtma terminallari: uskuna, dastur, o‘rnatish, Click, Payme, Uzum, HUMO, Uzcard, Visa va Mastercard to‘lovlari, o‘qitish va qo‘llab-quvvatlash. Ijara mavjud."
     },
     "product": {
       "title": "Kiosk — uskuna, interfeys va xizmat",
       "description": "Kafe va restoranlar uchun o‘z-o‘ziga xizmat terminali: sensorli buyurtma, brendlangan ko‘p tilli interfeys, to‘lov terminali, yetkazib berish, o‘rnatish, o‘qitish va O‘zbekistonda ijara."
     },
     "integrations": {
-      "title": "iiko va to‘lov tizimlari bilan integratsiya",
-      "description": "kiyo kioski iiko POS va O‘zbekiston to‘lov tizimlari — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — bilan qanday integratsiyalashadi, individual integratsiyalar qanday buyurtma qilinadi."
+      "title": "To‘lov tizimlari va kassaga ulanish",
+      "description": "kiyo kioski to‘lovlarni qanday qabul qiladi — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — va kassa tizimingiz bilan integratsiya qanday kelishiladi."
     },
     "implementation": {
       "title": "Joriy etish — baholashdan ishga tushirishgacha",
@@ -481,7 +481,7 @@
     },
     "service": {
       "title": "Yetkazamiz, o‘rnatamiz va kuzatib boramiz",
-      "text": "kiyo kioskni yetkazadi, nuqtada o‘rnatadi, iiko va to‘lovlarni ulaydi, jamoani o‘qitadi va aloqada qoladi. Ijara tufayli uskunani sotib olmasdan boshlash mumkin."
+      "text": "kiyo kioskni yetkazadi, nuqtada o‘rnatadi, to‘lov va kelishilgan integratsiyalarni ulaydi, jamoani o‘qitadi va aloqada qoladi. Ijara tufayli uskunani sotib olmasdan boshlash mumkin."
     },
     "specs": {
       "title": "Texnik xususiyatlar",
@@ -501,11 +501,11 @@
   "integrationsPage": {
     "kicker": "Integratsiyalar",
     "title": "Biznesingiz ishlayotgan tizimlarga ulanadi",
-    "lead": "Buyurtmalar iiko’ga boradi, to‘lov mehmonlarga tanish tizimlar orqali o‘tadi.",
-    "iiko": {
-      "title": "iiko POS integratsiyasi",
-      "text": "iiko — asosiy integratsiya. Kiosk buyurtmalarni amaldagi jarayoningizga uzatadi — oshxona va kassa odatdagidek ishlaydi.",
-      "p1": "Kiosk buyurtmalari — iiko jarayoningizda",
+    "lead": "To‘lov mehmonlarga tanish tizimlar orqali o‘tadi; kassangizga ulanishni alohida kelishamiz.",
+    "pos": {
+      "title": "Kassa tizimi bilan integratsiya",
+      "text": "POS bilan integratsiya muassasaga qarab tanlanadi: texnik auditda tizimingizni ko‘rib, buyurtma va menyu almashinuvi formatini kelishamiz.",
+      "p1": "Integratsiya formati — kassangiz va jarayonlaringizga mos",
       "p2": "Pozitsiyalar, narxlar va modifikatorlar sinxron",
       "p3": "Stop-listlar tugagan taomni buyurtma qildirmaydi",
       "p4": "Markazlashgan menyu bilan bir nechta filial"
@@ -527,7 +527,7 @@
         "text": "Karta yoki QR — sozlangan provayder orqali."
       },
       "s3": {
-        "title": "Buyurtma iiko’ga keladi",
+        "title": "Buyurtma oshxonaga boradi",
         "text": "Oshxona uni odatiy jarayonda ko‘radi."
       },
       "s4": {
@@ -557,7 +557,7 @@
     "kicker": "Joriy etish",
     "title": "Birinchi qo‘ng‘iroqdan ishlayotgan kioskgacha boshqariladigan yo‘l",
     "lead": "Joriy etish — bu xizmat, jamoangiz uchun uy vazifasi emas.",
-    "note": "Bosqichlar davomiyligi menyu hajmi, nuqtalar soni va iiko konfiguratsiyasiga bog‘liq. Real jadval — auditdan keyingi taklifning bir qismi.",
+    "note": "Bosqichlar davomiyligi menyu hajmi, nuqtalar soni va kassa konfiguratsiyangizga bog‘liq. Real jadval — auditdan keyingi taklifning bir qismi.",
     "stages": {
       "discovery": {
         "title": "Tanishuv",
@@ -565,7 +565,7 @@
       },
       "review": {
         "title": "Texnik audit",
-        "text": "iiko konfiguratsiyasi, to‘lov sxemasi va infratuzilmani ko‘rib chiqamiz."
+        "text": "Kassa tizimingiz, to‘lov sxemasi va infratuzilmani ko‘rib chiqamiz."
       },
       "menu": {
         "title": "Menyu tayyorlash",
@@ -585,7 +585,7 @@
       },
       "testing": {
         "title": "To‘liq sinov",
-        "text": "Joyida real stsenariylar: menyu, to‘lov, cheklar, iiko’ga uzatish."
+        "text": "Joyida real stsenariylar: menyu, to‘lov, cheklar, buyurtmaning oshxonaga uzatilishi."
       },
       "training": {
         "title": "Xodimlarni o‘qitish",
@@ -618,7 +618,7 @@
     "prepareTitle": "Birinchi suhbatga nima tayyorlash foydali",
     "prepare": {
       "i1": "Biznes formati va nuqtalar soni",
-      "i2": "iiko ishlatasizmi (va taxminan qanday)",
+      "i2": "Qaysi kassa tizimidan foydalanasiz (bo‘lsa)",
       "i3": "Menyuning taxminiy hajmi",
       "i4": "Hozir qanday to‘lov usullarini qabul qilasiz",
       "i5": "O‘z-o‘ziga xizmat orqali nimani o‘zgartirmoqchisiz",

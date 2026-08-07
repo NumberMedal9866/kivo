@@ -56,15 +56,29 @@ export default async function IntegrationsPage({ params }: Props) {
         breadcrumbLabel={tNav("integrations")}
       />
 
-      {/* iiko */}
+      {/* POS — no vendor named: the connection is scoped per venue */}
       <section className="section-pad">
         <Container className="grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <div className="flex h-10 items-center">
-              <IntegrationLogo integration={brand.integrations[0]} />
-            </div>
-            <h2 className="mt-4 text-title text-ink">{t("iiko.title")}</h2>
-            <p className="mt-4 leading-relaxed text-ink-soft">{t("iiko.text")}</p>
+            <span
+              aria-hidden="true"
+              className="grid h-11 w-11 place-items-center rounded-xl bg-brand-soft text-brand dark:text-brand-bright"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="3" />
+                <path d="M8 12h8M8 16h5M8 8h.01" />
+              </svg>
+            </span>
+            <h2 className="mt-4 text-title text-ink">{t("pos.title")}</h2>
+            <p className="mt-4 leading-relaxed text-ink-soft">{t("pos.text")}</p>
             <ul className="mt-6 space-y-3">
               {(["p1", "p2", "p3", "p4"] as const).map((key) => (
                 <li key={key} className="flex items-start gap-3 text-[0.95rem] text-ink">
@@ -82,7 +96,7 @@ export default async function IntegrationsPage({ params }: Props) {
                       />
                     </svg>
                   </span>
-                  {t(`iiko.${key}`)}
+                  {t(`pos.${key}`)}
                 </li>
               ))}
             </ul>

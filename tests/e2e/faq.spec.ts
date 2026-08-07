@@ -21,6 +21,6 @@ test("FAQ accordion works with the keyboard", async ({ page }) => {
 test("FAQ answers are present in server HTML", async ({ request }) => {
   const res = await request.get("/en");
   const html = await res.text();
-  expect(html).toContain("Is iiko supported?");
+  expect(html).toContain("Do you integrate with my POS?");
   expect(html).toContain("Rental with a low initial payment");
 });

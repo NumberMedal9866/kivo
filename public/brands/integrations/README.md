@@ -6,22 +6,23 @@ for that brand — nothing breaks when files are missing.
 
 ## Required filenames
 
-| Brand      | Filename         |
-| ---------- | ---------------- |
-| iiko       | `iiko.svg`       |
-| Click      | `click.svg`      |
-| Uzum       | `uzum.svg`       |
-| Payme      | `payme.svg`      |
-| HUMO       | `humo.svg`       |
-| Uzcard     | `uzcard.svg`     |
-| Visa       | `visa.svg`       |
-| Mastercard | `mastercard.svg` |
+| Brand      | Filename                  |
+| ---------- | ------------------------- |
+| Click      | `click.svg`               |
+| Uzum       | `uzum.png`                |
+| Payme      | `payme.png`               |
+| HUMO       | `humo.png`                |
+| Uzcard     | `uzcard.png` <sup>1</sup> |
+| Visa       | `visa.svg`                |
+| Mastercard | `mastercard.svg`          |
+
+<sup>1</sup> Official wordmark strip cropped (glyphs untouched) from the
+vertical lockup supplied by the site owner.
 
 ## File requirements
 
-- **Format:** SVG strongly preferred (crisp at any size). If only raster is
-  available, use a transparent PNG at least 240 px wide and change the
-  extension check in `src/components/home/IntegrationLogo.tsx`.
+- **Format:** SVG preferred (crisp at any size); transparent PNG at least
+  240 px wide also works — `IntegrationLogo.tsx` checks `.svg` then `.png`.
 - **Padding:** trim the artwork to its bounding box; the layout adds its own
   clear space. Do not bake extra margins into the file.
 - **Color:** use the brand's official full-color or monochrome variant as
