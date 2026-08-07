@@ -235,9 +235,12 @@ body {
   html {
     scroll-behavior: auto;
   }
-  *,
-  *::before,
-  *::after {
+  /* The .pk-motion scope (peak-hour compare demo) is exempt: its diagram
+     IS the content, and its motion is gentle constant-velocity gliding.
+     Everything else honours the OS setting. */
+  *:not(.pk-motion, .pk-motion *),
+  *:not(.pk-motion, .pk-motion *)::before,
+  *:not(.pk-motion, .pk-motion *)::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

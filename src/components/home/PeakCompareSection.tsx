@@ -33,35 +33,27 @@ export function PeakCompareSection() {
 
   const sims = useMemo(() => ({ cash: buildCashierSim("pkc"), kiosk: buildKioskSim("pkk") }), []);
 
-  const mounted = useMounted();
-  const reduced = usePrefersReducedMotion();
-  const animated = mounted && !reduced;
+  // The scenes animate for everyone once hydrated: this diagram is the
+  // section's whole argument, its motion is gentle constant-velocity
+  // gliding (no flashing, zooming or parallax), and the OS reduced-motion
+  // flag is deliberately not consulted — the site owner wants the demo
+  // live. The `.pk-motion` scope in globals.css exempts it from the global
+  // reduced-motion kill rule for the same reason.
+  const animated = useMounted();
 
   const { ref: viewRef, visible } = useInView<HTMLDivElement>();
   const live = useSimClock(sims, SPEED, animated && visible, animated);
-
-  // Reduced motion: steady-state hourly throughput of each model.
-  const perHour = {
-    cash: Math.round(sims.cash.ratePerMinute * 60),
-    kiosk: Math.round(sims.kiosk.ratePerMinute * 60),
-  };
-  const cashShown = reduced ? perHour.cash : live.cash;
-  const kioskShown = reduced ? perHour.kiosk : live.kiosk;
 
   const nf = useMemo(
     () => new Intl.NumberFormat(locale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }),
     [locale],
   );
-  const ratio = reduced
-    ? nf.format(perHour.kiosk / perHour.cash)
-    : live.cash >= 4
-      ? nf.format(live.kiosk / live.cash)
-      : null;
+  const ratio = live.cash >= 4 ? nf.format(live.kiosk / live.cash) : null;
   // The ×2.5 factor lives inside the translated label (formatting it with
   // Intl at render time hydration-mismatches on locales where server and
   // browser ICU disagree). Keep the strings in sync with SPEED.
   const timelapse = t("timelapse");
-  const servedLabel = reduced ? t("servedPerHour") : t("servedLabel");
+  const servedLabel = t("servedLabel");
 
   // Stable label objects so counter ticks don't re-render the scene trees
   // (the scenes are memoized; an inline object would defeat that).
@@ -84,23 +76,25 @@ export function PeakCompareSection() {
           </p>
         </div>
 
-        <div ref={viewRef} className={cn("relative mt-10", animated && !visible && "pk-paused")}>
+        <div
+          ref={viewRef}
+          className={cn("pk-motion relative mt-10", animated && !visible && "pk-paused")}
+        >
           <div className="grid gap-4 md:grid-cols-2 md:gap-5">
             <Panel
               tone="before"
               title={t("beforeTitle")}
               tag={t("beforeTag")}
-              count={cashShown}
-              approx={reduced}
+              count={live.cash}
               servedLabel={servedLabel}
               alt={t("beforeAlt")}
               badge={
                 <span className="inline-flex shrink-0 items-center gap-2 rounded-full border border-line bg-bg px-3.5 py-1.5 text-xs font-bold text-ink-soft">
                   <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-amber" />
-                  {t("queueNow")}: {reduced ? sims.cash.queueAt!(sims.cash.snapshotT) : live.queue}
+                  {t("queueNow")}: {live.queue}
                 </span>
               }
-              timelapse={reduced ? null : timelapse}
+              timelapse={timelapse}
             >
               <CashierScene sim={sims.cash} speed={SPEED} animated={animated} labels={cashLabels} />
             </Panel>
@@ -109,8 +103,7 @@ export function PeakCompareSection() {
               tone="after"
               title={t("afterTitle")}
               tag={t("afterTag")}
-              count={kioskShown}
-              approx={reduced}
+              count={live.kiosk}
               servedLabel={servedLabel}
               alt={t("afterAlt")}
               badge={
@@ -122,7 +115,7 @@ export function PeakCompareSection() {
                   {t("noQueue")}
                 </span>
               }
-              timelapse={reduced ? null : timelapse}
+              timelapse={timelapse}
             >
               <KioskScene sim={sims.kiosk} speed={SPEED} animated={animated} labels={kioskLabels} />
             </Panel>
@@ -177,7 +170,6 @@ function Panel({
   title,
   tag,
   count,
-  approx,
   servedLabel,
   badge,
   alt,
@@ -188,11 +180,10 @@ function Panel({
   title: string;
   tag: string;
   count: number;
-  approx: boolean;
   servedLabel: string;
   badge: ReactNode;
   alt: string;
-  timelapse: string | null;
+  timelapse: string;
   children: ReactNode;
 }) {
   return (
@@ -220,11 +211,6 @@ function Panel({
             <span className="text-xs font-bold text-ink-soft">{tag}</span>
           </div>
           <div className="mt-3.5 flex items-baseline gap-1">
-            {approx && (
-              <span aria-hidden="true" className="text-3xl font-black text-ink-soft sm:text-4xl">
-                ≈
-              </span>
-            )}
             <Odometer
               value={count}
               className={cn(
@@ -287,20 +273,6 @@ function useMounted() {
   return useSyncExternalStore(
     emptySubscribe,
     () => true,
-    () => false,
-  );
-}
-
-const REDUCED_MQ = "(prefers-reduced-motion: reduce)";
-
-function usePrefersReducedMotion() {
-  return useSyncExternalStore(
-    (onChange) => {
-      const mq = window.matchMedia(REDUCED_MQ);
-      mq.addEventListener("change", onChange);
-      return () => mq.removeEventListener("change", onChange);
-    },
-    () => window.matchMedia(REDUCED_MQ).matches,
     () => false,
   );
 }
