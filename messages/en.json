@@ -42,38 +42,52 @@
     "subtitle": "kiyo delivers a turnkey kiosk: iiko, payments, menu, training and support.",
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "Try the demo",
-    "worksWith": "Works with",
     "cardTitle": "#214 paid",
     "cardSubtitle": "Sent to the kitchen",
     "upsellChip": "Add a dessert?",
     "kioskCaption": "Illustration — final hardware may differ"
   },
-  "trust": {
-    "heading": "Works with",
-    "note": "Third-party names and marks belong to their respective owners."
-  },
   "switch": {
     "kicker": "Before / after",
     "heading": "One rush hour, two scenarios",
-    "beforeLabel": "Without a kiosk",
-    "afterLabel": "With kiyo",
-    "before": {
-      "i1": "One till — one queue",
-      "i2": "The cashier types, guests wait",
-      "i3": "Upselling depends on luck",
-      "i4": "Orders taken by ear"
+    "sub": "On the left, a single till takes every order. On the right — three kiyo kiosks. Same rules in both rooms: guests walk in, order, pick up and sit down. Watch the counter.",
+    "beforeTitle": "Without a kiosk",
+    "beforeTag": "1 till",
+    "afterTitle": "With kiyo",
+    "afterTag": "3 kiosks",
+    "servedLabel": "guests served",
+    "servedPerHour": "guests per hour — model",
+    "queueNow": "in line",
+    "noQueue": "no line",
+    "timelapse": "time-lapse ×2.5",
+    "ratioLabel": "gap on the board",
+    "beforeAlt": "Floor plan: a single till takes orders one by one and a line builds up in front of it.",
+    "afterAlt": "Floor plan: three kiosks take orders in parallel and guests flow through with no line.",
+    "scene": {
+      "menu": "MENU",
+      "orderHere": "ORDER HERE",
+      "pickup": "PICK UP",
+      "kiosk": "KIOSK"
     },
-    "after": {
-      "i1": "Guests order in parallel",
-      "i2": "The team cooks and hands out",
-      "i3": "Suggestions in every order",
-      "i4": "Orders confirmed on screen"
+    "benefits": {
+      "b1": {
+        "title": "Orders in parallel",
+        "text": "Three kiosks take orders at the same time — a line simply never forms."
+      },
+      "b2": {
+        "title": "The team stays in the kitchen",
+        "text": "Routine order entry moves to the kiosk. People cook, hand out and help guests."
+      },
+      "b3": {
+        "title": "Suggestions in every order",
+        "text": "The kiosk tactfully offers add-ons — consistently, not when someone remembers."
+      },
+      "b4": {
+        "title": "No mistakes taken by ear",
+        "text": "Guests build the order themselves and confirm it on screen."
+      }
     },
-    "sceneCounter": "Till",
-    "sceneKiosks": "Kiosks",
-    "sceneKitchen": "Kitchen",
-    "sceneEntrance": "Entrance",
-    "caption": "Kiosks don't replace people — they take over repetitive order entry so the team can focus on guests and food."
+    "caption": "The animation is a simplified model of a dining room at peak hour, not a measurement of any specific venue. Industry benchmarks are in the “Industry data” section."
   },
   "demo": {
     "kicker": "Live demo",
@@ -176,10 +190,22 @@
     "heading": "Start without buying the hardware",
     "intro": "Kiosk, installation and support — as a service with a low initial payment.",
     "points": {
-      "p1": { "title": "kiyo hardware", "text": "We deliver and install it ourselves" },
-      "p2": { "title": "Low entry", "text": "No heavy upfront investment" },
-      "p3": { "title": "Support included", "text": "Service, warranty, updates" },
-      "p4": { "title": "Flexible scale", "text": "From one venue to a chain" }
+      "p1": {
+        "title": "kiyo hardware",
+        "text": "We deliver and install it ourselves"
+      },
+      "p2": {
+        "title": "Low entry",
+        "text": "No heavy upfront investment"
+      },
+      "p3": {
+        "title": "Support included",
+        "text": "Service, warranty, updates"
+      },
+      "p4": {
+        "title": "Flexible scale",
+        "text": "From one venue to a chain"
+      }
     },
     "note": "Exact terms are calculated individually — for your format and size.",
     "cta": "Discuss the terms"
@@ -226,19 +252,58 @@
     "heading": "Everything included",
     "intro": "One agreement — the whole stack, from hardware to support.",
     "items": {
-      "hardware": { "title": "Hardware", "text": "A kiosk ready to work" },
-      "software": { "title": "Software", "text": "The guest ordering interface" },
-      "installation": { "title": "Delivery & mounting", "text": "Installed at your venue" },
-      "menu": { "title": "Menu migration", "text": "Photos, modifiers, combos" },
-      "iiko": { "title": "iiko integration", "text": "Orders into your system" },
-      "payments": { "title": "Payment systems", "text": "Configured per merchant" },
-      "branding": { "title": "Branding", "text": "Your colors and logo" },
-      "languages": { "title": "Languages", "text": "Uzbek, Russian, English+" },
-      "training": { "title": "Training", "text": "Your team, launch-ready" },
-      "warranty": { "title": "Warranty", "text": "On all hardware" },
-      "maintenance": { "title": "Maintenance", "text": "Scheduled service" },
-      "support": { "title": "Support", "text": "Real engineers on call" },
-      "custom": { "title": "Custom integrations", "text": "After a technical review" }
+      "hardware": {
+        "title": "Hardware",
+        "text": "A kiosk ready to work"
+      },
+      "software": {
+        "title": "Software",
+        "text": "The guest ordering interface"
+      },
+      "installation": {
+        "title": "Delivery & mounting",
+        "text": "Installed at your venue"
+      },
+      "menu": {
+        "title": "Menu migration",
+        "text": "Photos, modifiers, combos"
+      },
+      "iiko": {
+        "title": "iiko integration",
+        "text": "Orders into your system"
+      },
+      "payments": {
+        "title": "Payment systems",
+        "text": "Configured per merchant"
+      },
+      "branding": {
+        "title": "Branding",
+        "text": "Your colors and logo"
+      },
+      "languages": {
+        "title": "Languages",
+        "text": "Uzbek, Russian, English+"
+      },
+      "training": {
+        "title": "Training",
+        "text": "Your team, launch-ready"
+      },
+      "warranty": {
+        "title": "Warranty",
+        "text": "On all hardware"
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "text": "Scheduled service"
+      },
+      "support": {
+        "title": "Support",
+        "text": "Real engineers on call"
+      },
+      "custom": {
+        "title": "Custom integrations",
+        "text": "After a technical review"
+      }
     }
   },
   "faq": {

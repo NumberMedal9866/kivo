@@ -42,38 +42,52 @@
     "subtitle": "kiyo kioskni kalit topshirish sharti bilan ishga tushiradi: iiko, to‘lov, menyu, o‘qitish va qo‘llab-quvvatlash.",
     "ctaPrimary": "Loyihani muhokama qilish",
     "ctaSecondary": "Demoni sinab ko‘rish",
-    "worksWith": "Hamkor tizimlar",
     "cardTitle": "№214 to‘landi",
     "cardSubtitle": "Oshxonaga yuborildi",
     "upsellChip": "Desert qo‘shasizmi?",
     "kioskCaption": "Illyustratsiya — yakuniy uskuna farq qilishi mumkin"
   },
-  "trust": {
-    "heading": "Hamkor tizimlar",
-    "note": "Nomlar va tovar belgilari o‘z egalariga tegishli."
-  },
   "switch": {
     "kicker": "Oldin / keyin",
     "heading": "Bitta gavjum soat — ikki xil manzara",
-    "beforeLabel": "Kiosksiz",
-    "afterLabel": "kiyo bilan",
-    "before": {
-      "i1": "Bitta kassa — bitta navbat",
-      "i2": "Kassir teradi, mehmonlar kutadi",
-      "i3": "Qo‘shimcha savdo — omadga bog‘liq",
-      "i4": "Buyurtma og‘zaki qabul qilinadi"
+    "sub": "Chapda buyurtmalarni bitta kassa qabul qiladi. O‘ngda — uchta kiyo kioski. Qoidalar bir xil: mehmonlar kiradi, buyurtma beradi, olib, o‘tiradi. Hisoblagichni kuzating.",
+    "beforeTitle": "Kiosksiz",
+    "beforeTag": "1 kassa",
+    "afterTitle": "kiyo bilan",
+    "afterTag": "3 kiosk",
+    "servedLabel": "mehmonga xizmat ko‘rsatildi",
+    "servedPerHour": "mehmon / soat — model",
+    "queueNow": "navbatda",
+    "noQueue": "navbatsiz",
+    "timelapse": "taymlaps ×2,5",
+    "ratioLabel": "tablodagi farq",
+    "beforeAlt": "Zal sxemasi: bitta kassa buyurtmalarni birma-bir qabul qiladi, kassa oldida navbat yig‘ilib boradi.",
+    "afterAlt": "Zal sxemasi: uchta kiosk buyurtmalarni parallel qabul qiladi, mehmonlar navbatsiz o‘tadi.",
+    "scene": {
+      "menu": "MENYU",
+      "orderHere": "BUYURTMA BERING",
+      "pickup": "OLISH JOYI",
+      "kiosk": "KIOSK"
     },
-    "after": {
-      "i1": "Mehmonlar parallel buyurtma beradi",
-      "i2": "Jamoa tayyorlaydi va topshiradi",
-      "i3": "Har buyurtmada mos takliflar",
-      "i4": "Buyurtma ekranda tasdiqlanadi"
+    "benefits": {
+      "b1": {
+        "title": "Buyurtmalar — parallel",
+        "text": "Uchta kiosk buyurtmalarni bir vaqtda qabul qiladi — navbat shunchaki yig‘ilmaydi."
+      },
+      "b2": {
+        "title": "Jamoa — oshxonada",
+        "text": "Bir xildagi buyurtma kiritish kioskka o‘tadi. Odamlar tayyorlaydi, beradi va mehmonlarga yordamlashadi."
+      },
+      "b3": {
+        "title": "Har buyurtmada tavsiyalar",
+        "text": "Kiosk buyurtmani to‘ldirishni xushmuomala taklif qiladi — omadga emas, tizimga tayanadi."
+      },
+      "b4": {
+        "title": "«Og‘zaki» xatolarsiz",
+        "text": "Mehmon buyurtmani o‘zi yig‘adi va ekranda tasdiqlaydi."
+      }
     },
-    "sceneCounter": "Kassa",
-    "sceneKiosks": "Kiosklar",
-    "sceneKitchen": "Oshxona",
-    "sceneEntrance": "Kirish",
-    "caption": "Kiosklar odamlarning o‘rnini bosmaydi — ular bir xildagi buyurtma kiritishni o‘z zimmasiga oladi."
+    "caption": "Animatsiya — gavjum soatdagi zalning soddalashtirilgan modeli, muayyan muassasa o‘lchovi emas. Samara bo‘yicha soha ko‘rsatkichlari — «Soha ma’lumotlari» blokida."
   },
   "demo": {
     "kicker": "Jonli demo",
@@ -176,10 +190,22 @@
     "heading": "Uskuna sotib olmasdan boshlang",
     "intro": "Kiosk, o‘rnatish va qo‘llab-quvvatlash — past boshlang‘ich to‘lovli xizmat sifatida.",
     "points": {
-      "p1": { "title": "Uskuna — kiyo’dan", "text": "O‘zimiz olib kelamiz va o‘rnatamiz" },
-      "p2": { "title": "Past start", "text": "Boshida katta sarmoya shart emas" },
-      "p3": { "title": "Qo‘llab-quvvatlash ichida", "text": "Servis, kafolat, yangilanishlar" },
-      "p4": { "title": "Moslashuvchan masshtab", "text": "Bitta nuqtadan tarmoqqacha" }
+      "p1": {
+        "title": "Uskuna — kiyo’dan",
+        "text": "O‘zimiz olib kelamiz va o‘rnatamiz"
+      },
+      "p2": {
+        "title": "Past start",
+        "text": "Boshida katta sarmoya shart emas"
+      },
+      "p3": {
+        "title": "Qo‘llab-quvvatlash ichida",
+        "text": "Servis, kafolat, yangilanishlar"
+      },
+      "p4": {
+        "title": "Moslashuvchan masshtab",
+        "text": "Bitta nuqtadan tarmoqqacha"
+      }
     },
     "note": "Aniq shartlarni alohida hisoblaymiz — format va hajmingizga qarab.",
     "cta": "Shartlarni muhokama qilish"
@@ -226,19 +252,58 @@
     "heading": "Hammasi ichida",
     "intro": "Bitta shartnoma — butun tizim: uskunadan qo‘llab-quvvatlashgacha.",
     "items": {
-      "hardware": { "title": "Uskuna", "text": "Ishga tayyor kiosk" },
-      "software": { "title": "Dastur", "text": "Mehmonlar uchun buyurtma interfeysi" },
-      "installation": { "title": "Yetkazish va montaj", "text": "Nuqtangizda o‘rnatamiz" },
-      "menu": { "title": "Menyu ko‘chirish", "text": "Foto, modifikatorlar, kombolar" },
-      "iiko": { "title": "iiko integratsiyasi", "text": "Buyurtmalar — tizimingizga" },
-      "payments": { "title": "To‘lov tizimlari", "text": "Merchantga moslab sozlash" },
-      "branding": { "title": "Brending", "text": "Sizning rang va logotipingiz" },
-      "languages": { "title": "Tillar", "text": "O‘zbek, rus, ingliz+" },
-      "training": { "title": "O‘qitish", "text": "Jamoa ishga tayyor" },
-      "warranty": { "title": "Kafolat", "text": "Barcha uskunaga" },
-      "maintenance": { "title": "Texnik xizmat", "text": "Rejali servis" },
-      "support": { "title": "Qo‘llab-quvvatlash", "text": "Jonli muhandislar aloqada" },
-      "custom": { "title": "Qo‘shimcha integratsiyalar", "text": "Texnik baholashdan keyin" }
+      "hardware": {
+        "title": "Uskuna",
+        "text": "Ishga tayyor kiosk"
+      },
+      "software": {
+        "title": "Dastur",
+        "text": "Mehmonlar uchun buyurtma interfeysi"
+      },
+      "installation": {
+        "title": "Yetkazish va montaj",
+        "text": "Nuqtangizda o‘rnatamiz"
+      },
+      "menu": {
+        "title": "Menyu ko‘chirish",
+        "text": "Foto, modifikatorlar, kombolar"
+      },
+      "iiko": {
+        "title": "iiko integratsiyasi",
+        "text": "Buyurtmalar — tizimingizga"
+      },
+      "payments": {
+        "title": "To‘lov tizimlari",
+        "text": "Merchantga moslab sozlash"
+      },
+      "branding": {
+        "title": "Brending",
+        "text": "Sizning rang va logotipingiz"
+      },
+      "languages": {
+        "title": "Tillar",
+        "text": "O‘zbek, rus, ingliz+"
+      },
+      "training": {
+        "title": "O‘qitish",
+        "text": "Jamoa ishga tayyor"
+      },
+      "warranty": {
+        "title": "Kafolat",
+        "text": "Barcha uskunaga"
+      },
+      "maintenance": {
+        "title": "Texnik xizmat",
+        "text": "Rejali servis"
+      },
+      "support": {
+        "title": "Qo‘llab-quvvatlash",
+        "text": "Jonli muhandislar aloqada"
+      },
+      "custom": {
+        "title": "Qo‘shimcha integratsiyalar",
+        "text": "Texnik baholashdan keyin"
+      }
     }
   },
   "faq": {
@@ -462,8 +527,14 @@
         "title": "To‘lov tasdiqlanadi",
         "text": "Karta yoki QR — sozlangan provayder orqali."
       },
-      "s3": { "title": "Buyurtma iiko’ga keladi", "text": "Oshxona uni odatiy jarayonda ko‘radi." },
-      "s4": { "title": "Mehmon buyurtmani oladi", "text": "Raqam — chekda va ekranda." }
+      "s3": {
+        "title": "Buyurtma iiko’ga keladi",
+        "text": "Oshxona uni odatiy jarayonda ko‘radi."
+      },
+      "s4": {
+        "title": "Mehmon buyurtmani oladi",
+        "text": "Raqam — chekda va ekranda."
+      }
     },
     "sync": {
       "title": "Menyu sinxronizatsiyasi",

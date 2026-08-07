@@ -1,16 +1,14 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import { brand, type Locale } from "@/config/brand";
+import { type Locale } from "@/config/brand";
 import { media } from "@/content/media";
 import { Container } from "@/components/ui/Container";
 import { buttonClasses } from "@/components/ui/Button";
 import { TrackedLink } from "@/components/ui/TrackedLink";
 import { Link } from "@/i18n/navigation";
 import { HeroKiosk } from "@/components/home/HeroKiosk";
-import { IntegrationLogo } from "@/components/home/IntegrationLogo";
 
 export async function Hero() {
   const t = await getTranslations("hero");
-  const tTrust = await getTranslations("trust");
   const locale = (await getLocale()) as Locale;
   const heroAlt = media["hero-kiosk-front"].alt[locale];
 
@@ -58,25 +56,6 @@ export async function Hero() {
           <p className="mt-4 text-center text-[0.68rem] text-white/30">{t("kioskCaption")}</p>
         </div>
       </Container>
-
-      {/* Integration strip */}
-      <div className="border-t border-white/8">
-        <Container className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 py-7 lg:justify-between">
-          <p className="text-[0.72rem] font-extrabold uppercase tracking-[0.2em] text-white/40">
-            {t("worksWith")}
-          </p>
-          <ul
-            className="flex flex-wrap items-center justify-center gap-2.5"
-            aria-label={tTrust("heading")}
-          >
-            {brand.integrations.map((integration) => (
-              <li key={integration.id}>
-                <IntegrationLogo integration={integration} tile />
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </div>
     </section>
   );
 }

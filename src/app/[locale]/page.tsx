@@ -11,7 +11,7 @@ import {
   webSiteJsonLd,
 } from "@/lib/structured-data";
 import { Hero } from "@/components/home/Hero";
-import { SwitchSection } from "@/components/home/SwitchSection";
+import { PeakCompareSection } from "@/components/home/PeakCompareSection";
 import { StatsSection } from "@/components/home/StatsSection";
 import { DemoSection } from "@/components/home/DemoSection";
 import { HowItWorks } from "@/components/home/HowItWorks";
@@ -64,7 +64,7 @@ export default async function HomePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: jsonLdScript(jsonLd) }}
       />
       <Hero />
-      <SwitchSection />
+      <PeakCompareSection />
       <DemoSection />
       <StatsSection />
       <IntegrationsSection />
