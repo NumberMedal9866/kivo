@@ -231,21 +231,11 @@ body {
   border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  /* The .pk-motion scope (peak-hour compare demo) is exempt: its diagram
-     IS the content, and its motion is gentle constant-velocity gliding.
-     Everything else honours the OS setting. */
-  *:not(.pk-motion, .pk-motion *),
-  *:not(.pk-motion, .pk-motion *)::before,
-  *:not(.pk-motion, .pk-motion *)::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
+/* The OS reduced-motion flag is deliberately NOT honoured: the owner wants
+   the site animated for everyone (Windows "animation effects off" is common
+   here and made the whole site look broken/static). All motion on the site
+   is gentle — transitions, reveals, constant-velocity gliding — no flashing
+   or parallax. */
 
 /* --- Section rhythm ------------------------------------------------------ */
 @utility section-pad {

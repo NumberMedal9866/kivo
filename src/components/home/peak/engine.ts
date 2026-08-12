@@ -48,7 +48,7 @@ export type Sim = {
   agentCount: number;
   /** Cashier scene only: how many guests stand in the lane at global sim-time `gt`. */
   queueAt?: (gt: number) => number;
-  /** A representative moment for static (reduced-motion / SSR) snapshots. */
+  /** A representative moment for static (SSR first-paint) snapshots. */
   snapshotT: number;
 };
 

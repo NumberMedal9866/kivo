@@ -101,7 +101,7 @@ function TrayContents() {
 
 /**
  * The walking guests. Animated mode plays the precompiled keyframes;
- * static mode (SSR first paint, prefers-reduced-motion) renders the
+ * static mode (SSR first paint) renders the
  * scene frozen at the sim's most telling moment.
  */
 export function Agents({ sim, speed, animated }: { sim: Sim; speed: number; animated: boolean }) {

@@ -21,9 +21,8 @@ import { cn } from "@/lib/utils";
  * badge read the very same schedule, so numbers and motion never disagree.
  *
  * Time runs at SPEED× (a time-lapse — labelled on each panel). Animations
- * and counters pause together while the section is off-screen, and under
- * prefers-reduced-motion the scenes freeze at a telling moment while the
- * counters show the model's steady-state hourly figures.
+ * and counters pause together while the section is off-screen; the SSR
+ * pass renders the scenes frozen at a telling moment.
  */
 const SPEED = 2.5;
 
@@ -33,12 +32,10 @@ export function PeakCompareSection() {
 
   const sims = useMemo(() => ({ cash: buildCashierSim("pkc"), kiosk: buildKioskSim("pkk") }), []);
 
-  // The scenes animate for everyone once hydrated: this diagram is the
-  // section's whole argument, its motion is gentle constant-velocity
-  // gliding (no flashing, zooming or parallax), and the OS reduced-motion
-  // flag is deliberately not consulted — the site owner wants the demo
-  // live. The `.pk-motion` scope in globals.css exempts it from the global
-  // reduced-motion kill rule for the same reason.
+  // The scenes animate for everyone once hydrated — like the rest of the
+  // site, the OS reduced-motion flag is deliberately not consulted (the
+  // owner wants the demo live; the motion is gentle constant-velocity
+  // gliding, no flashing or parallax).
   const animated = useMounted();
 
   const { ref: viewRef, visible } = useInView<HTMLDivElement>();
@@ -76,10 +73,7 @@ export function PeakCompareSection() {
           </p>
         </div>
 
-        <div
-          ref={viewRef}
-          className={cn("pk-motion relative mt-10", animated && !visible && "pk-paused")}
-        >
+        <div ref={viewRef} className={cn("relative mt-10", animated && !visible && "pk-paused")}>
           <div className="grid gap-4 md:grid-cols-2 md:gap-5">
             <Panel
               tone="before"

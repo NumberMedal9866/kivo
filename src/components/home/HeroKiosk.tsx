@@ -8,8 +8,7 @@ import { FoodIcon } from "@/components/media/FoodIcon";
  * Hero product shot: the real kiosk render (transparent PNG at
  * public/images/hero-kiosk-front.png — see docs/MEDIA_REPLACEMENT_GUIDE.md)
  * on the dark stage with a studio glow, floor reflection and floating UI
- * chips. Gentle pointer tilt on desktop; disabled on touch and under
- * prefers-reduced-motion.
+ * chips. Gentle pointer tilt on desktop (fine pointers only).
  */
 export function HeroKiosk({
   cardTitle,
@@ -27,8 +26,7 @@ export function HeroKiosk({
 
   useEffect(() => {
     const fine = window.matchMedia("(pointer: fine)").matches;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!fine || reduced) return;
+    if (!fine) return;
     const el = ref.current;
     if (!el) return;
 

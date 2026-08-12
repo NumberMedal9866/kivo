@@ -5,8 +5,8 @@ import { useEffect, useRef } from "react";
 /**
  * Animates a numeral from 0 to `value` when it scrolls into view.
  * Prefix/suffix stay static ("+", "%", "~"). The final value is rendered in
- * the server HTML — JavaScript only animates the transition, and
- * prefers-reduced-motion skips it entirely.
+ * the server HTML — JavaScript only animates the transition. Runs
+ * regardless of the OS reduced-motion flag (owner's choice).
  */
 export function CountUp({
   value,
@@ -26,7 +26,6 @@ export function CountUp({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let raf = 0;
     const io = new IntersectionObserver(

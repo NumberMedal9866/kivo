@@ -54,14 +54,29 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
                 </span>
               </button>
             </h3>
+            {/* Smooth expand/collapse: grid rows 0fr→1fr. Content stays in
+                the DOM (server-rendered, crawlable); aria-hidden mirrors the
+                visual state for assistive tech. */}
             <div
               id={panelId}
               role="region"
               aria-labelledby={headerId}
-              hidden={!open}
-              className="px-5 pb-6 sm:px-7"
+              aria-hidden={!open}
+              className={cn(
+                "grid transition-[grid-template-rows] duration-300 ease-out",
+                open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+              )}
             >
-              <p className="max-w-2xl leading-relaxed text-ink-soft">{item.answer}</p>
+              <div className="overflow-hidden">
+                <p
+                  className={cn(
+                    "max-w-2xl px-5 pb-6 leading-relaxed text-ink-soft transition-opacity duration-300 sm:px-7",
+                    open ? "opacity-100" : "opacity-0",
+                  )}
+                >
+                  {item.answer}
+                </p>
+              </div>
             </div>
           </div>
         );

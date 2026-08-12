@@ -5,7 +5,8 @@ import { cn } from "@/lib/utils";
 
 /**
  * Reveal-on-scroll wrapper. Content is always present in the server HTML;
- * only opacity/transform are animated. Respects prefers-reduced-motion.
+ * only opacity/transform are animated. Runs regardless of the OS
+ * reduced-motion flag — the owner wants the site animated for everyone.
  */
 export function Reveal({
   children,
@@ -24,12 +25,6 @@ export function Reveal({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      // Skip the animation entirely — override the hidden classes inline.
-      el.style.opacity = "1";
-      el.style.transform = "none";
-      return;
-    }
     const io = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {

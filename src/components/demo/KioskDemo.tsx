@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import {
   demoCategories,
   demoItems,
@@ -27,7 +27,6 @@ export function KioskDemo({ initialLang, label }: { initialLang: DemoLang; label
   const [pendingItem, setPendingItem] = useState<string | null>(null);
   const [orderNo] = useState(() => 200 + Math.floor(Math.random() * 700));
   const started = useRef(false);
-  const reduced = useReducedMotion();
 
   const total = useMemo(
     () =>
@@ -77,13 +76,10 @@ export function KioskDemo({ initialLang, label }: { initialLang: DemoLang; label
 
   function onPay() {
     setScreen("processing");
-    window.setTimeout(
-      () => {
-        setScreen("success");
-        trackEvent("demo_completed");
-      },
-      reduced ? 300 : 1400,
-    );
+    window.setTimeout(() => {
+      setScreen("success");
+      trackEvent("demo_completed");
+    }, 1400);
   }
 
   function reset() {
@@ -93,9 +89,7 @@ export function KioskDemo({ initialLang, label }: { initialLang: DemoLang; label
   }
 
   const itemCount = basket.reduce((n, l) => n + l.qty, 0);
-  const transition = reduced
-    ? { duration: 0 }
-    : { duration: 0.28, ease: [0.22, 0.61, 0.36, 1] as const };
+  const transition = { duration: 0.28, ease: [0.22, 0.61, 0.36, 1] as const };
 
   return (
     <div
@@ -134,9 +128,9 @@ export function KioskDemo({ initialLang, label }: { initialLang: DemoLang; label
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={screen}
-              initial={{ opacity: 0, x: reduced ? 0 : 24 }}
+              initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: reduced ? 0 : -24 }}
+              exit={{ opacity: 0, x: -24 }}
               transition={transition}
               className="absolute inset-0 flex flex-col"
             >

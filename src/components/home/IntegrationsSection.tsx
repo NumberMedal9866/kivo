@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 
 /**
  * Dark integration chapter: order-flow diagram with an animated pulse
- * traveling from guest to kitchen (CSS offset-path; static under
- * prefers-reduced-motion), real payment-system logos, and a custom-work card.
+ * traveling from guest to kitchen, real payment-system logos, and a
+ * custom-work card.
  */
 export async function IntegrationsSection() {
   const t = await getTranslations("integrations");
