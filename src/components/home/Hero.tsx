@@ -16,14 +16,17 @@ export async function Hero() {
     <section className="chapter-dark overflow-hidden">
       <Container className="grid items-center gap-14 pb-10 pt-28 md:pt-36 lg:grid-cols-[1.05fr_0.95fr] lg:gap-6">
         <div className="min-w-0 max-w-2xl">
-          <p className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-[0.78rem] font-bold tracking-wide text-white/75">
+          {/* The search phrase ("Киоски самообслуживания · Узбекистан") is the
+              h1; the large slogan below is styled as the headline but kept
+              out of the heading outline. */}
+          <h1 className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-[0.78rem] font-bold tracking-wide text-white/75">
             <span
               aria-hidden="true"
               className="h-1.5 w-1.5 animate-pulse rounded-full bg-success"
             />
             {t("badge")}
-          </p>
-          <h1 className="mt-7 text-display text-balance text-white">{t("title")}</h1>
+          </h1>
+          <p className="mt-7 text-display text-balance text-white">{t("title")}</p>
           <p className="mt-6 max-w-md text-lead text-pretty text-white/65">{t("subtitle")}</p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <TrackedLink

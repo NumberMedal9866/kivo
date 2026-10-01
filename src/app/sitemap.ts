@@ -1,7 +1,15 @@
 import type { MetadataRoute } from "next";
 import { brand, locales } from "@/config/brand";
 
-const PAGES = ["", "/product", "/integrations", "/implementation", "/contact", "/privacy"];
+const PAGES = [
+  "",
+  "/product",
+  "/guide",
+  "/integrations",
+  "/implementation",
+  "/contact",
+  "/privacy",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const { siteUrl } = brand.seo;

@@ -13,6 +13,7 @@ export async function Footer() {
 
   const productLinks = [
     { href: "/product", label: t("nav.product") },
+    { href: "/guide", label: t("nav.guide") },
     { href: "/integrations", label: t("nav.integrations") },
     { href: "/implementation", label: t("nav.implementation") },
   ];

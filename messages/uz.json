@@ -28,7 +28,8 @@
     "faq": "Savollar",
     "implementation": "Joriy etish",
     "contact": "Bog‘lanish",
-    "home": "Bosh sahifa"
+    "home": "Bosh sahifa",
+    "guide": "Kiosklar qo‘llanmasi"
   },
   "langSwitcher": {
     "label": "Til",
@@ -305,13 +306,23 @@
       }
     }
   },
+  "seoText": {
+    "kicker": "Kiosklar haqida",
+    "heading": "Toshkentda restoran, kafe va fastfud uchun o‘z-o‘ziga xizmat kiosklari",
+    "p1": "kiyo o‘z-o‘ziga xizmat ko‘rsatish kiosklarini kalit topshirish sharti bilan yetkazib beradi va ishga tushiradi: sensorli buyurtma terminali, menyungiz va firma uslubingizdagi dastur, Click, Payme, Uzum, Uzcard, HUMO, Visa va Mastercard orqali to‘lov, o‘rnatish, jamoani o‘qitish va qo‘llab-quvvatlash.",
+    "p2": "Mehmonlar taomlarni o‘zbek, rus yoki ingliz tilida o‘zlari tanlaydi, karta yoki QR-kod orqali to‘laydi, buyurtma esa darhol oshxonaga yetib boradi. Kassa bo‘shaydi, navbat yig‘ilmaydi, har bir buyurtmada qo‘shimcha savdo bo‘ladi.",
+    "p3": "Toshkent va butun O‘zbekiston bo‘ylab muassasalar bilan ishlaymiz. Kioskni sotib olish yoki ijaraga olish mumkin — shartlar va terminallar sonini zalingiz va mehmonlar oqimiga qarab tanlaymiz.",
+    "linkGuide": "O‘z-o‘ziga xizmat kioskini qanday tanlash kerak",
+    "linkProduct": "Uskuna va interfeys",
+    "linkContact": "Narxni hisoblash"
+  },
   "faq": {
     "kicker": "Savol-javob",
     "heading": "Ko‘p beriladigan savollar",
     "intro": "Asosiylari — qisqacha. Qolganini suhbatda aniqlaymiz.",
     "items": {
       "q1": {
-        "q": "Kiosk qanday biznesga mos?",
+        "q": "O‘z-o‘ziga xizmat kioski qanday biznesga mos?",
         "a": "Fastfud, qahvaxona, novvoyxona, fud-kort va mehmon o‘zi buyurtma berib, to‘lab, olib ketadigan har qanday zavedeniyaga."
       },
       "q2": {
@@ -359,7 +370,7 @@
         "a": "Ha — sodiqlik, yetkazib berish va ichki tizimlarni ish hajmi texnik baholangach muhokama qilamiz."
       },
       "q13": {
-        "q": "Narx qanday shakllanadi?",
+        "q": "O‘z-o‘ziga xizmat kioski qancha turadi?",
         "a": "Kiosklar va nuqtalar soni, model (ijara yoki xarid) va sozlash hajmiga bog‘liq. Ochiq narxnoma yo‘q — qisqa auditdan keyin individual taklif tayyorlaymiz."
       },
       "q14": {
@@ -457,6 +468,10 @@
     "privacy": {
       "title": "Maxfiylik bayonnomasi",
       "description": "kiyo sayti so‘rov formasi orqali qanday ma’lumotlarni yig‘adi, ular qayerda saqlanadi hamda analitika va cookie qanday ishlatiladi."
+    },
+    "guide": {
+      "title": "O‘z-o‘ziga xizmat kioski: bu nima va qanday tanlash kerak",
+      "description": "O‘z-o‘ziga xizmat kioski nima, buyurtma qanday ishlaydi, kimga mos, qanday tanlash kerak va qancha turadi. Toshkent va O‘zbekistondagi restoran, kafe va fastfud uchun qo‘llanma."
     }
   },
   "productPage": {
@@ -606,6 +621,77 @@
       "after": "Ishga tushirilgandan keyin"
     },
     "cta": "Baholashdan boshlash"
+  },
+  "guidePage": {
+    "kicker": "Qo‘llanma",
+    "title": "O‘z-o‘ziga xizmat kioski: bu nima, qanday ishlaydi va qanday tanlash kerak",
+    "lead": "Toshkent va butun O‘zbekistondagi restoran, kafe va fastfud egalari uchun qisqa va aniq.",
+    "toc": "Mundarija",
+    "what": {
+      "h": "O‘z-o‘ziga xizmat kioski nima",
+      "p1": "O‘z-o‘ziga xizmat kioski — bu sensorli terminal: mehmon u orqali kassirni kutmasdan taomlarni o‘zi tanlaydi, buyurtmani sozlaydi va to‘laydi. Buyurtma darhol oshxonaga boradi, mehmon esa uni raqam bo‘yicha oladi.",
+      "p2": "Tezkor ovqatlanish restoranlarida bunday kiosklar allaqachon odatiy holga aylangan — masalan, McDonald's va Shake Shack ulardan keng foydalanadi. Bugun o‘z-o‘ziga xizmat terminallari qahvaxonalar, novvoyxonalar, food-kortlar va fast casual kafelarda ham o‘rnatilmoqda."
+    },
+    "how": {
+      "h": "Kiosk orqali buyurtma qanday ishlaydi",
+      "s1": "Mehmon tilni tanlaydi va suratli menyuni ko‘radi.",
+      "s2": "Taomlarni qo‘shadi, modifikatorlar va kombolarni tanlaydi.",
+      "s3": "Kiosk buyurtmani to‘ldirishni taklif qiladi — ichimlik, desert yoki sous.",
+      "s4": "Mehmon karta yoki QR-kod orqali to‘laydi.",
+      "s5": "Buyurtma raqam oladi va oshxonaga yuboriladi; mehmon uni berish joyidan oladi."
+    },
+    "who": {
+      "h": "O‘z-o‘ziga xizmat kioski kimga mos",
+      "p": "Kiosk mehmonlar ko‘p va menyu tushunarli bo‘lgan joylarda o‘zini oqlaydi:",
+      "i1": "Fastfud va burgerxonalar",
+      "i2": "Qahvaxonalar va novvoyxonalar",
+      "i3": "Savdo markazlaridagi food-kortlar",
+      "i4": "Fast casual kafe va restoranlar",
+      "i5": "Oshxonalar va korporativ ovqatlanish"
+    },
+    "benefits": {
+      "h": "Kiosk biznesga nima beradi",
+      "i1": "Buyurtmalar parallel qabul qilinadi — navbat bitta kassada to‘planmaydi.",
+      "i2": "Jamoa buyurtma kiritish bilan emas, oshxona va mehmonlar bilan band.",
+      "i3": "Har bir buyurtmada qo‘shimcha savdo — kiosk qo‘shimchalarni barqaror taklif qiladi.",
+      "i4": "Kamroq xato: mehmon buyurtmani o‘zi yig‘adi va ekranda tasdiqlaydi.",
+      "i5": "Menyu o‘zbek, rus va ingliz tillarida.",
+      "p": "Ochiq soha ma’lumotlariga ko‘ra, kiosk orqali buyurtmalar o‘rtacha kattaroq bo‘ladi. Manbalar — ushbu blokda:",
+      "link": "«Soha ma’lumotlari»"
+    },
+    "parts": {
+      "h": "Kiosk nimalardan iborat",
+      "i1": "Korpus — polga o‘rnatiladigan, stol ustiga yoki devorga.",
+      "i2": "Sensorli ekran — odatda 21 dan 32 dyuymgacha.",
+      "i3": "Karta va QR to‘lovlari uchun to‘lov terminali.",
+      "i4": "Buyurtma raqami bilan chek printeri.",
+      "i5": "Menyungiz va firma uslubingizdagi buyurtma dasturi.",
+      "i6": "Integratsiyalar: to‘lov, oshxona, hisob tizimi."
+    },
+    "choose": {
+      "h": "O‘z-o‘ziga xizmat kioskini qanday tanlash kerak",
+      "i1": "To‘lov: mehmonlarga tanish usullar ishlaydimi — Click, Payme, Uzum, Uzcard, HUMO, Visa va Mastercard.",
+      "i2": "Tillar: interfeys mehmon bilan o‘zbek va rus tillarida, sayyohlar bilan esa ingliz tilida gaplashishi kerak.",
+      "i3": "Kassa va oshxona: buyurtma hisob tizimingizga qanday tushadi — buni xariddan oldin muhokama qilish kerak.",
+      "i4": "O‘lcham va joy: zalda qancha bo‘sh joy bor va mehmonlar oqimiga nechta kiosk kerak.",
+      "i5": "Servis: kioskni kim o‘rnatadi, jamoani o‘qitadi va ishga tushirilgandan keyin qo‘llab-quvvatlaydi.",
+      "i6": "Xarid yoki ijara: ijara boshlang‘ich xarajatlarni kamaytiradi."
+    },
+    "price": {
+      "h": "O‘z-o‘ziga xizmat kioski qancha turadi",
+      "p1": "Narx kiosklar soni, ularning konfiguratsiyasi, menyu hajmi va kerakli integratsiyalarga bog‘liq. Shuning uchun aniq raqam muassasangizni qisqa auditdan o‘tkazgandan keyin paydo bo‘ladi.",
+      "p2": "Agar uskunaga birdaniga sarmoya kiritishni istamasangiz, kioskni ijaraga olish mumkin — past boshlang‘ich to‘lov va qo‘llab-quvvatlash bilan."
+    },
+    "kiyo": {
+      "h": "kiyo kiosklarni qanday joriy etadi",
+      "p": "kiyo butun yo‘lni o‘z zimmasiga oladi: audit, menyu va interfeysni sozlash, o‘rnatish, jamoani o‘qitish va qo‘llab-quvvatlash.",
+      "linkImplementation": "Joriy etish bosqichlari",
+      "linkProduct": "Uskuna va interfeys"
+    },
+    "cta": {
+      "title": "Muassasangiz uchun kiosk tanlaymiz",
+      "text": "Format va mehmonlar oqimi haqida aytib bering — konfiguratsiyani taklif qilamiz va xarid yoki ijara narxini hisoblaymiz."
+    }
   },
   "contactPage": {
     "kicker": "Kontaktlar",

@@ -28,7 +28,8 @@
     "faq": "FAQ",
     "implementation": "Implementation",
     "contact": "Contact",
-    "home": "Home"
+    "home": "Home",
+    "guide": "Kiosk guide"
   },
   "langSwitcher": {
     "label": "Language",
@@ -305,13 +306,23 @@
       }
     }
   },
+  "seoText": {
+    "kicker": "About the kiosks",
+    "heading": "Self-service kiosks for restaurants, cafés and fast food in Tashkent",
+    "p1": "kiyo supplies and launches turnkey self-service kiosks: a touchscreen ordering terminal, software with your menu and branding, Click, Payme, Uzum, Uzcard, HUMO, Visa and Mastercard payments, installation, staff training and support.",
+    "p2": "Guests choose their food in Uzbek, Russian or English, pay by card or QR code, and the order goes straight to the kitchen. The till is freed up, no line builds, and every order gets a suggested add-on.",
+    "p3": "We work with venues in Tashkent and across Uzbekistan. You can buy the kiosk or rent it — we match the terms and the number of terminals to your floor and guest flow.",
+    "linkGuide": "How to choose a self-service kiosk",
+    "linkProduct": "Hardware and interface",
+    "linkContact": "Get a price estimate"
+  },
   "faq": {
     "kicker": "FAQ",
     "heading": "Frequently asked questions",
     "intro": "The essentials, briefly. The rest — in person.",
     "items": {
       "q1": {
-        "q": "Which businesses is the kiosk a good fit for?",
+        "q": "Which businesses is a self-service kiosk a good fit for?",
         "a": "Fast food, coffee shops, bakeries, food courts and any venue where guests order, pay and collect themselves."
       },
       "q2": {
@@ -359,7 +370,7 @@
         "a": "Yes — loyalty, delivery and internal systems are discussed after a technical review of the scope."
       },
       "q13": {
-        "q": "How is the price formed?",
+        "q": "How much does a self-service kiosk cost?",
         "a": "It depends on the number of kiosks, locations, the model (rental or purchase) and the setup scope. There's no public price list — we prepare an individual proposal after a short assessment."
       },
       "q14": {
@@ -457,6 +468,10 @@
     "privacy": {
       "title": "Privacy notice",
       "description": "How the kiyo website collects and processes contact details submitted through the lead form, and how analytics and cookies are used."
+    },
+    "guide": {
+      "title": "Self-service kiosk: what it is and how to choose",
+      "description": "What a self-service kiosk is, how ordering works, who it suits, how to choose one and what it costs. A guide for restaurants, cafés and fast food in Tashkent and Uzbekistan."
     }
   },
   "productPage": {
@@ -606,6 +621,77 @@
       "after": "After launch"
     },
     "cta": "Start with an assessment"
+  },
+  "guidePage": {
+    "kicker": "Guide",
+    "title": "Self-service kiosk: what it is, how it works and how to choose one",
+    "lead": "Short and to the point — for owners of restaurants, cafés and fast-food venues in Tashkent and across Uzbekistan.",
+    "toc": "Contents",
+    "what": {
+      "h": "What is a self-service kiosk",
+      "p1": "A self-service kiosk is a touchscreen terminal where guests choose their food, customise the order and pay without waiting for a cashier. The order goes straight to the kitchen, and the guest collects it by number.",
+      "p2": "In quick-service restaurants these kiosks are long familiar — McDonald's and Shake Shack, for example, use them widely. Today self-service terminals also appear in coffee shops, bakeries, food courts and fast-casual cafés."
+    },
+    "how": {
+      "h": "How ordering at a kiosk works",
+      "s1": "The guest picks a language and browses a menu with photos.",
+      "s2": "Adds items and chooses modifiers and combos.",
+      "s3": "The kiosk suggests an add-on — a drink, a dessert or a sauce.",
+      "s4": "The guest pays by card or QR code.",
+      "s5": "The order gets a number and goes to the kitchen; the guest collects it at the pickup point."
+    },
+    "who": {
+      "h": "Who a self-service kiosk suits",
+      "p": "A kiosk pays off where there are many guests and a clear menu:",
+      "i1": "Fast food and burger places",
+      "i2": "Coffee shops and bakeries",
+      "i3": "Food courts in shopping malls",
+      "i4": "Fast-casual cafés and restaurants",
+      "i5": "Canteens and corporate catering"
+    },
+    "benefits": {
+      "h": "What a kiosk gives the business",
+      "i1": "Orders are taken in parallel — no line piles up at a single till.",
+      "i2": "The team works the kitchen and the floor, not order entry.",
+      "i3": "Add-on suggestions in every order — consistently, not when someone remembers.",
+      "i4": "Fewer mistakes: guests build the order themselves and confirm it on screen.",
+      "i5": "A menu in Uzbek, Russian and English.",
+      "p": "Public industry data shows kiosk orders tend to be larger on average. Sources are in the",
+      "link": "“Industry data” section"
+    },
+    "parts": {
+      "h": "What a kiosk is made of",
+      "i1": "An enclosure — floor-standing, countertop or wall-mounted.",
+      "i2": "A touchscreen — usually 21 to 32 inches.",
+      "i3": "A payment terminal for cards and QR payments.",
+      "i4": "A receipt printer that prints the order number.",
+      "i5": "Ordering software with your menu and branding.",
+      "i6": "Integrations: payments, kitchen, back-office system."
+    },
+    "choose": {
+      "h": "How to choose a self-service kiosk",
+      "i1": "Payments: do the methods your guests use work — Click, Payme, Uzum, Uzcard, HUMO, Visa and Mastercard?",
+      "i2": "Languages: the interface should speak Uzbek and Russian with guests, and English with tourists.",
+      "i3": "Till and kitchen: how orders reach your back-office system — worth agreeing before you buy.",
+      "i4": "Size and space: how much free floor space you have and how many kiosks your guest flow needs.",
+      "i5": "Service: who installs the kiosk, trains the team and supports it after launch.",
+      "i6": "Buy or rent: renting lowers the upfront investment."
+    },
+    "price": {
+      "h": "How much a self-service kiosk costs",
+      "p1": "The price depends on the number of kiosks, their configuration, the size of the menu and the integrations you need. That's why an honest figure comes after a short assessment of your venue.",
+      "p2": "If you'd rather not invest in hardware upfront, you can rent the kiosk — with a low initial payment and support included."
+    },
+    "kiyo": {
+      "h": "How kiyo rolls out kiosks",
+      "p": "kiyo handles the whole path: assessment, menu and interface setup, installation, staff training and support.",
+      "linkImplementation": "Implementation steps",
+      "linkProduct": "Hardware and interface"
+    },
+    "cta": {
+      "title": "We'll match a kiosk to your venue",
+      "text": "Tell us about your format and guest flow — we'll propose a configuration and price out buying or renting."
+    }
   },
   "contactPage": {
     "kicker": "Contact",

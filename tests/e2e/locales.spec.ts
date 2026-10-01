@@ -1,16 +1,18 @@
 import { expect, test } from "@playwright/test";
 
+// h1 carries the search phrase; the slogan is the visual headline.
 const LOCALES = [
-  { locale: "ru", heading: /Заказы принимает киоск/i },
-  { locale: "uz", heading: /Buyurtmani kiosk oladi/i },
-  { locale: "en", heading: /The kiosk takes orders/i },
+  { locale: "ru", heading: /Киоски самообслуживания/i, slogan: /Заказы принимает киоск/i },
+  { locale: "uz", heading: /O‘z-o‘ziga xizmat kiosklari/i, slogan: /Buyurtmani kiosk oladi/i },
+  { locale: "en", heading: /Self-service kiosks/i, slogan: /The kiosk takes orders/i },
 ];
 
-for (const { locale, heading } of LOCALES) {
+for (const { locale, heading, slogan } of LOCALES) {
   test(`home page renders in ${locale}`, async ({ page }) => {
     await page.goto(`/${locale}`);
     await expect(page.locator("html")).toHaveAttribute("lang", locale);
     await expect(page.getByRole("heading", { level: 1 })).toContainText(heading);
+    await expect(page.getByText(slogan).first()).toBeVisible();
     // Server-rendered FAQ content must be crawlable
     await expect(page.locator("#faq")).toBeVisible();
   });
@@ -43,7 +45,14 @@ test("NEXT_LOCALE cookie wins over Accept-Language", async ({ browser }) => {
 
 test("detail pages respond in every locale", async ({ request }) => {
   for (const locale of ["ru", "uz", "en"]) {
-    for (const path of ["product", "integrations", "implementation", "contact", "privacy"]) {
+    for (const path of [
+      "product",
+      "guide",
+      "integrations",
+      "implementation",
+      "contact",
+      "privacy",
+    ]) {
       const res = await request.get(`/${locale}/${path}`);
       expect(res.status(), `/${locale}/${path}`).toBe(200);
     }

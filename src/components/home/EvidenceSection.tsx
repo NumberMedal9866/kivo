@@ -20,7 +20,7 @@ export async function EvidenceSection() {
   };
 
   return (
-    <section className="section-pad">
+    <section id="evidence" className="section-pad scroll-mt-24">
       <Container>
         <SectionHeading kicker={t("kicker")} heading={t("heading")} lead={t("intro")} />
 

@@ -19,6 +19,7 @@ import { RentalSection } from "@/components/home/RentalSection";
 import { IntegrationsSection } from "@/components/home/IntegrationsSection";
 import { EvidenceSection } from "@/components/home/EvidenceSection";
 import { ServiceSection } from "@/components/home/ServiceSection";
+import { AboutKiosksSection } from "@/components/home/AboutKiosksSection";
 import { FaqSection, FAQ_KEYS } from "@/components/home/FaqSection";
 import { FinalCta } from "@/components/home/FinalCta";
 import { StickyContact } from "@/components/layout/StickyContact";
@@ -74,6 +75,7 @@ export default async function HomePage({ params }: Props) {
       <RentalSection />
       <EvidenceSection />
       <ServiceSection />
+      <AboutKiosksSection />
       <FaqSection />
       <FinalCta />
       <StickyContact />
