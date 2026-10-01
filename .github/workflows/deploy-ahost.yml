@@ -43,9 +43,10 @@ jobs:
           echo "Bundle: $(find deploy -type f | wc -l) files, $(du -sh deploy | cut -f1)"
 
       # lftp retries failed transfers (ahost's Pure-FTPd occasionally drops a
-      # TLS data connection, which aborts single-shot uploaders). Order:
-      # upload new/changed files → swap the startup file → trigger the
-      # restart → only then prune files the new build no longer references.
+      # TLS data connection, which aborts single-shot uploaders). Only files
+      # whose hash differs from the server's manifest are sent. Order: new
+      # files → startup file → restart trigger → delete files the new build
+      # dropped → manifest last, so a failed run is simply redone next time.
       - name: Upload to ahost (FTPS)
         if: env.FTP_SERVER != ''
         env:
@@ -53,8 +54,7 @@ jobs:
           LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq lftp > /dev/null
-          cat > upload.lftp <<EOF
-          set cmd:fail-exit yes
+          cat > connect.lftp <<EOF
           set ftp:ssl-force true
           set ftp:ssl-protect-data true
           # ahost's certificate names its own host, not ftp.kiyo.uz; still encrypted.
@@ -63,13 +63,31 @@ jobs:
           set net:reconnect-interval-base 5
           set net:timeout 30
           open --env-password -u "$FTP_USERNAME" "$FTP_SERVER"
-          mirror --reverse --parallel=4 --verbose=1 deploy/site site
+          EOF
+
+          # Server manifest from the last deploy (absent → upload everything).
+          { cat connect.lftp; echo "get site/.deploy-manifest.json -o server-manifest.json"; } > fetch.lftp
+          lftp -f fetch.lftp || rm -f server-manifest.json
+          node scripts/ahost/changed.mjs server-manifest.json
+
+          { echo "set cmd:fail-exit yes"; cat connect.lftp; cat <<'EOF'
+          mirror --reverse --parallel=6 --verbose=1 deploy-changed/site site
           put deploy/app.js -o app.js
           mirror --reverse deploy/tmp tmp
           put deploy/tmp/restart.txt -o tmp/restart.txt
-          mirror --reverse --delete --only-missing --verbose=1 deploy/site site
           EOF
+          } > upload.lftp
           lftp -f upload.lftp
+
+          # Stale files are harmless if a delete fails, so don't fail the deploy.
+          if [ -s deploy-changed/removed ]; then
+            { cat connect.lftp; sed 's|.*|rm "site/&"|' deploy-changed/removed; } > prune.lftp
+            lftp -f prune.lftp || echo "::warning::Some stale files could not be deleted"
+          fi
+
+          { echo "set cmd:fail-exit yes"; cat connect.lftp
+            echo "put deploy/site/.deploy-manifest.json -o site/.deploy-manifest.json"; } > manifest.lftp
+          lftp -f manifest.lftp
 
       - name: Upload skipped
         if: env.FTP_SERVER == ''
