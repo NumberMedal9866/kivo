@@ -42,23 +42,34 @@ jobs:
           node scripts/ahost/assemble.mjs
           echo "Bundle: $(find deploy -type f | wc -l) files, $(du -sh deploy | cut -f1)"
 
+      # lftp retries failed transfers (ahost's Pure-FTPd occasionally drops a
+      # TLS data connection, which aborts single-shot uploaders). Order:
+      # upload new/changed files → swap the startup file → trigger the
+      # restart → only then prune files the new build no longer references.
       - name: Upload to ahost (FTPS)
         if: env.FTP_SERVER != ''
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          # The shared server's certificate is issued for ahost's hostname,
-          # not ftp.kiyo.uz; the connection is still encrypted.
-          security: loose
-          local-dir: ./deploy/
-          server-dir: ./
-          # The action skips node_modules by default; the server bundle needs them.
-          exclude: |
-            **/.git*
-            **/.git*/**
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp > /dev/null
+          cat > upload.lftp <<EOF
+          set cmd:fail-exit yes
+          set ftp:ssl-force true
+          set ftp:ssl-protect-data true
+          # ahost's certificate names its own host, not ftp.kiyo.uz; still encrypted.
+          set ssl:verify-certificate no
+          set net:max-retries 8
+          set net:reconnect-interval-base 5
+          set net:timeout 30
+          open --env-password -u "$FTP_USERNAME" "$FTP_SERVER"
+          mirror --reverse --parallel=4 --verbose=1 deploy/site site
+          put deploy/app.js -o app.js
+          mirror --reverse deploy/tmp tmp
+          put deploy/tmp/restart.txt -o tmp/restart.txt
+          mirror --reverse --delete --only-missing --verbose=1 deploy/site site
+          EOF
+          lftp -f upload.lftp
 
       - name: Upload skipped
         if: env.FTP_SERVER == ''
