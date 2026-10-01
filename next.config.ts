@@ -48,6 +48,9 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // Self-contained server bundle for the ahost (cPanel Node.js) deploy —
+  // see .github/workflows/deploy-ahost.yml. Off for Vercel and local runs.
+  output: process.env.BUILD_STANDALONE === "1" ? "standalone" : undefined,
   async headers() {
     return [
       {

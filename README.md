@@ -101,9 +101,14 @@ Events tracked: hero/CTA clicks, contact-channel clicks, form started /
 submitted / error, language change, demo started / completed, rental section
 viewed, integrations page opened. No personal data is ever attached.
 
-## Deployment (Vercel)
+## Deployment
 
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Short version:
+Production runs on **ahost** (cPanel Node.js, Tashkent / TAS-IX), deployed
+automatically by GitHub Actions on every push to `main` — see
+[docs/HOSTING_AHOST.md](docs/HOSTING_AHOST.md).
+
+The Vercel setup remains available as a fallback —
+[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Short version:
 
 ```bash
 vercel link

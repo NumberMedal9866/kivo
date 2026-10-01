@@ -103,8 +103,13 @@ export default async function LocaleLayout({
           <Footer />
         </NextIntlClientProvider>
         <AnalyticsScripts />
-        <Analytics />
-        <SpeedInsights />
+        {/* Vercel serves these scripts itself; elsewhere they would 404. */}
+        {process.env.VERCEL && (
+          <>
+            <Analytics />
+            <SpeedInsights />
+          </>
+        )}
       </body>
     </html>
   );

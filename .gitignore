@@ -36,3 +36,6 @@ pnpm-debug.log*
 /playwright-report/
 /test-results/
 /coverage/
+
+# ahost deploy bundle (scripts/ahost/assemble.mjs)
+/deploy/

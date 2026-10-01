@@ -1,0 +1,65 @@
+# Builds the site on every push to main and uploads it to the ahost cPanel
+# Node.js application over FTPS. Setup: docs/HOSTING_AHOST.md.
+name: Deploy to ahost
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-ahost
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      # Job-level so the upload step's `if` can see whether it's configured.
+      FTP_SERVER: ${{ secrets.FTP_SERVER }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Must match the Node.js version selected in cPanel.
+          node-version: 24
+          cache: pnpm
+
+      # Flat node_modules: the standalone bundle is uploaded over FTP, which
+      # can't carry pnpm's symlinked layout.
+      - run: pnpm install --frozen-lockfile --config.node-linker=hoisted
+
+      - run: pnpm build
+        env:
+          BUILD_STANDALONE: "1"
+
+      - name: Assemble upload folder
+        run: |
+          node scripts/ahost/assemble.mjs
+          echo "Bundle: $(find deploy -type f | wc -l) files, $(du -sh deploy | cut -f1)"
+
+      - name: Upload to ahost (FTPS)
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          # The shared server's certificate is issued for ahost's hostname,
+          # not ftp.kiyo.uz; the connection is still encrypted.
+          security: loose
+          local-dir: ./deploy/
+          server-dir: ./
+          # The action skips node_modules by default; the server bundle needs them.
+          exclude: |
+            **/.git*
+            **/.git*/**
+
+      - name: Upload skipped
+        if: env.FTP_SERVER == ''
+        run: echo "::notice::FTP_SERVER secret not set — built only. See docs/HOSTING_AHOST.md."

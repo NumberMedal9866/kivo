@@ -1,12 +1,30 @@
 import createMiddleware from "next-intl/middleware";
+import { NextResponse, type NextRequest } from "next/server";
+import { brand } from "./config/brand";
 import { routing } from "./i18n/routing";
+
+const handleI18nRouting = createMiddleware(routing);
+
+const canonicalHost = new URL(brand.seo.siteUrl).hostname;
+// The bare-domain twin of a www canonical host (www.kiyo.uz → kiyo.uz).
+const bareHost = canonicalHost.startsWith("www.") ? canonicalHost.slice(4) : null;
 
 /**
  * Locale proxy (Next.js 16 name for middleware).
+ * - Sends the bare domain to the canonical www host with a 308, so one URL
+ *   per page gets indexed (Vercel did this at the edge; on cPanel hosting
+ *   nothing else does).
  * - Redirects "/" to the best matching locale (cookie → Accept-Language → ru).
  * - Persists the selected locale in the NEXT_LOCALE cookie.
  */
-export default createMiddleware(routing);
+export default function proxy(request: NextRequest) {
+  const host = request.headers.get("host")?.split(":")[0];
+  if (bareHost && host === bareHost) {
+    const { pathname, search } = request.nextUrl;
+    return NextResponse.redirect(`https://${canonicalHost}${pathname}${search}`, 308);
+  }
+  return handleI18nRouting(request);
+}
 
 export const config = {
   // Skip API routes, Next internals, Vercel internals and files with extensions.

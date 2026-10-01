@@ -13,7 +13,13 @@ const eslintConfig = defineConfig([
     "playwright-report/**",
     "test-results/**",
     "coverage/**",
+    "deploy/**",
   ]),
+  {
+    // Passenger loads the cPanel startup file as CommonJS.
+    files: ["scripts/ahost/app.js"],
+    rules: { "@typescript-eslint/no-require-imports": "off" },
+  },
 ]);
 
 export default eslintConfig;

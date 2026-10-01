@@ -6,3 +6,4 @@ test-results
 coverage
 public
 next-env.d.ts
+deploy
