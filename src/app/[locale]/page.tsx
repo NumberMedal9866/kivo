@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import type { Locale } from "@/config/brand";
+import { brand, type Locale } from "@/config/brand";
 import { pageMetadata } from "@/lib/seo";
 import {
   faqJsonLd,
@@ -32,10 +32,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  // The layout's title template doesn't reach a page in its own segment,
+  // so the brand suffix is added here.
   return pageMetadata({
     locale,
     path: "",
-    title: t("home.title"),
+    title: `${t("home.title")} | ${brand.name}`,
     description: t("home.description"),
   });
 }

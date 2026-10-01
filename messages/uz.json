@@ -39,7 +39,7 @@
   "hero": {
     "badge": "O‘z-o‘ziga xizmat kiosklari · O‘zbekiston",
     "title": "Buyurtmani kiosk oladi. Jamoa — tayyorlaydi.",
-    "subtitle": "kiyo kioskni kalit topshirish sharti bilan ishga tushiradi: to‘lov, menyu, o‘qitish va qo‘llab-quvvatlash.",
+    "subtitle": "kiyo o‘z-o‘ziga xizmat kioskini kalit topshirish sharti bilan ishga tushiradi: to‘lov, menyu, o‘qitish va qo‘llab-quvvatlash.",
     "ctaPrimary": "Loyihani muhokama qilish",
     "ctaSecondary": "Demoni sinab ko‘rish",
     "cardTitle": "№214 to‘landi",
@@ -435,24 +435,24 @@
   },
   "meta": {
     "home": {
-      "title": "O‘zbekistonda restoranlar uchun o‘z-o‘ziga xizmat kiosklari",
-      "description": "kiyo — O‘zbekistonda restoranlar, fastfud va qahvaxonalar uchun o‘z-o‘ziga buyurtma terminallari: uskuna, dastur, o‘rnatish, Click, Payme, Uzum, HUMO, Uzcard, Visa va Mastercard to‘lovlari, o‘qitish va qo‘llab-quvvatlash. Ijara mavjud."
+      "title": "Restoranlar uchun o‘z-o‘ziga xizmat kiosklari, Toshkent",
+      "description": "Restoran, fastfud va qahvaxonalar uchun o‘z-o‘ziga xizmat ko‘rsatish kioski kalit topshirish sharti bilan: uskuna, o‘rnatish, Click, Payme, Uzum, Uzcard, HUMO to‘lovlari. Toshkent va butun O‘zbekiston. Ijara mavjud."
     },
     "product": {
-      "title": "Kiosk — uskuna, interfeys va xizmat",
-      "description": "Kafe va restoranlar uchun o‘z-o‘ziga xizmat terminali: sensorli buyurtma, brendlangan ko‘p tilli interfeys, to‘lov terminali, yetkazib berish, o‘rnatish, o‘qitish va O‘zbekistonda ijara."
+      "title": "O‘z-o‘ziga xizmat kioski: uskuna, interfeys va xizmat",
+      "description": "Kafe va restoranlar uchun sensorli o‘z-o‘ziga xizmat kioski: brendlangan ko‘p tilli interfeys, to‘lov qabul qilish, yetkazib berish, o‘rnatish, o‘qitish va ijara — Toshkent va butun O‘zbekiston."
     },
     "integrations": {
-      "title": "To‘lov tizimlari va kassaga ulanish",
+      "title": "Click, Payme, Uzum, Uzcard to‘lovli o‘z-o‘ziga xizmat kioski",
       "description": "kiyo kioski to‘lovlarni qanday qabul qiladi — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — va kassa tizimingiz bilan integratsiya qanday kelishiladi."
     },
     "implementation": {
-      "title": "Joriy etish — baholashdan ishga tushirishgacha",
+      "title": "O‘z-o‘ziga xizmat kioskini joriy etish: auditdan ishga tushirishgacha",
       "description": "Restoranda o‘z-o‘ziga xizmat kioskini joriy etish qanday kechadi: baholash, texnik tahlil, menyu tayyorlash, o‘rnatish, sinov, xodimlarni o‘qitish, ishga tushirish va qo‘llab-quvvatlash."
     },
     "contact": {
-      "title": "Bog‘lanish — konsultatsiya olish",
-      "description": "O‘zbekistondagi restoran yoki kafengiz uchun o‘z-o‘ziga xizmat kioskini muhokama qiling. Kontaktlaringizni qoldiring va shaxsiy taklif oling."
+      "title": "O‘z-o‘ziga xizmat kioskini sotib olish yoki ijaraga olish",
+      "description": "Restoran yoki kafengiz uchun o‘z-o‘ziga xizmat kioskini sotib olish yoki ijarasini muhokama qiling — Toshkent va butun O‘zbekiston. Kontaktlaringizni qoldiring, shaxsiy taklif tayyorlaymiz."
     },
     "privacy": {
       "title": "Maxfiylik bayonnomasi",

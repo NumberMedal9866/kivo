@@ -52,7 +52,7 @@ The terminal prints a `https://….vercel.app` URL — the site is live there.
 Each command prompts "What's the value of …?" — paste the value, Enter.
 
 ```bash
-vercel env add NEXT_PUBLIC_SITE_URL production      # → https://kiyo.uz
+vercel env add NEXT_PUBLIC_SITE_URL production      # → https://www.kiyo.uz (optional; this is the default)
 vercel env add NEXT_PUBLIC_TELEGRAM_URL production  # → https://t.me/barsushe
 vercel env add NEXT_PUBLIC_CONTACT_EMAIL production # → info@kiyo.uz
 ```
@@ -114,11 +114,47 @@ SSL is issued automatically once verification passes — no certificate steps.
 
 ## 6. Post-deploy checks
 
-1. `https://kiyo.uz` opens with a valid padlock and redirects to `/ru`.
+1. `https://kiyo.uz` opens with a valid padlock and redirects to
+   `https://www.kiyo.uz/ru` (www is the primary/canonical host).
 2. Language switch persists after reload (cookie).
 3. Submit a test lead → row appears in the Google Sheet (once creds are set).
-4. `https://kiyo.uz/sitemap.xml` and `/robots.txt` respond.
+4. `https://www.kiyo.uz/sitemap.xml` and `/robots.txt` respond.
 5. Telegram/email buttons appear (env vars picked up).
+
+## 7. DNS must not depend on a hosting plan
+
+The website lives on Vercel; the ahost **hosting** plan only ever carried
+the DNS zone and the `info@kiyo.uz` mailbox. If that plan lapses or is
+removed, the zone disappears with it and the whole domain stops resolving
+(this happened in Sept/Oct 2026: the registry still delegated to ahost's
+nameservers, which answered REFUSED). Diagnose with:
+
+```bash
+nslookup -norecurse -type=NS kiyo.uz ns1.uz      # who the registry delegates to
+nslookup -type=SOA kiyo.uz dns1.ahost.uz         # "Query refused" = zone gone
+```
+
+Records the zone needs (whichever DNS host serves it):
+
+| Name         | Type  | Value                                  |
+| ------------ | ----- | -------------------------------------- |
+| `kiyo.uz`    | A     | `216.198.79.1`                         |
+| `www`        | CNAME | `dc2c91b411b2b7c8.vercel-dns-017.com`  |
+| mail records | MX/A  | only for whichever provider hosts mail |
+
+Re-check the A/CNAME values with `vercel domains inspect kiyo.uz` — they are
+per-project.
+
+## 8. Search engines
+
+- **Google Search Console** → add a _Domain_ property `kiyo.uz`, verify with
+  the DNS TXT record it gives you, then submit
+  `https://www.kiyo.uz/sitemap.xml` under _Sitemaps_.
+- **Yandex Webmaster** → add `https://www.kiyo.uz`, verify (DNS TXT or meta
+  tag), submit the same sitemap.
+- Meta-tag verification alternative: set `GOOGLE_SITE_VERIFICATION` /
+  `YANDEX_VERIFICATION` env vars in Vercel (the content value only) and
+  redeploy — the layout emits the tags.
 
 ## Useful commands
 

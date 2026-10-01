@@ -54,9 +54,11 @@ export const brand = {
   seo: {
     /**
      * Canonical production URL; NEXT_PUBLIC_SITE_URL overrides (local dev
-     * sets http://localhost:3000 via .env.local).
+     * sets http://localhost:3000 via .env.local). Must be the host Vercel
+     * serves as primary — www.kiyo.uz; the apex 308-redirects to it, and a
+     * canonical pointing at a redirect confuses search engines.
      */
-    siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://kiyo.uz").replace(/\/$/, ""),
+    siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kiyo.uz").replace(/\/$/, ""),
     siteName: "kiyo",
     /** Used when a page does not define its own metadata. */
     defaultTitle: "kiyo — self-service ordering kiosks for Uzbekistan",

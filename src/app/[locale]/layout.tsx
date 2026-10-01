@@ -44,12 +44,18 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(brand.seo.siteUrl),
     title: {
-      template: `%s — ${brand.name}`,
-      default: `${brand.name} — ${t("home.title")}`,
+      template: `%s | ${brand.name}`,
+      default: `${t("home.title")} | ${brand.name}`,
     },
     description: t("home.description"),
     applicationName: brand.name,
     robots: { index: true, follow: true },
+    // Optional HTML-tag verification for Google Search Console / Yandex
+    // Webmaster; a DNS TXT record works too and needs no deploy.
+    verification: {
+      google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+      yandex: process.env.YANDEX_VERIFICATION || undefined,
+    },
   };
 }
 

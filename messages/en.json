@@ -37,9 +37,9 @@
     "en": "English"
   },
   "hero": {
-    "badge": "Self-ordering kiosks · Uzbekistan",
+    "badge": "Self-service kiosks · Uzbekistan",
     "title": "The kiosk takes orders. Your team cooks.",
-    "subtitle": "kiyo delivers a turnkey kiosk: payments, menu, training and support.",
+    "subtitle": "kiyo delivers a turnkey self-service kiosk: payments, menu, training and support.",
     "ctaPrimary": "Discuss your project",
     "ctaSecondary": "Try the demo",
     "cardTitle": "#214 paid",
@@ -435,24 +435,24 @@
   },
   "meta": {
     "home": {
-      "title": "Self-service ordering kiosks for restaurants in Uzbekistan",
-      "description": "kiyo supplies self-ordering kiosks for restaurants, fast food and coffee shops in Uzbekistan: hardware, software, installation, Click, Payme, Uzum, HUMO, Uzcard, Visa and Mastercard payments, training and support. Rental available."
+      "title": "Self-service ordering kiosks for restaurants in Tashkent",
+      "description": "Turnkey self-service kiosks for restaurants, fast food and coffee shops: hardware, installation, Click, Payme, Uzum, Uzcard and HUMO payments. Tashkent and all of Uzbekistan. Rental available."
     },
     "product": {
-      "title": "The kiosk — hardware, interface and service",
-      "description": "A self-service ordering terminal for cafés and restaurants: touchscreen ordering, branded multilingual interface, payment terminal, delivery, installation, training and rental options in Uzbekistan."
+      "title": "Self-service kiosk: hardware, interface and service",
+      "description": "A touchscreen self-service kiosk for cafés and restaurants: branded multilingual interface, payment acceptance, delivery, installation, training and rental — in Tashkent and across Uzbekistan."
     },
     "integrations": {
-      "title": "Payment systems and POS connection",
+      "title": "Self-service kiosk with Click, Payme, Uzum and Uzcard payments",
       "description": "How the kiyo kiosk takes payments — Click, Uzum, Payme, HUMO, Uzcard, Visa, Mastercard — and how the integration with your POS is agreed."
     },
     "implementation": {
-      "title": "Implementation — from assessment to launch",
+      "title": "Self-service kiosk implementation: from assessment to launch",
       "description": "How a self-ordering kiosk is implemented in a restaurant: discovery, technical review, menu preparation, installation, testing, staff training, launch and ongoing support."
     },
     "contact": {
-      "title": "Contact us — request a consultation",
-      "description": "Discuss a self-service ordering kiosk for your restaurant or café in Uzbekistan. Leave your contact details and get a tailored proposal."
+      "title": "Buy or rent a self-service kiosk",
+      "description": "Discuss buying or renting a self-service kiosk for your restaurant or café in Tashkent or anywhere in Uzbekistan. Leave your details and get a tailored proposal."
     },
     "privacy": {
       "title": "Privacy notice",
